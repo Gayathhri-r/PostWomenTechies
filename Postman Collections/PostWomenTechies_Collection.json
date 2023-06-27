@@ -16364,7 +16364,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_038_Invalid_Request_PUT_GET_DELETE Copy",
+							"name": "Program_Batch_TC_066_Invalid_Request_PUT_GET_DELETE",
 							"event": [
 								{
 									"listen": "test",
@@ -16393,7 +16393,7 @@
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
 											"    pm.expect(jsonResponse.message,200);\r",
-											"    pm.expect(jsonResponse.success,\"Batch with Id-\" + pm.variables.get(batchId) + \" deleted Successfully!\");\r",
+											"    pm.expect(jsonResponse.success,\"Batch with Id-\" + pm.variables.get(\"batchId\") + \" deleted Successfully!\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -21522,12 +21522,12 @@
 	],
 	"variable": [
 		{
-			"id": "1d2d2998-c8f8-4b7f-a3ff-5c9984b110ff",
+			"id": "53583d28-2f62-4ce5-a94e-6d5ed902dcac",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "70b18b71-32aa-473f-8b3c-535cce46411e",
+			"id": "c781e869-58d6-4030-b0f2-5f34539cef04",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
