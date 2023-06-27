@@ -15837,7 +15837,7 @@
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
 											"        console.log(jsonResponse.programId)\r",
-											"        pm.expect(jsonResponse.programName, \"Jun26-PostWomenTechies-SDET-100\").false\r",
+											"        pm.expect(jsonResponse.programName, \"Jun26-PostWomenTechies-SDET-100-update\").to.be.false\r",
 											"})\r",
 											"\r",
 											"\r",
@@ -20727,12 +20727,12 @@
 	],
 	"variable": [
 		{
-			"id": "74f02d64-b567-44a3-876f-ede65b9c31c2",
+			"id": "48816b33-d92d-4b67-b9ac-1d60e7b2f02f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a48b345d-4449-47ec-a9ec-1859eedbcc7d",
+			"id": "ee8df1bf-07f0-4742-af01-77652e690454",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
