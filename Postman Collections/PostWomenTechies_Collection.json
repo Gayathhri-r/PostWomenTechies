@@ -5549,12 +5549,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogid/1232",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/1232",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										"1232"
 									],
 									"query": [
@@ -5594,16 +5594,12 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms /deletebyprogid/{programId}?ProgramID=11",
-									"protocol": "https",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/{programId}?ProgramID=11",
 									"host": [
-										"lms-api-hackathon-june2023-930a8b0f895d",
-										"herokuapp",
-										"com"
+										"{{baseURL}}"
 									],
 									"path": [
-										"lms ",
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										"{programId}"
 									],
 									"query": [
@@ -22016,17 +22012,17 @@
 	],
 	"variable": [
 		{
-			"id": "ab2e120d-5a30-4542-b106-3b7edc371be8",
+			"id": "7011731e-0fe7-4eba-9ce4-2951e4e8cefa",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ddc70fae-71f0-43cf-96ac-165aa4e218e1",
+			"id": "ee2ae819-8ac4-435e-8fc6-7b5799292bc4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "293a22a2-48f6-4248-85fe-f7f73f7e20c5",
+			"id": "89672aac-3050-4ca6-8ef3-fddf24d211e0",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
