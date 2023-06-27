@@ -1799,7 +1799,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n  \"programName\": \"Jun23-PostWomenTechies-P5_0\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n   \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-P5_0\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1833,7 +1833,81 @@
 							"response": []
 						},
 						{
-							"name": "Post Program-Without Program Name",
+							"name": "Post Program-Empty  Program Name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "92b614bd-02af-4cb0-a908-c5f9a15fae34",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"\r",
+											"        \r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"       \r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        \r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\",\r",
+											"       \r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											"})\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "349467ec-5994-4e14-8a1f-73f3fcad87bb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -21486,17 +21560,17 @@
 	],
 	"variable": [
 		{
-			"id": "b7680ffa-9d58-43b4-a515-3182bce2915b",
+			"id": "0ad2a1c7-f3eb-435a-881d-74dfc992f558",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e11ad2ac-a1b7-4951-a74b-1791a7224d44",
+			"id": "1f808839-66ff-49e9-bb1a-3ced11a46180",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "bc7a3e7c-dd55-491a-90b0-1ea5d21ec4da",
+			"id": "64201edf-0a79-462c-99ed-c2c5e16a552d",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
