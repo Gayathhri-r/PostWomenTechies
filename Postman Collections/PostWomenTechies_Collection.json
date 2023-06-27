@@ -13961,7 +13961,8 @@
 								"body": {
 									"mode": "file",
 									"file": {}
-								}
+								},
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13973,7 +13974,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -15318,7 +15320,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -15330,7 +15333,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						}
@@ -20137,12 +20141,12 @@
 	],
 	"variable": [
 		{
-			"id": "230c3b09-8db1-4fd0-b52f-2159cfe8fa03",
+			"id": "72bba8bf-9b05-4841-865f-8886d191fc6f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "119eebd4-fa45-41bb-a949-38a1191fb666",
+			"id": "780be87d-8b81-4f58-a725-ef5ab8e99c11",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
