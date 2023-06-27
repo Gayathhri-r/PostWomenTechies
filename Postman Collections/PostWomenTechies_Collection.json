@@ -13844,9 +13844,9 @@
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"        console.log(jsonResponse.batchId);\r",
 											"\r",
-											"        //pm.expect(jsonResponse.batchId).to.eql(3130);\r",
-											"        pm.expect(jsonResponse.batchId).to.eql(pm.environment.get(\"batchName\",batchName))\r",
-											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
+											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
+											"        pm.expect(jsonResponse.batchName).to.eql(pm.environment.get(\"batchName\"))\r",
+											"       // pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon update\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
@@ -19985,12 +19985,12 @@
 	],
 	"variable": [
 		{
-			"id": "1807bea3-4576-48b7-ac4a-682047b0d4f4",
+			"id": "c2717a4a-5f68-4718-b522-d7e7c55a72a1",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2258bb26-9085-4f93-a118-c9a401a96119",
+			"id": "e1346943-3878-46e1-8c3e-8461f9a7374b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
