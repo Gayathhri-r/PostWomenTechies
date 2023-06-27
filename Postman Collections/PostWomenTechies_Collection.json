@@ -21581,7 +21581,7 @@
 			"name": "Assignment_Submit_Module",
 			"item": [
 				{
-					"name": "Grades by StudentID invalid tc",
+					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U",
 					"id": "eea9ea31-7512-4d72-a088-1fda448b5b6a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21634,17 +21634,17 @@
 	],
 	"variable": [
 		{
-			"id": "27ef7ccc-75b3-415f-8a29-4608cccc7e2a",
+			"id": "3310c499-da6a-4978-b243-d53a22f4d92e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0233a00b-1e0d-4248-baf9-ad8b5f2d41eb",
+			"id": "fc633aac-610c-466f-8945-4b399c249872",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "02fa15e5-53a0-42dd-a31d-552df1f150bb",
+			"id": "d62c8197-3971-4c79-aa88-17240fc05909",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
