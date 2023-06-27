@@ -14607,7 +14607,7 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches"
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
 								{
@@ -20136,12 +20136,12 @@
 	],
 	"variable": [
 		{
-			"id": "c11a4991-ad1b-41b4-a378-2437a4aca6ce",
+			"id": "eb1a20a9-6b02-445c-b5cb-9c7470082fcc",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "28f0d4df-09d9-4c28-880f-f6ae5b9ef9dc",
+			"id": "999a5dc7-9488-4f81-afd9-8274190c2862",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
