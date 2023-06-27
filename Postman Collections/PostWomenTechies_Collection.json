@@ -13832,7 +13832,7 @@
 											"var random = Math.random().toString(36).substring(2);\r",
 											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
 											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
-											"var batchName = \"Jun23-PostWomenTechies-SDET-SDET01-\"+random;\r",
+											"var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
 											"pm.environment.set(\"batchName\",batchName)\r",
 											"\r",
 											"\r",
@@ -19985,12 +19985,12 @@
 	],
 	"variable": [
 		{
-			"id": "c2717a4a-5f68-4718-b522-d7e7c55a72a1",
+			"id": "317ab4a5-ba54-4133-bed9-7b0cc8535ad1",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e1346943-3878-46e1-8c3e-8461f9a7374b",
+			"id": "af2194f3-8cd3-4eb8-b390-2d813279b3b5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
