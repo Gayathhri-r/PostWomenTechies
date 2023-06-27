@@ -6857,6 +6857,80 @@
 						},
 						{
 							"name": "DELETE by ProgramName_Already deleted progam",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "93ec2fa9-58fa-4ea1-b7ab-cd4c95237c74",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"\r",
+											"        \r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"       \r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        \r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\",\r",
+											"       \r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											"})\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "96b179fb-cbe9-4961-946c-d3d9dd196da0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -6888,8 +6962,7 @@
 										},
 										{
 											"key": "programName",
-											"value": "Jun23-PostWomenTechies-SDET-0101",
-											"type": "text"
+											"value": "Jun23-PostWomenTechies-SDET-0101"
 										}
 									]
 								}
@@ -23295,17 +23368,17 @@
 	],
 	"variable": [
 		{
-			"id": "7d4a89c8-628c-415f-bd76-f23aa9a7cc7c",
+			"id": "2f11f079-7496-4c17-a0da-c46290356510",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c9638573-16ec-4e0c-8a8f-ee29903bc352",
+			"id": "7e662a17-9abe-4a47-8d78-fffe1de663ac",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e5290d9c-2d71-47c3-9743-b9ad13da4957",
+			"id": "376629a8-279e-4434-89b1-193151073115",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
