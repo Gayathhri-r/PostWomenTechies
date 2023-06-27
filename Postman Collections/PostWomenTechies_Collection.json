@@ -120,12 +120,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -2631,11 +2631,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/programs/02",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/02",
+									"protocol": "https",
 									"host": [
-										"{{baseURL}}"
+										"lms-api-hackathon-june2023-930a8b0f895d",
+										"herokuapp",
+										"com"
 									],
 									"path": [
+										"lms",
 										"programs",
 										"02"
 									],
@@ -2781,7 +2785,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/02",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -2791,7 +2795,7 @@
 									"path": [
 										"lms",
 										"programs",
-										""
+										"02"
 									],
 									"query": [
 										{
@@ -5595,7 +5599,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n\r\n    \"programId\": 1711,\r\n    \"programName\": \"Jun23-PostWomenTechies-P5_0\",\r\n    \"programDescription\": \"selenium\",\r\n    \"programStatus\": \"Active\",\r\n    \"creationTime\": \"2023-06-24T23:21:55.228+00:00\",\r\n    \"lastModTime\": \"2023-06-24T23:21:55.228+00:00\"\r\n\r\n\r\n\r\n  },\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n",
+									"raw": "\r\n{\r\n    \"programId\": ,\r\n    \"programName\": \"Jun23-PostWomenTechies-SDET0002\",\r\n    \"programDescription\": \"selenium\",\r\n    \"programStatus\": \"Active\",\r\n    \"creationTime\": \"2023-06-25T07:14:26.017+00:00\",\r\n    \"lastModTime\": \"2023-06-25T07:14:26.017+00:00\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5603,13 +5607,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/Jun23-PostWomenTechies-P5_0",
+									"raw": "{{baseURL}}/deletebyprogname/{programName}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"deletebyprogname",
-										"Jun23-PostWomenTechies-P5_0"
+										"{programName}"
 									],
 									"query": [
 										{
@@ -21509,34 +21513,21 @@
 				}
 			],
 			"id": "cc47accc-9311-4a65-979c-b971c30b4332"
-		},
-		{
-			"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U",
-			"id": "eea9ea31-7512-4d72-a088-1fda448b5b6a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U"
-			},
-			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "9e9cfb55-1472-401a-9e60-65966d07c0b9",
+			"id": "10b17eeb-4e5b-4009-b0af-a41e80ecf08d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6f4fef30-12fd-4ac5-bde8-70f06bd8afc3",
+			"id": "54ee984a-c291-48f6-91f2-f12e64cc6b4d",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cdb6ff54-66c7-42ef-8bb7-b86a1e58234a",
+			"id": "f920d736-807b-4223-966a-660a4f51433b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
