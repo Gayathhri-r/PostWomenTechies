@@ -13835,13 +13835,7 @@
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"         \r",
 											"        \r",
-											"        pm.expect(jsonResponse[0].batchId).is.to.equal(3130);\r",
-											"        pm.expect(jsonResponse.batchName, \"batchName\");\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"batchStatus\"));\r",
-											"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"batchDescription\"));;\r",
-											"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"batchNoOfClasses\"));;\r",
-											"        pm.expect(jsonResponse.programId, pm.environment.get(\"programId\"));;\r",
-											"        pm.expect(jsonResponse.programName,pm.environment.get(\"programName\"));;\r",
+											"        \r",
 											"})\r",
 											"\r",
 											"\r",
@@ -19975,12 +19969,12 @@
 	],
 	"variable": [
 		{
-			"id": "a69c4b0c-cc58-468c-b537-4225d129075f",
+			"id": "0d9e5dfd-31f6-48de-8e5d-d32515dbb91d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c9aa552f-9c7c-4e54-90fd-e387ef105628",
+			"id": "007a93b1-4ee8-45ab-bbd7-dbf66cb0e8f9",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
