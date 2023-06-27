@@ -1325,12 +1325,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/save-program",
+									"raw": "{{baseURL}}/save-prograam",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"save-program"
+										"save-prograam"
 									],
 									"query": [
 										{
@@ -1442,7 +1442,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foo/lms/saveprogram",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foo/lms/{{{{saveprogram}}}}",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -1452,7 +1452,7 @@
 									"path": [
 										"foo",
 										"lms",
-										"saveprogram"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -1558,12 +1558,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"saveprogram"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -1676,12 +1676,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"saveprogram"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -1807,12 +1807,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"saveprogram"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -1851,12 +1851,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"saveprogram"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -1873,87 +1873,6 @@
 										}
 									]
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "Assignment_TC_027_Without_DueDate_Field Copy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "8d0a4681-da2d-4f9a-97a1-7ff0bc73e040",
-										"exec": [
-											"//Validating the status code\r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"//validating the status message\r",
-											"pm.test(\"Status code name is Bad Request\", function () {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"//Validating header\r",
-											"pm.test(\"Validating the Content-Type header is application/json\",() => {\r",
-											"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
-											"});\r",
-											"\r",
-											"//validating the response body\r",
-											"var jsonData = pm.response.json();\r",
-											"pm.test(\"Validating the data of the response body\",() => {\r",
-											"    pm.expect(jsonData.message).to.eql(\"Due Date is mandatory\");\r",
-											"    pm.expect(jsonData.success).to.eql(false);\r",
-											"    \r",
-											"});\r",
-											"\r",
-											"\r",
-											"//validating the JSON schema\r",
-											"var jsonData = pm.response.json();\r",
-											"var schema =\r",
-											"{\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"message\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"success\": {\r",
-											"      \"type\": \"boolean\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"message\",\r",
-											"    \"success\"\r",
-											"  ]\r",
-											"}\r",
-											"\r",
-											"pm.test(\"Validating schema\", function() {\r",
-											"    pm.expect(tv4.validate(jsonData,schema)).to.be.true;\r",
-											"});\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "3442e4f6-665d-4754-b752-75c7a9efb4b6",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"assignmentDescription\": \"Selenium Assignment\",\r\n  \"assignmentId\": 0,\r\n  \"assignmentName\": \"Jun23-PostwomenTechies-SDET-Selenium-001\",\r\n  \"batchId\": 1,\r\n  \"comments\": \"Day 01 Assignments\",\r\n  \"createdBy\": \"U22\",\r\n  \"graderId\": \"U19\",\r\n  \"pathAttachment1\": \"File1\",\r\n  \"pathAttachment2\": \"File2\",\r\n  \"pathAttachment3\": \"File3\",\r\n  \"pathAttachment4\": \"File4\",\r\n  \"pathAttachment5\": \"File5\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseURL}}/{{Assgn_endpoint_1}}"
 							},
 							"response": []
 						}
@@ -2087,12 +2006,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/allPrograms",
+									"raw": "{{baseURL}}/{{allPrograms}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"allPrograms"
+										"{{allPrograms}}"
 									],
 									"query": [
 										{
@@ -2214,12 +2133,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/alPrograms",
+									"raw": "{{baseURL}}/allPrograams",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"alPrograms"
+										"allPrograams"
 									],
 									"query": [
 										{
@@ -2348,7 +2267,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foolms/allPrograms",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foolms/{{allPrograms}}",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -2357,7 +2276,7 @@
 									],
 									"path": [
 										"foolms",
-										"allPrograms"
+										"{{allPrograms}}"
 									],
 									"query": [
 										{
@@ -21547,6 +21466,19 @@
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U22"
 					},
 					"response": []
+				},
+				{
+					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission",
+					"id": "a6d9bcf8-b883-470f-9aaa-3925b49f3d61",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission"
+					},
+					"response": []
 				}
 			],
 			"id": "43ce9408-6808-4626-a790-514df62b97cf"
@@ -21554,17 +21486,17 @@
 	],
 	"variable": [
 		{
-			"id": "224b4ffd-9625-40a5-a391-bf812a2210bd",
+			"id": "176a4734-04fc-405a-bf7f-65c5ddc78d8b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "af9ce58d-f7a9-4cec-a707-71e7d340a6c5",
+			"id": "1f054411-4958-4deb-a6e4-314b724d0e8b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b1c8c02a-01e3-4fdb-97b0-1eefb55107d1",
+			"id": "549eb918-2b43-4649-aec0-50397ebf0601",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
