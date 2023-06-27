@@ -3764,10 +3764,8 @@
 								"method": "PUT",
 								"header": [],
 								"body": {
-									"mode": "file",
-									"file": {
-										"src": ""
-									}
+									"mode": "raw",
+									"raw": ""
 								},
 								"url": {
 									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
@@ -22899,17 +22897,17 @@
 	],
 	"variable": [
 		{
-			"id": "443ed37e-d6cf-4132-88f8-db03742cb7ef",
+			"id": "09ca371b-2d6d-4d89-ab9f-8feff9c37f52",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fdb98619-f6bf-4e14-99f1-ab8f5b57219d",
+			"id": "2da222a2-52d4-4319-8c2a-d208506550f9",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e3e8e38a-c10a-4860-8137-ecfb3dce4aa3",
+			"id": "58f29ea9-5942-4681-bc91-9bb7f23f8af6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
