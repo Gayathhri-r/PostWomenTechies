@@ -15830,6 +15830,7 @@
 											"        console.log(jsonResponse.batchId);\r",
 											"        console.log(jsonResponse.batchName);\r",
 											"        console.log(jsonResponse.batchDescription);\r",
+											"        console.log(jsonResponse.programName);\r",
 											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
@@ -20726,12 +20727,12 @@
 	],
 	"variable": [
 		{
-			"id": "e9a59943-f573-43dc-8b35-a51916ab4451",
+			"id": "c5fff0a2-a1b4-4969-b38f-00ba8ffd79b5",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "485052f6-4303-4b27-b3e1-5d895bf4cf44",
+			"id": "7f921ba8-5528-42b3-82be-209658606bdb",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
