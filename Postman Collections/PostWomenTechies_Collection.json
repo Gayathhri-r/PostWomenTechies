@@ -2508,7 +2508,7 @@
 					"name": "GET one ProgramID",
 					"item": [
 						{
-							"name": "Get one ProgramID by",
+							"name": "Get one ProgramID with valid end points",
 							"event": [
 								{
 									"listen": "test",
@@ -21631,12 +21631,12 @@
 	],
 	"variable": [
 		{
-			"id": "9611af6f-2870-4d5e-a11f-1a7929f6da11",
+			"id": "b139d4c1-5f5f-4479-b957-d9fa9feb2529",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b6f8cca3-d078-436c-bfd3-45d7c4080976",
+			"id": "83cdd0a1-9040-4f22-a00a-1a98302351ba",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
