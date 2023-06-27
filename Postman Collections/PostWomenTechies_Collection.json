@@ -1584,7 +1584,7 @@
 							"response": []
 						},
 						{
-							"name": "Post Program-Empty  Program Status",
+							"name": "Post Program-Without Program Status",
 							"event": [
 								{
 									"listen": "test",
@@ -21468,7 +21468,7 @@
 					"response": []
 				},
 				{
-					"name": "All Submission",
+					"name": "All assignmentsubmission",
 					"id": "a6d9bcf8-b883-470f-9aaa-3925b49f3d61",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21486,17 +21486,17 @@
 	],
 	"variable": [
 		{
-			"id": "580907e3-68ce-4c90-bbdb-f64c2dc2e8f0",
+			"id": "69f2971e-3865-4ff1-ac5d-44cc61890d9f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "dfe8f8a3-883b-4399-97d5-95c4b4b65373",
+			"id": "dbbf7b1e-1105-4899-8dac-aeba54183fb4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "29fdb07a-bbc6-40c7-9f0e-7aab7b1e60d2",
+			"id": "dbbb5be4-d4cb-4fa8-b3b7-943e0c92d840",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
