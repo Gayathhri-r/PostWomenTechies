@@ -112,7 +112,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0102\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0101\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1750,12 +1750,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}};",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}};"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -21521,19 +21521,6 @@
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/grades/1"
 					},
 					"response": []
-				},
-				{
-					"name": " https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/studentbatch/abcd",
-					"id": "aa97f5f8-983f-4ba7-b000-89d5d990ae29",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/studentbatch/abcd"
-					},
-					"response": []
 				}
 			],
 			"id": "43ce9408-6808-4626-a790-514df62b97cf"
@@ -21541,17 +21528,17 @@
 	],
 	"variable": [
 		{
-			"id": "050286f9-6274-47f2-9d59-25aac35fcbba",
+			"id": "96b1c811-ac09-48c4-9ce2-340a3dc99e69",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c18a2512-c536-4c51-90e5-f8a41d9fbe31",
+			"id": "396c9df2-b90a-406e-9fc2-a2b7f5a30316",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c04bcdd4-23a5-4931-9086-6fa58233b26e",
+			"id": "d5340192-d9bf-4bc0-a8b1-5be32e870954",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
