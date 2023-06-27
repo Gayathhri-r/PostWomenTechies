@@ -4026,12 +4026,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{program}}/\"Jun23-PostWomenTechies-SDET-0102\"",
+									"raw": "{{baseURL}}/program/\"Jun23-PostWomenTechies-SDET-0102\"",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{program}}",
+										"program",
 										"\"Jun23-PostWomenTechies-SDET-0102\""
 									],
 									"query": [
@@ -4154,12 +4154,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
+									"raw": "{{baseURL}}/program/Jun23-PostWomenTechies-SDET-0001",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{program}}",
+										"program",
 										"Jun23-PostWomenTechies-SDET-0001"
 									],
 									"query": [
@@ -4282,12 +4282,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
+									"raw": "{{baseURL}}/program/Jun23-PostWomenTechies-SDET-0001",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{program}}",
+										"program",
 										"Jun23-PostWomenTechies-SDET-0001"
 									],
 									"query": [
@@ -4310,80 +4310,6 @@
 						},
 						{
 							"name": "PUT Program(UpdateByProgramName)-json Schema",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "8d96e7e2-2522-4248-9210-1bd234279e52",
-										"exec": [
-											"\r",
-											"\r",
-											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \r",
-											"   \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
-											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
 							"id": "35da0e46-59ce-4361-b9cc-df4d53ba27cd",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4393,7 +4319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programNamee\": \"Jun23-PostWomenTechies-SDET-0002\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n\r\n\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0002\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4401,12 +4327,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
+									"raw": "{{baseURL}}/program/Jun23-PostWomenTechies-SDET-0001",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{program}}",
+										"program",
 										"Jun23-PostWomenTechies-SDET-0001"
 									],
 									"query": [
@@ -21615,17 +21541,17 @@
 	],
 	"variable": [
 		{
-			"id": "4da29f26-b5ac-439d-9eaf-9274cd12e154",
+			"id": "fde06b43-131c-4ec1-beb1-dc965c3e03cd",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "28007ad1-a0ad-4585-9528-9a3bc6c91f2e",
+			"id": "477811a6-ca82-4865-9ec9-f30773d0abcb",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2b900945-5f36-4ede-a848-a6561b9606df",
+			"id": "52a3b51e-11cc-4fd1-b8e1-7e31f3cea1ba",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
