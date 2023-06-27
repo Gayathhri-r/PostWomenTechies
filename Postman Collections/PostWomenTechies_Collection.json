@@ -23693,6 +23693,28 @@
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/3"
 					},
 					"response": []
+				},
+				{
+					"name": " https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/gradesubmission/21",
+					"id": "b0f97732-8a61-4e68-bbc2-0dd082be433e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"assignmentId\": null,\r\n        \"userId\": \"null\",\r\n        \"subDesc\": \"null\",\r\n        \"subComments\": \"submitted succesfully\",\r\n        \"subPathAttach1\": \"file1.json\",\r\n        \"subPathAttach2\": \"file2.json\",\r\n        \"subPathAttach3\": \"file3.json\",\r\n        \"subPathAttach4\": \"file4.json\",\r\n        \"subPathAttach5\": \"file5.json\",\r\n        \"subDateTime\": \"06-26-2023 20:48:47\",\r\n        \"gradedBy\": \"U1172\",\r\n        \"gradedDateTime\": null,\r\n        \"grade\": 2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/gradesubmission/21"
+					},
+					"response": []
 				}
 			],
 			"id": "43ce9408-6808-4626-a790-514df62b97cf"
@@ -23700,17 +23722,17 @@
 	],
 	"variable": [
 		{
-			"id": "a9d5ebc8-cd7b-4e58-b16b-5a970bc8c37c",
+			"id": "3dd99b79-43c4-483b-ad99-5414fbad7c36",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c7766a6d-b030-4e64-8006-0f9af48fd487",
+			"id": "7bdf9517-6e8f-4e33-9ec1-83c24e9e86ab",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "af186d6f-09e1-41c8-9d94-4f915186fdff",
+			"id": "3dcf3e83-bd2e-4002-ac30-a8903637ef0f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
