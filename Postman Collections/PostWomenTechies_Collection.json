@@ -2006,12 +2006,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{allPrograms}}",
+									"raw": "{{baseURL}}/allPrograms",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{allPrograms}}"
+										"allPrograms"
 									],
 									"query": [
 										{
@@ -2133,12 +2133,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/allPrograams",
+									"raw": "{{baseURL}}/alPrograms",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"allPrograams"
+										"alPrograms"
 									],
 									"query": [
 										{
@@ -2267,7 +2267,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foolms/{{allPrograms}}",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foolms/allPrograms",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -2276,7 +2276,7 @@
 									],
 									"path": [
 										"foolms",
-										"{{allPrograms}}"
+										"allPrograms"
 									],
 									"query": [
 										{
@@ -21486,17 +21486,17 @@
 	],
 	"variable": [
 		{
-			"id": "176a4734-04fc-405a-bf7f-65c5ddc78d8b",
+			"id": "3cc29aa0-5644-4e32-92ff-32e49214a42b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1f054411-4958-4deb-a6e4-314b724d0e8b",
+			"id": "f7fba8ba-9e03-4c3c-b82d-a969a97f73b9",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "549eb918-2b43-4649-aec0-50397ebf0601",
+			"id": "c11b6637-6be5-4000-89cd-ddd4d16ecdc4",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
