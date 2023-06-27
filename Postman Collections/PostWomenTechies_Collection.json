@@ -14844,14 +14844,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10000-002\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3739,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "{\r\n\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10000-002\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 23568923,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{baseURL}}/{{updateBatch}}/1594"
+								"url": "{{baseURL}}/{{updateBatch}}/{{nonExistingProgramId}}"
 							},
 							"response": []
 						},
@@ -22042,7 +22042,7 @@
 					"response": []
 				},
 				{
-					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/studentbatch/1",
+					"name": "Submission by batch ID valid tc",
 					"id": "bf373f35-f48b-4d70-8864-4da44a00a86a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -22060,17 +22060,17 @@
 	],
 	"variable": [
 		{
-			"id": "8b4ef7f7-5525-4359-93a5-5ea8082a0f04",
+			"id": "bbb4416c-2c41-458f-bc90-e8bb0a05e028",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8172f7d9-9154-4092-9611-e85908270adc",
+			"id": "9cb4cf3e-9410-46be-b92f-f04f52007b78",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ffe296a2-18f1-482f-8d66-a7dd5c5310d7",
+			"id": "4a710bb6-a517-4dbb-9dd9-ebb77f58cf29",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
