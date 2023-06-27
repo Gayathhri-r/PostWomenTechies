@@ -112,7 +112,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0102\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0101\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5915,6 +5915,80 @@
 						},
 						{
 							"name": "DELETE by ProgramId-Already deleted program",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a740d3e4-1d9e-45b6-9e60-5676c9260a6c",
+										"exec": [
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"\r",
+											"        \r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"       \r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        \r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\",\r",
+											"       \r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											"})\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "7bb26180-3df6-44de-873f-1bacc1f4088f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5932,13 +6006,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{deletebyprogid}}/1232",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/programName?programID",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{deletebyprogid}}",
-										"1232"
+										"programName"
 									],
 									"query": [
 										{
@@ -5952,6 +6026,11 @@
 											"value": "Active",
 											"type": "text",
 											"disabled": true
+										},
+										{
+											"key": "programID",
+											"value": null,
+											"type": "text"
 										}
 									]
 								}
@@ -22797,17 +22876,17 @@
 	],
 	"variable": [
 		{
-			"id": "30e913cb-9e22-4c6b-898f-29adc9bf4d64",
+			"id": "bac669a6-5f2e-4522-bb57-39f0027625d4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "facf0704-3011-4f32-893c-732d698195fa",
+			"id": "768d15ca-e5cb-4408-8d70-1134f61c0595",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "fc6290ca-4553-4a9d-a6b5-89ed1efbed99",
+			"id": "b62df428-a96a-41e1-b480-d206689e30c0",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
