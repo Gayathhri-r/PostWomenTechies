@@ -4585,6 +4585,85 @@
 						},
 						{
 							"name": "PUT Program(UpdateByProgramId)-Without Request Body",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3f3a3a5c-4c54-4b66-afad-7ba0bbf05516",
+										"exec": [
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 415\", function () {\r",
+											"    pm.response.to.have.status(415);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Unsupported Media Type\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,415);\r",
+											"    pm.expect(jsonResponse.error,\"Unsupported Media Type\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"\r",
+											"       \"programId\": {\r",
+											"      \"type\": \"integer\" \r",
+											"      },\r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"       \r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        \"programId\",\r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\",\r",
+											"       \r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse[0],schema)).to.be.true\r",
+											"})\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "ff6a16b3-86e0-479d-92a1-779a3d091b27",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4594,7 +4673,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n\r\n\r\n\r\n\r\n//validate status code \r\npm.test(\"Status code is 400\", function () {\r\n    pm.response.to.have.status(400);\r\n});\r\n\r\n//validate status message\r\npm.test(\"Status code name has string\", function() {\r\n    pm.response.to.have.status(\"Bad Request\");\r\n});\r\n\r\n//validate response header - Content-type\r\npm.test(\"Content-type is application/json\",function(){\r\n     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r\n});\r\n\r\n\r\n//Get the response result\r\nvar jsonResponse = pm.response.json();\r\n\r\n//validate response body\r\npm.test(\"Validate response body\", function(){\r\n    pm.expect(jsonResponse.status,400);\r\n    pm.expect(jsonResponse.error,\"Bad Request\");\r\n})\r\n\r\n //validate response json schema\r\n//Using json to json schema converter\r\nvar schema =   \r\n {\r\n     \r\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r\n  \"type\": \"object\",\r\n  \"properties\": {\r\n\r\n       \"programId\": {\r\n      \"type\": \"integer\" \r\n      },\r\n        \"programName\": {\r\n            \"type\": \"string\"\r\n        },    \r\n        \"programDescription\": {\r\n            \"type\": \"string\"\r\n        },\r\n        \"programStatus\": {\r\n            \"type\": \"string\"\r\n        },\r\n       \r\n    },\r\n    \"required\" :[\r\n        \"programId\",\r\n        \"programName\",\r\n        \"programDescription\",\r\n        \"programStatus\",\r\n       \r\n    ]\r\n}\r\n\r\npm.test(\"Validate schema\", () => {\r\n    //using tv4 validatroty library and validate method\r\n    pm.expect(tv4.validate(jsonResponse[0],schema)).to.be.true\r\n})\r\n\r\n",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4602,12 +4681,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/putprogram/2299",
+									"raw": "{{baseURL}}/{{putprogram}}/2299",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"putprogram",
+										"{{putprogram}}",
 										"2299"
 									],
 									"query": [
@@ -4767,12 +4846,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/putprogram/2298",
+									"raw": "{{baseURL}}/{{putprogram}}/2298",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"putprogram",
+										"{{putprogram}}",
 										"2298"
 									],
 									"query": [
@@ -21689,17 +21768,17 @@
 	],
 	"variable": [
 		{
-			"id": "e9905b5c-51f5-400c-996c-16c01dafe8f8",
+			"id": "60903b1a-bd10-46f4-b81c-4b7719f144e8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ecb52efa-316f-4f5f-9d95-038f5f71fce7",
+			"id": "48f4f76e-1f41-494a-8803-56e0aec637f3",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c6b9a63b-e7a8-46fc-882b-942b7fb764f0",
+			"id": "1c49a5c8-fe82-4e7f-82ac-3d8c56624ba9",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
