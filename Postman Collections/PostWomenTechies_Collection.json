@@ -14714,6 +14714,78 @@
 						},
 						{
 							"name": "Program_Batch_TC_065_Invalid_Endpoints",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1dac0b27-eb03-47b5-ba39-01b01b3b9050",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "c1535080-33f7-4919-8693-da774007fe47",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -14721,6 +14793,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{invalidEndpointGetAllBatches}}"
 							},
 							"response": []
@@ -22060,17 +22141,17 @@
 	],
 	"variable": [
 		{
-			"id": "bbb4416c-2c41-458f-bc90-e8bb0a05e028",
+			"id": "acc2a88a-2589-47aa-8039-7e1b582a3899",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "9cb4cf3e-9410-46be-b92f-f04f52007b78",
+			"id": "3ca0aec7-4029-474a-a49c-436f22c8dbb4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4a710bb6-a517-4dbb-9dd9-ebb77f58cf29",
+			"id": "68950709-52e4-407b-b8af-3299a1dcb57a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
