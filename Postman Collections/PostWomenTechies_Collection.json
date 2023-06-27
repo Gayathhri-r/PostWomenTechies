@@ -13833,6 +13833,7 @@
 											"    \r",
 											"//validate Response body\r",
 											"    pm.test(\"Validate Response body\", function() {\r",
+											"        pm.expect(pm.response.text()).to.include(\"batch_Id\");\r",
 											"         \r",
 											"        \r",
 											"        \r",
@@ -19969,12 +19970,12 @@
 	],
 	"variable": [
 		{
-			"id": "8c950498-e858-451f-8182-b67923aa84ff",
+			"id": "73a0bb54-7206-45eb-806f-32564de997e5",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c28ac45a-163f-4ae5-88eb-0f49b686517b",
+			"id": "c52a3e4d-bd28-48a2-aaae-fb10e27790fd",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
