@@ -16364,7 +16364,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_066_Invalid_Request_PUT_GET_DELETE",
+							"name": "Program_Batch_TC_038_Invalid_Request_PUT_GET_DELETE Copy",
 							"event": [
 								{
 									"listen": "test",
@@ -16393,26 +16393,35 @@
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
 											"    pm.expect(jsonResponse.message,200);\r",
-											"    pm.expect(jsonResponse.success,\"Batch with Id-\" + pm.variables.get(\"batchId\") + \" deleted Successfully!\");\r",
+											"    pm.expect(jsonResponse.success,\"Batch with Id-\" + \"pm.variables.get(batchId)\" + \" deleted Successfully!\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
 											" {\r",
+											"     \r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"    \"message\": {\r",
+											"    \"timestamp\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"success\": {\r",
-											"      \"type\": \"boolean\"\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"    \"message\",\r",
-											"    \"success\"\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
 											"  ]\r",
 											"}\r",
 											"//validate schema \r",
@@ -21522,12 +21531,12 @@
 	],
 	"variable": [
 		{
-			"id": "53583d28-2f62-4ce5-a94e-6d5ed902dcac",
+			"id": "504d3e21-2632-4735-803e-2b8597ee2d40",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c781e869-58d6-4030-b0f2-5f34539cef04",
+			"id": "3d25ab69-f368-4e9e-bd7a-9a970fad5050",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
