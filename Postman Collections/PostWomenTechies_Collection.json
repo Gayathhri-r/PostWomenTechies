@@ -14162,7 +14162,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -20171,12 +20172,12 @@
 	],
 	"variable": [
 		{
-			"id": "90828c09-8d06-4b58-9c17-e2a7eb5efeb6",
+			"id": "41b67a1c-d3c7-49b1-b876-caf3e82a13ce",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5d10ba0f-ea39-4030-a014-cdc051326564",
+			"id": "668b7d8c-1e7b-48d6-b346-f50f462d19ad",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
