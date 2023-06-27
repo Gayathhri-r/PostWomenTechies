@@ -15318,7 +15318,7 @@
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Not found\");\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -20784,12 +20784,12 @@
 	],
 	"variable": [
 		{
-			"id": "615fbd4c-664b-4bc2-b9ba-7881700fd164",
+			"id": "d6c89734-d182-47bb-a244-ca7c1fe7ae0f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7836470b-f28c-4367-9a47-7fb32373a36c",
+			"id": "50f36b8d-1b2d-47fb-90f0-01698c2ada3c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
