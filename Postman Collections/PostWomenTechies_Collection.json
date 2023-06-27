@@ -14288,7 +14288,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10000-002\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3739\r\n  \r\n}",
+									"raw": "{\r\n\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10000-002\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3739,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -20459,12 +20459,12 @@
 	],
 	"variable": [
 		{
-			"id": "7e6ba1e9-74cc-4f19-9011-391bd7fd1f8c",
+			"id": "1d7f7e4b-b3e4-472c-b122-5fb92e601342",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d8857fe8-8a40-46c2-a334-8d8b0c67fb56",
+			"id": "e80ad6aa-62e6-43ae-bd23-2cf597981720",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
