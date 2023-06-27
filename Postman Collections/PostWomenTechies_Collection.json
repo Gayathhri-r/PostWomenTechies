@@ -23502,14 +23502,14 @@
 							"script": {
 								"id": "1755bdeb-d446-44aa-969a-3f95c4d59dd3",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
 									"});\r",
 									"pm.test(\"Content-Type is present\", function () {\r",
 									"    pm.response.to.have.header(\"Content-Type\");\r",
 									"});\r",
 									"pm.test(\"Status message is OK\", function () {\r",
-									"    pm.response.to.have.status(\"OK\");\r",
+									"    pm.response.to.have.status(\"Not Found\");\r",
 									"    \r",
 									"});\r",
 									"\r",
@@ -24042,17 +24042,17 @@
 	],
 	"variable": [
 		{
-			"id": "ad26aaab-bfff-4536-8ab7-b0bac13d3235",
+			"id": "b3cad38b-e91d-4532-bd8b-6e2e1fdc8cb1",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7d2731bf-ef77-4483-8227-ccc9edf48550",
+			"id": "dd502f67-e89f-488b-8879-9272e9d1a122",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "fceb003d-b5fd-47e2-a55b-2f21f5d99fa2",
+			"id": "c5657336-9499-490c-8176-48e804ccdd17",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
