@@ -14249,7 +14249,6 @@
 										"exec": [
 											"console.log(\"Due to application error displays XML code, response body validation cannot be done\");\r",
 											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
-											"console.log(\"This Test Scenario cannot be tested\");\r",
 											"\r",
 											"//validate status code \r",
 											"pm.test(\"Status code is 404\", function () {\r",
@@ -20047,12 +20046,12 @@
 	],
 	"variable": [
 		{
-			"id": "8bbd3b02-1b32-4df9-9144-c21d2fb78cef",
+			"id": "fea48a8b-9756-4f2d-b6a7-a950a715d182",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "04084c4e-cbd9-4f1e-8530-383297990267",
+			"id": "00f8cf35-61ae-42dc-a5a4-52b1d3eaba7b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
