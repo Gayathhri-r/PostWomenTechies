@@ -15243,6 +15243,49 @@
 								"header": []
 							},
 							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_098_Invalid_baseURL",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "21bb2abe-1181-4312-a919-f590cde7882f",
+										"exec": [
+											"console.log(\"Due to application error displays XML code, response body validation cannot be done\");\r",
+											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.expect(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "0465f663-bc63-4463-855a-eb9f90efa86d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{invalidBaseUrl}}"
+							},
+							"response": []
 						}
 					],
 					"id": "ca04cf5c-2845-4d02-9588-a6a01e585727"
@@ -19830,12 +19873,12 @@
 	],
 	"variable": [
 		{
-			"id": "7a7f25c6-9d84-4d4b-8db2-3e2f43f4c6bf",
+			"id": "b49e1698-0716-4187-9bd1-1743e3a96d15",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "61ac3f32-9f91-4ad2-a285-eed99e950a86",
+			"id": "78e5ce4b-6765-490b-851e-8dfc4c5bb80c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
