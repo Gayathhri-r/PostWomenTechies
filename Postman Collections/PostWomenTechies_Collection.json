@@ -112,7 +112,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0101\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0102\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1750,12 +1750,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}};",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"{{{{saveprogram}}}};"
 									],
 									"query": [
 										{
@@ -3607,12 +3607,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/program/;",
+									"raw": "{{baseURL}}/{{program}}/;",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"program",
+										"{{program}}",
 										";"
 									],
 									"query": [
@@ -21521,6 +21521,19 @@
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/grades/1"
 					},
 					"response": []
+				},
+				{
+					"name": " https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/studentbatch/abcd",
+					"id": "aa97f5f8-983f-4ba7-b000-89d5d990ae29",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/studentbatch/abcd"
+					},
+					"response": []
 				}
 			],
 			"id": "43ce9408-6808-4626-a790-514df62b97cf"
@@ -21528,17 +21541,17 @@
 	],
 	"variable": [
 		{
-			"id": "96b1c811-ac09-48c4-9ce2-340a3dc99e69",
+			"id": "fa098263-6176-4ac6-8be3-97e2a192e29f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "396c9df2-b90a-406e-9fc2-a2b7f5a30316",
+			"id": "b3614d6b-2e9e-41f3-85c0-2c9451f1ed55",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d5340192-d9bf-4bc0-a8b1-5be32e870954",
+			"id": "5aded6e0-9e13-42e7-81b0-c2e92fff47e5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
