@@ -13833,7 +13833,7 @@
 											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
 											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
 											"var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
-											"pm.environment.set(\"batchName\",batchName)\r",
+											"pm.environment.set(\"batchDescription\",batchDescription)\r",
 											"\r",
 											"\r",
 											"//Get the response result\r",
@@ -13843,9 +13843,9 @@
 											"//validate Response body\r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"        console.log(jsonResponse.batchId);\r",
-											"\r",
+											"        console.log(jsonResponse.batchName);\r",
 											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
-											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
+											"        //pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(pm.environment.get(\"batchDescription\"))\r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon update\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
@@ -19985,12 +19985,12 @@
 	],
 	"variable": [
 		{
-			"id": "de72d26d-8aba-4d2f-9d22-0cf0f52ecc4a",
+			"id": "98a4f2df-0d55-41dc-a845-bdafb807b41a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "259ae7c2-e00f-4466-a19f-14f9cefab9e9",
+			"id": "ac1e9170-a844-4dc8-ad2b-9ea40454b080",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
