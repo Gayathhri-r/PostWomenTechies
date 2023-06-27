@@ -14150,7 +14150,8 @@
 							},
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -20172,12 +20173,12 @@
 	],
 	"variable": [
 		{
-			"id": "41b67a1c-d3c7-49b1-b876-caf3e82a13ce",
+			"id": "1d68cae6-bdcc-48ce-9c5c-c47af236645e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "668b7d8c-1e7b-48d6-b346-f50f462d19ad",
+			"id": "38180fe8-a5dc-48d8-9de2-53275ab70b08",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
