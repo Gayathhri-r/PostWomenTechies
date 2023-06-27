@@ -22027,6 +22027,19 @@
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/student/U75"
 					},
 					"response": []
+				},
+				{
+					"name": "GET Submission by User ID invalid tc",
+					"id": "b827a2ec-b557-4d1f-bf90-4f335f5c01eb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/student/U7"
+					},
+					"response": []
 				}
 			],
 			"id": "43ce9408-6808-4626-a790-514df62b97cf"
@@ -22034,17 +22047,17 @@
 	],
 	"variable": [
 		{
-			"id": "3b361750-3a78-4773-893e-4cd1e4214a5e",
+			"id": "207fda95-555b-4dea-937c-109168b57d0d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6973b1a6-c4e8-449f-ba62-a9dde46ad208",
+			"id": "cf87d616-3c2e-4f0f-9085-71a9a6dc6705",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ef85f369-5d2d-445c-a334-287fcd0b78a2",
+			"id": "20818a50-3e1c-4356-b07e-b1f290423b3f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
