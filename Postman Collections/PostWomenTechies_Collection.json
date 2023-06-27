@@ -21581,7 +21581,7 @@
 			"name": "Assignment_Submit_Module",
 			"item": [
 				{
-					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U",
+					"name": "Grades by StudentID invalid tc",
 					"id": "eea9ea31-7512-4d72-a088-1fda448b5b6a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21627,6 +21627,50 @@
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission"
 					},
 					"response": []
+				},
+				{
+					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/196",
+					"id": "91f5d7f7-0f61-40ed-98fd-3fa76ae9e4a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n        \"assignmentId\": 13,\r\n        \"userId\": \"U92\",\r\n        \"subDesc\": \"team 22\",\r\n        \"subComments\": \"team22 testing post request\",\r\n        \"subPathAttach1\": \"team 22\",\r\n        \"subPathAttach2\": \"team 22\",\r\n        \"subPathAttach3\": \"team 22\",\r\n        \"subPathAttach4\": \"team 22\",\r\n        \"subPathAttach5\": \"team 22\",\r\n        \"subDateTime\": \"06-26-2023 19:55:04\",\r\n        \"gradedBy\": null,\r\n        \"gradedDateTime\": null,\r\n        \"grade\": -1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/196"
+					},
+					"response": []
+				},
+				{
+					"name": " https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/gradesubmission/211",
+					"id": "2f86f25d-daff-4d10-9e29-9f7eedcf9350",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"assignmentId\": 197,\r\n        \"userId\": \"U234\",\r\n        \"subDesc\": \"Assignment submission by U234\",\r\n        \"subComments\": \"submitted succesfully\",\r\n        \"subPathAttach1\": \"file1.json\",\r\n        \"subPathAttach2\": \"file2.json\",\r\n        \"subPathAttach3\": \"file3.json\",\r\n        \"subPathAttach4\": \"file4.json\",\r\n        \"subPathAttach5\": \"file5.json\",\r\n        \"subDateTime\": \"06-26-2023 20:48:47\",\r\n        \"gradedBy\": \"U1172\",\r\n        \"gradedDateTime\": null,\r\n        \"grade\": 2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/gradesubmission/211"
+					},
+					"response": []
 				}
 			],
 			"id": "43ce9408-6808-4626-a790-514df62b97cf"
@@ -21634,17 +21678,17 @@
 	],
 	"variable": [
 		{
-			"id": "3310c499-da6a-4978-b243-d53a22f4d92e",
+			"id": "2b977427-0b93-4933-a6ff-e60095d05ae4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fc633aac-610c-466f-8945-4b399c249872",
+			"id": "011ec00b-6ed8-41c7-b8a6-7902b5392d11",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d62c8197-3971-4c79-aa88-17240fc05909",
+			"id": "dbc02d85-e914-4b04-9c58-19cee57330da",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
