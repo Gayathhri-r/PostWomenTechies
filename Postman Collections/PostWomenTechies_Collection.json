@@ -13945,7 +13945,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13961,7 +13962,8 @@
 								"body": {
 									"mode": "file",
 									"file": {}
-								}
+								},
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13973,7 +13975,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13985,7 +13988,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13997,7 +14001,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14009,7 +14014,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14021,7 +14027,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14118,7 +14125,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{invalidEndpointGetAllBatches}}"
 							},
 							"response": []
 						},
@@ -14129,7 +14137,31 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_066_Invalid_Request_GET_POST Copy",
+							"id": "1b163a13-474f-4a00-95c3-1ff1efa3ec75",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_066_Invalid_Request_GET_POST Copy 2",
+							"id": "e5011968-f95d-4d94-ae78-b7cb0f8c8060",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
 								"header": []
 							},
 							"response": []
@@ -15160,7 +15192,7 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches"
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
 								{
@@ -15239,7 +15271,7 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches"
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
 								{
@@ -15305,7 +15337,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -15317,7 +15350,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -15329,7 +15363,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						}
@@ -20136,12 +20171,12 @@
 	],
 	"variable": [
 		{
-			"id": "32537cd5-d324-4c23-8c9c-c09f883d331a",
+			"id": "90828c09-8d06-4b58-9c17-e2a7eb5efeb6",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "58dfc1b6-ab92-480b-b2ae-ebc2a877182a",
+			"id": "5d10ba0f-ea39-4030-a014-cdc051326564",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
