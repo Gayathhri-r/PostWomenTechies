@@ -16143,6 +16143,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n  \"batchId\": \"U123\",\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
@@ -23722,17 +23731,17 @@
 	],
 	"variable": [
 		{
-			"id": "c62b8169-6f08-4a32-9269-36be54a68974",
+			"id": "3a5a4ef5-6891-4cb3-af34-da61aaa1b960",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ad0e9dde-cb6a-4a81-87a8-b4b7430f5dc9",
+			"id": "fe69f486-7eb0-4c24-815d-dc6631d2497c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "82953248-4b96-4d32-95aa-8ee2f3ae17fe",
+			"id": "931692c5-b569-4ec3-9500-637c6c45d7fe",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
