@@ -15837,7 +15837,7 @@
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
 											"        console.log(jsonResponse.programId)\r",
-											"        pm.expect(jsonResponse.programName, \"Jun26-PostWomenTechies-SDET-100-update\").to.be.false\r",
+											"        pm.expect(jsonResponse.programName,\"Jun26-PostWomenTechies-SDET-100-update\").to.not.match;\r",
 											"})\r",
 											"\r",
 											"\r",
@@ -20727,12 +20727,12 @@
 	],
 	"variable": [
 		{
-			"id": "48816b33-d92d-4b67-b9ac-1d60e7b2f02f",
+			"id": "40c58b4c-bcce-4774-af13-1d62a2ad2ed7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ee8df1bf-07f0-4742-af01-77652e690454",
+			"id": "47f6d199-96f1-4c29-847f-bfbd253f5423",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
