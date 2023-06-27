@@ -16393,7 +16393,7 @@
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
 											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
+											"    pm.expect(jsonResponse.error,\"Batch with Id-\" + \"pm.variables.get(batchId)\" + \" deleted Successfully!\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -16450,7 +16450,7 @@
 										}
 									}
 								},
-								"url": "{{baseURL}}/{{createBatch}}"
+								"url": "{{baseURL}}/{{updateBatch}}/1597"
 							},
 							"response": []
 						},
@@ -21531,12 +21531,12 @@
 	],
 	"variable": [
 		{
-			"id": "b60606d6-3fd3-4a18-acff-f25479d26a5b",
+			"id": "a4f28805-bbcc-4c5f-8f74-7ca4eeb2b438",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b3713f96-c9e1-4325-9f63-53c41eaf5c38",
+			"id": "ffda44b3-e73b-4c41-ad57-5a43fb824077",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
