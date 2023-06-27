@@ -5643,12 +5643,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{deletebyprogid}}/1232",
+									"raw": "{{baseURL}}/deletebyprogid/1232",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{deletebyprogid}}",
+										"deletebyprogid",
 										"1232"
 									],
 									"query": [
@@ -22008,17 +22008,17 @@
 	],
 	"variable": [
 		{
-			"id": "b9a1b910-cd02-4df9-ba0d-a98f3ea76047",
+			"id": "4a774cc9-4fc5-428c-9476-d817da2b896b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2534a583-1ea2-4a80-9242-a1469a3f91ee",
+			"id": "f3bfac87-8a3d-410d-8a0e-053144a82cc1",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6e2cf581-56c2-464d-b62e-39b3f9ffce43",
+			"id": "c1e0d45d-8522-4170-82ff-80a8d01c433a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
