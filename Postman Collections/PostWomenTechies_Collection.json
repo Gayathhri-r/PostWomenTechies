@@ -14327,14 +14327,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchId\": 1504,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 5555,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "{\r\n  \r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001-update\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon-update\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 12,\r\n  \"programId\": 3739,\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-10000\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{baseURL}}/{{updateBatch}}"
+								"url": "{{baseURL}}/{{updateBatch}}/1594"
 							},
 							"response": []
 						},
@@ -20015,12 +20015,12 @@
 	],
 	"variable": [
 		{
-			"id": "27007c8e-5c68-4b3d-b436-fe4329642d46",
+			"id": "ccfc4c00-bdc0-4e50-862c-e61b17c03e77",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0029224f-3fff-44b8-966e-b174ed113e35",
+			"id": "6a7f1274-ca12-4bf9-9d79-86b09d3e97d1",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
