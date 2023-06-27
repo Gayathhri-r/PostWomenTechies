@@ -4026,12 +4026,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/program/\"Jun23-PostWomenTechies-SDET-0102\"",
+									"raw": "{{baseURL}}/{{program}}/\"Jun23-PostWomenTechies-SDET-0102\"",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"program",
+										"{{program}}",
 										"\"Jun23-PostWomenTechies-SDET-0102\""
 									],
 									"query": [
@@ -4282,12 +4282,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/program/Jun23-PostWomenTechies-SDET-0001",
+									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"program",
+										"{{program}}",
 										"Jun23-PostWomenTechies-SDET-0001"
 									],
 									"query": [
@@ -21541,17 +21541,17 @@
 	],
 	"variable": [
 		{
-			"id": "bccdf8e6-7fc5-423c-9115-8d05f38efa4c",
+			"id": "b9363b7f-1037-4a9e-8f4e-e34946ab9df6",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6be30b39-1ce7-488d-8e8a-8a2eca7c13c2",
+			"id": "1133941e-3dec-4069-b259-3e915d93d970",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "40a3ae47-8b02-4c0e-9902-9889627c3e16",
+			"id": "305cf15d-9a78-4d6d-bd21-fb452eb28e78",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
