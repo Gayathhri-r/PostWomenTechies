@@ -4319,7 +4319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0002\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n\r\n\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programNamee\": \"Jun23-PostWomenTechies-SDET-0002\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4327,12 +4327,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/program/Jun23-PostWomenTechies-SDET-0001",
+									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"program",
+										"{{program}}",
 										"Jun23-PostWomenTechies-SDET-0001"
 									],
 									"query": [
@@ -21541,17 +21541,17 @@
 	],
 	"variable": [
 		{
-			"id": "b9363b7f-1037-4a9e-8f4e-e34946ab9df6",
+			"id": "e5da3e97-689a-4a8c-bf77-ae705b430451",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1133941e-3dec-4069-b259-3e915d93d970",
+			"id": "41ed8bde-bbfb-4b5a-9ab3-f8ac4759331f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "305cf15d-9a78-4d6d-bd21-fb452eb28e78",
+			"id": "57b4dc00-ed40-42ee-a31b-d062289e2cbb",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
