@@ -15312,13 +15312,13 @@
 											"\r",
 											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"    pm.response.to.have.status(\"Not found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -15375,7 +15375,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": -3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100-update\"\r\n}",
+									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": -10,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100-update\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -20784,12 +20784,12 @@
 	],
 	"variable": [
 		{
-			"id": "a432f886-a749-474b-9ddd-edacb2f23d44",
+			"id": "615fbd4c-664b-4bc2-b9ba-7881700fd164",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ec59eb72-fbc7-45f2-aa53-1dd364325c0a",
+			"id": "7836470b-f28c-4367-9a47-7fb32373a36c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
