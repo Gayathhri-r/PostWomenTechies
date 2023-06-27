@@ -15298,6 +15298,56 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"batchId\": 3130,\n    \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 10,\n    \"programId\": 3168,\n    \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\n}"
+								},
+								{
+									"id": "45364646-1a13-48ba-9eaf-e071cf2b94ea",
+									"name": "Program_Batch_TC_076_Without_Batch_Description",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  //\"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n  \r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "Cowboy"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 27 Jun 2023 13:39:14 GMT"
+										},
+										{
+											"key": "Via",
+											"value": "1.1 vegur"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"batchId\": 3130,\n    \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 10,\n    \"programId\": 3168,\n    \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\n}"
 								}
 							]
 						},
@@ -15670,7 +15720,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_083_Same_batch_multiple_program Copy 2",
+							"name": "Program_Batch_TC_099_Program_Batch_TC_098_Update_Program_name",
 							"id": "10af7127-00ec-47c1-bca1-9ee661fd568d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -20485,12 +20535,12 @@
 	],
 	"variable": [
 		{
-			"id": "92ec9fcc-0094-4b64-a8eb-2c3119014d26",
+			"id": "e0fb4672-4b53-466a-910a-449070b6f8ab",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "4c07ef1a-fe21-478f-a9b4-c54c6f271efb",
+			"id": "e394ca98-e5ea-4e4b-92f2-4385ac8a4301",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
