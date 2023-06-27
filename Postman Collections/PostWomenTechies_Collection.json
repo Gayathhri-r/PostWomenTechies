@@ -13815,7 +13815,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "",
+									"raw": "{\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10000-001\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168,\r\n  \"programName\": \"string\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -15281,7 +15281,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
+								"method": "DELETE",
 								"header": [],
 								"url": "{{invalidBaseUrl}}"
 							},
@@ -19873,12 +19873,12 @@
 	],
 	"variable": [
 		{
-			"id": "a701fad6-f297-4dd1-a03f-81cdd6ab2b14",
+			"id": "724fbd30-392b-4622-8270-65e810771eb5",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fd749e14-02b4-473d-9d2c-dccd030e071d",
+			"id": "c2945674-dbf7-4dde-925b-37b0dd75ce09",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
