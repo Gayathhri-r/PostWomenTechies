@@ -4846,12 +4846,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/putprogram/2298",
+									"raw": "{{baseURL}}/{{putprogram}}/2298",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"putprogram",
+										"{{putprogram}}",
 										"2298"
 									],
 									"query": [
@@ -4874,6 +4874,89 @@
 						},
 						{
 							"name": "PUT Program(UpdateByProgramId)-Existing Data",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "48ce0ad1-3acd-4895-8c53-16a77db60b60",
+										"exec": [
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "425511a7-bfa1-4bfd-8528-37591c8158f5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -4891,12 +4974,11 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/putprogram/717",
+									"raw": "{{baseURL}}{{putprogram}}/717",
 									"host": [
-										"{{baseURL}}"
+										"{{baseURL}}{{putprogram}}"
 									],
 									"path": [
-										"putprogram",
 										"717"
 									],
 									"query": [
@@ -21768,17 +21850,17 @@
 	],
 	"variable": [
 		{
-			"id": "aee440f2-9157-4f07-b138-420c9e04ee02",
+			"id": "5c14263a-41d7-4af4-a7e6-d4451b073bc8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "be74db14-df8c-4a70-8b10-72f41294bba8",
+			"id": "554c71ac-f7d2-4a02-887a-76b1768f1082",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8933b992-0990-4b51-a90d-3e19dddec54b",
+			"id": "ad27b5ad-4501-4ec6-bf41-c3e32410c14f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
