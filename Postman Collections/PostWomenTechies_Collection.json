@@ -13848,7 +13848,7 @@
 											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(pm.environment.get(\"batchDescription\"))\r",
-											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon update\");\r",
+											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon update-\"+random);\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
 											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");\r",
@@ -19986,12 +19986,12 @@
 	],
 	"variable": [
 		{
-			"id": "27bfce57-18e6-4cbc-9aa3-d7b4f94feeec",
+			"id": "e083055b-8efa-4c0f-b37d-6a6c0dea3ab3",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a1058ebe-c534-40c9-add0-813412bc612f",
+			"id": "829c7e79-d076-466d-b8ca-8f5f3920f9ac",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
