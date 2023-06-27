@@ -14031,7 +14031,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  //\"batchDescription\": \"This Batch is for Postman Hackathon update\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"string\",\r\n  \"batchNoOfClasses\": 0,\r\n  \"batchStatus\": \"string\",\r\n  \"programId\": 0,\r\n  \"programName\": \"string\"\r\n}\r\n",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14138,7 +14138,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}"
 							},
 							"response": []
 						},
@@ -19867,12 +19868,12 @@
 	],
 	"variable": [
 		{
-			"id": "643e1811-27b3-4245-9178-fd1c91766951",
+			"id": "0168c8d9-c7ce-464f-9e47-9aac46e43088",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5c83e371-2652-4b2a-92be-fc338447c72e",
+			"id": "ea65ed2d-e6ca-4c2c-82e4-ba9885f7a09c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
