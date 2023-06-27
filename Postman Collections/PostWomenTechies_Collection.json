@@ -14150,8 +14150,7 @@
 							},
 							"request": {
 								"method": "POST",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -14162,9 +14161,8 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"method": "PUT",
+								"header": []
 							},
 							"response": []
 						},
@@ -20173,12 +20171,12 @@
 	],
 	"variable": [
 		{
-			"id": "1d68cae6-bdcc-48ce-9c5c-c47af236645e",
+			"id": "0d872f1a-4057-4c92-b703-1337a59f5463",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "38180fe8-a5dc-48d8-9de2-53275ab70b08",
+			"id": "2d7d9ccd-f2e0-4cb5-b2e1-8bab76f12cf5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
