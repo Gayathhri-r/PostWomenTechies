@@ -15815,36 +15815,27 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"    pm.expect(jsonResponse.message,\"Batch status is needed\");\r",
+											"    pm.expect(jsonResponse.success,\"false\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
 											" {\r",
-											"     \r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
+											"    \"message\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
 											"  ]\r",
 											"}\r",
 											"//validate schema \r",
@@ -15867,7 +15858,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "",
+									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \" \",\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -21042,12 +21033,12 @@
 	],
 	"variable": [
 		{
-			"id": "888b103f-e48e-4ae9-8491-d3adfdd506aa",
+			"id": "a88bc0dd-b11c-4cf9-87e3-d5ef3c8bfcc7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0f58eeec-094e-44cc-a1c7-8f4010004a79",
+			"id": "223dfd74-7f48-4f92-a3e0-295ec92429a3",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
