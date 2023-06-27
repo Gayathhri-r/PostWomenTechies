@@ -20294,12 +20294,12 @@
 	],
 	"variable": [
 		{
-			"id": "74b7ccda-1b25-427e-be30-0feee4029dc3",
+			"id": "5e7b1541-324d-4f17-bff3-92e6b60b0e16",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "17a16a3f-c6c6-4d01-b412-cacf349ca7ac",
+			"id": "0ccf335c-eb48-453f-8763-e6043f60abf4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
