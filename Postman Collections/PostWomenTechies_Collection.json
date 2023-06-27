@@ -1325,12 +1325,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/save-prograam",
+									"raw": "{{baseURL}}/save-program",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"save-prograam"
+										"save-program"
 									],
 									"query": [
 										{
@@ -1442,7 +1442,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foo/lms/{{{{saveprogram}}}}",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foo/lms/saveprogram",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -1452,7 +1452,7 @@
 									"path": [
 										"foo",
 										"lms",
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -1558,12 +1558,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -1676,12 +1676,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -1807,12 +1807,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -21554,17 +21554,17 @@
 	],
 	"variable": [
 		{
-			"id": "be01ab15-b09d-4c6d-8665-e770f0bd9b46",
+			"id": "224b4ffd-9625-40a5-a391-bf812a2210bd",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1ae0bfdb-900c-4b7c-b0d2-66bb963610d1",
+			"id": "af9ce58d-f7a9-4cec-a707-71e7d340a6c5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4caa9033-84c2-4b42-a88a-e2cb8a919972",
+			"id": "b1c8c02a-01e3-4fdb-97b0-1eefb55107d1",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
