@@ -2984,6 +2984,14 @@
 										"exec": [
 											"\r",
 											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
 											"//validate status code \r",
 											"pm.test(\"Status code is 400\", function () {\r",
 											"    pm.response.to.have.status(400);\r",
@@ -3074,12 +3082,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{programs}}/null",
+									"raw": "{{baseURL}}/programs/null",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{programs}}",
+										"programs",
 										"null"
 									],
 									"query": [
@@ -21529,17 +21537,17 @@
 	],
 	"variable": [
 		{
-			"id": "9c59fbee-9160-47b4-812a-4c35ca638492",
+			"id": "673363b1-264f-4cc0-b7c0-9bf76c948e89",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1af14309-d30a-4fd1-919f-09a8da4f84f1",
+			"id": "b343cf71-10b2-4c1a-a2a4-31fecc352411",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "fc8cbc9a-c0e1-4d84-abf6-24a9c74d5ca6",
+			"id": "8e970dd4-5d54-4813-b280-4971178e148a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
