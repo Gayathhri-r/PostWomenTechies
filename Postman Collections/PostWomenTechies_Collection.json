@@ -16393,7 +16393,7 @@
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
 											"    pm.expect(jsonResponse.message,200);\r",
-											"    pm.expect(jsonResponse.success,\"Batch with Id-\" + pm.variables.get(\"batchId\") + \" deleted Successfully!\");\r",
+											"    pm.expect(jsonResponse.success,\"Batch with Id-\" + pm.variables.get(batchId) + \" deleted Successfully!\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -21522,12 +21522,12 @@
 	],
 	"variable": [
 		{
-			"id": "c66b23fb-86d3-475c-9dec-eac57a98623f",
+			"id": "1d2d2998-c8f8-4b7f-a3ff-5c9984b110ff",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "38c99621-5ff2-4c8d-89db-94ad48b7df1c",
+			"id": "70b18b71-32aa-473f-8b3c-535cce46411e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
