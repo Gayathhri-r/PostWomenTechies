@@ -13832,8 +13832,8 @@
 											"var random = Math.random().toString(36).substring(2);\r",
 											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
 											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
-											"var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
-											"pm.environment.set(\"batchDescription\",batchDescription)\r",
+											"var batchName = \"Jun23-PostWomenTechies-SDET-SDET01-\"+random;\r",
+											"pm.environment.set(\"batchName\",batchName)\r",
 											"\r",
 											"\r",
 											"//Get the response result\r",
@@ -13843,12 +13843,10 @@
 											"//validate Response body\r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"        console.log(jsonResponse.batchId);\r",
-											"        console.log(jsonResponse.batchName);\r",
-											"        console.log(jsonResponse.batchDescription);\r",
+											"\r",
 											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
-											"        pm.expect(jsonResponse.batchDescription).to.eql(pm.environment.get(\"batchDescription\"))\r",
-											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon update-\"+random);\r",
+											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon update\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
 											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");\r",
@@ -13928,7 +13926,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}\r\n",
+									"raw": "{\r\n  \"batchDescription\": \"This batch is for Postman hackathon update\",\r\n  \"batchId\": 0,\r\n  \"batchName\": {{batchName}},\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -19986,12 +19984,12 @@
 	],
 	"variable": [
 		{
-			"id": "e083055b-8efa-4c0f-b37d-6a6c0dea3ab3",
+			"id": "28417374-a97f-4747-bcf5-d87958da10cd",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "829c7e79-d076-466d-b8ca-8f5f3920f9ac",
+			"id": "783252d6-dd57-4ebf-bf1d-6341726dcf98",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
