@@ -1198,12 +1198,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -21554,17 +21554,17 @@
 	],
 	"variable": [
 		{
-			"id": "55d469f3-05bb-4590-9947-bd8f0fd31007",
+			"id": "ee301cfd-8294-4429-891e-d479065f1e42",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "46e9b146-df73-4835-995d-e44acb9f0e56",
+			"id": "3d0098ff-f491-40c3-b113-a16c8010f1d2",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b916827b-e415-47ec-8baa-7a21fae4feac",
+			"id": "9df9cdcd-24a7-4509-b2c3-200f28ef4523",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
