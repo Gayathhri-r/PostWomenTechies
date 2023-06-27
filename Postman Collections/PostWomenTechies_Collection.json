@@ -1851,12 +1851,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -1873,6 +1873,87 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "Assignment_TC_027_Without_DueDate_Field Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8d0a4681-da2d-4f9a-97a1-7ff0bc73e040",
+										"exec": [
+											"//Validating the status code\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validating the status message\r",
+											"pm.test(\"Status code name is Bad Request\", function () {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//Validating header\r",
+											"pm.test(\"Validating the Content-Type header is application/json\",() => {\r",
+											"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
+											"});\r",
+											"\r",
+											"//validating the response body\r",
+											"var jsonData = pm.response.json();\r",
+											"pm.test(\"Validating the data of the response body\",() => {\r",
+											"    pm.expect(jsonData.message).to.eql(\"Due Date is mandatory\");\r",
+											"    pm.expect(jsonData.success).to.eql(false);\r",
+											"    \r",
+											"});\r",
+											"\r",
+											"\r",
+											"//validating the JSON schema\r",
+											"var jsonData = pm.response.json();\r",
+											"var schema =\r",
+											"{\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validating schema\", function() {\r",
+											"    pm.expect(tv4.validate(jsonData,schema)).to.be.true;\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "3442e4f6-665d-4754-b752-75c7a9efb4b6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"assignmentDescription\": \"Selenium Assignment\",\r\n  \"assignmentId\": 0,\r\n  \"assignmentName\": \"Jun23-PostwomenTechies-SDET-Selenium-001\",\r\n  \"batchId\": 1,\r\n  \"comments\": \"Day 01 Assignments\",\r\n  \"createdBy\": \"U22\",\r\n  \"graderId\": \"U19\",\r\n  \"pathAttachment1\": \"File1\",\r\n  \"pathAttachment2\": \"File2\",\r\n  \"pathAttachment3\": \"File3\",\r\n  \"pathAttachment4\": \"File4\",\r\n  \"pathAttachment5\": \"File5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseURL}}/{{Assgn_endpoint_1}}"
 							},
 							"response": []
 						}
@@ -21473,17 +21554,17 @@
 	],
 	"variable": [
 		{
-			"id": "2bffa1bc-ae33-47fe-90f9-ead7ea7be99d",
+			"id": "be01ab15-b09d-4c6d-8665-e770f0bd9b46",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b6e146f0-70cf-4371-84fa-42cb18972372",
+			"id": "1ae0bfdb-900c-4b7c-b0d2-66bb963610d1",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "acc1d284-7a8d-4844-a53d-f7591e46e9af",
+			"id": "4caa9033-84c2-4b42-a88a-e2cb8a919972",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
