@@ -1594,13 +1594,13 @@
 											"\r",
 											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -1614,8 +1614,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -1668,7 +1668,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-P2\"\r\n\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-P2\",\r\n   \"programStatus\":\"\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -21468,7 +21468,7 @@
 					"response": []
 				},
 				{
-					"name": "All assignmentsubmission",
+					"name": "All Submission",
 					"id": "a6d9bcf8-b883-470f-9aaa-3925b49f3d61",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21486,17 +21486,17 @@
 	],
 	"variable": [
 		{
-			"id": "4a6e7a2c-6437-4dfa-b17e-94a04a69ece8",
+			"id": "cdfb3317-dd18-41c3-9d22-1a8c0f624647",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5f8e3ba3-d71f-4d36-b84c-19c1b9c33fa9",
+			"id": "229fefc0-8f4b-4259-89c0-9506ca18f810",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ccb41635-72e4-46e1-b510-4070033e5e53",
+			"id": "10139ae4-7b1e-46f0-95dc-8e5bc127d9e3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
