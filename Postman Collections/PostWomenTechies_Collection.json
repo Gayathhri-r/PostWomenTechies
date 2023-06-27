@@ -5531,7 +5531,7 @@
 					"name": "DELETE by ProgramID",
 					"item": [
 						{
-							"name": "DELETE by ProgramId",
+							"name": "DELETE by Valid End points",
 							"id": "df0c6767-5ecf-4c46-b8a9-fbdcb008c26b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5643,12 +5643,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogid/1232",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/1232",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										"1232"
 									],
 									"query": [
@@ -5688,12 +5688,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogid/",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										""
 									],
 									"query": [
@@ -22008,17 +22008,17 @@
 	],
 	"variable": [
 		{
-			"id": "c52543a0-8c05-4e9c-8899-a07777f74b0e",
+			"id": "153eddf3-e1bb-47f1-ad97-acc182b7ce83",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "302336cc-a716-40cf-bcca-ef0ff457bf71",
+			"id": "a5dac73d-80d0-4042-a4fa-4c12aeab84bf",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2bcb2345-6fb6-4496-ac80-5cdfc62485d8",
+			"id": "0a012cda-7d17-4d72-9ab9-679492a07722",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
