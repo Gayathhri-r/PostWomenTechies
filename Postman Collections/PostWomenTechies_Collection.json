@@ -23669,7 +23669,7 @@
 					"response": []
 				},
 				{
-					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/384",
+					"name": "DELETE Request valid tc",
 					"id": "27fb3684-4671-490c-8f1d-c5d720985153",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -23687,17 +23687,17 @@
 	],
 	"variable": [
 		{
-			"id": "d39b1574-6f45-4441-bc2e-f408f0be5f9f",
+			"id": "21c144ff-20d2-4192-aa24-b40edb9076e9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "afcb3170-2ec2-4173-bf32-143a35fcc902",
+			"id": "8568561c-0454-4462-a145-01d3547b35d1",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "73b4dc77-d54d-4d9d-ae66-8b83d0a0fd48",
+			"id": "e5449d68-2d92-4671-9501-64b236b1ccd9",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
