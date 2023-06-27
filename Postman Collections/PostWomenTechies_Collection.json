@@ -14253,6 +14253,71 @@
 						},
 						{
 							"name": "Program_Batch_TC_068_non_existing_Program_Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ac38a94e-19a9-4c7e-ba3d-1642b4f47109",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    var environmentVar = pm.variables.get(\"programId\");\r",
+											"    \r",
+											"   pm.expect(jsonResponse.message,'Program not found with Id :' + environmentVar);\r",
+											"    pm.expect(jsonResponse.success,\"false\")\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "92dbd6e9-c88e-4ee9-820e-7299bf76e8ca",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19950,12 +20015,12 @@
 	],
 	"variable": [
 		{
-			"id": "05ca96e0-a6bc-44d4-8ac3-cc229dd3bb2b",
+			"id": "4061bde2-0adb-48e6-b388-57a42cffce0e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "cbd3cb11-ba64-4297-9567-9b5c9e719cd7",
+			"id": "0fc06872-3fab-4792-b44a-da364aeb08cc",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
