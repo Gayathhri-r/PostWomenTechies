@@ -4846,12 +4846,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{putprogram}}/2298",
+									"raw": "{{baseURL}}/putprogram/2298",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{putprogram}}",
+										"putprogram",
 										"2298"
 									],
 									"query": [
@@ -4891,11 +4891,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}{{putprogram}}/717",
+									"raw": "{{baseURL}}/putprogram/717",
 									"host": [
-										"{{baseURL}}{{putprogram}}"
+										"{{baseURL}}"
 									],
 									"path": [
+										"putprogram",
 										"717"
 									],
 									"query": [
@@ -21767,17 +21768,17 @@
 	],
 	"variable": [
 		{
-			"id": "a2effda9-6310-49f8-807c-421943388a2f",
+			"id": "aee440f2-9157-4f07-b138-420c9e04ee02",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e00d4232-6c44-498a-aa5a-3c2eb421ea16",
+			"id": "be74db14-df8c-4a70-8b10-72f41294bba8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "18b75978-99ea-4c14-88b2-d76d909bbdbf",
+			"id": "8933b992-0990-4b51-a90d-3e19dddec54b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
