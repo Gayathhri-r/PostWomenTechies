@@ -2698,12 +2698,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/programs/02",
+									"raw": "{{baseURL}}/{{programs}}/02",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"programs",
+										"{{programs}}",
 										"02"
 									],
 									"query": [
@@ -2984,14 +2984,6 @@
 										"exec": [
 											"\r",
 											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
 											"//validate status code \r",
 											"pm.test(\"Status code is 400\", function () {\r",
 											"    pm.response.to.have.status(400);\r",
@@ -3082,12 +3074,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/programs/null",
+									"raw": "{{baseURL}}/{{programs}}/null",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"programs",
+										"{{programs}}",
 										"null"
 									],
 									"query": [
@@ -21537,17 +21529,17 @@
 	],
 	"variable": [
 		{
-			"id": "f5447a66-97ae-4d2c-9b4a-d951fbabb15f",
+			"id": "9c59fbee-9160-47b4-812a-4c35ca638492",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "157a4c9f-a7ce-4f26-b9d6-38c57dad218d",
+			"id": "1af14309-d30a-4fd1-919f-09a8da4f84f1",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ed5d07c7-35b2-44e2-b5c9-c45c4d48ceb1",
+			"id": "fc8cbc9a-c0e1-4d84-abf6-24a9c74d5ca6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
