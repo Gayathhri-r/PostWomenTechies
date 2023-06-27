@@ -112,7 +112,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0101\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0102\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2983,15 +2983,14 @@
 										"id": "79cf4b5c-1659-4eec-9d5b-d1f0487bb3ec",
 										"exec": [
 											"\r",
-											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -3005,8 +3004,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -3017,34 +3016,38 @@
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"       \"programId\": {\r",
-											"      \"type\": \"integer\" \r",
-											"      },\r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \"programId\",\r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
 											"}\r",
-											"\r",
+											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse[0],schema)).to.be.true\r",
-											"})\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
 											"\r",
 											"\r",
 											"\r",
@@ -3074,13 +3077,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{programs}}/null",
+									"raw": "{{baseURL}}/{{programs}}/",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{programs}}",
-										"null"
+										""
 									],
 									"query": [
 										{
@@ -3320,16 +3323,12 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/02",
-									"protocol": "https",
+									"raw": "{{baseURL}}/{{programs}}/02",
 									"host": [
-										"lms-api-hackathon-june2023-930a8b0f895d",
-										"herokuapp",
-										"com"
+										"{{baseURL}}"
 									],
 									"path": [
-										"lms",
-										"programs",
+										"{{programs}}",
 										"02"
 									],
 									"query": [
@@ -21529,17 +21528,17 @@
 	],
 	"variable": [
 		{
-			"id": "ade8e147-1c9d-4ddc-87e4-4ae99dfa4764",
+			"id": "18a7120f-f543-4a06-ba7a-0bd6fa2da657",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "97961c94-c090-4562-ba03-78a0e9b6a305",
+			"id": "b3a8dff5-3fc1-4008-998c-f238ee33e614",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "12fbfaf1-901a-4032-a018-19b5f070a687",
+			"id": "0d4a96c3-9505-4862-a5e1-3f2f11a93fcf",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
