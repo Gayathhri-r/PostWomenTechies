@@ -13945,8 +13945,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -13962,8 +13961,7 @@
 								"body": {
 									"mode": "file",
 									"file": {}
-								},
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								}
 							},
 							"response": []
 						},
@@ -13975,8 +13973,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -13988,8 +13985,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -14001,8 +13997,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -14014,8 +14009,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -14027,8 +14021,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -14125,8 +14118,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{invalidEndpointGetAllBatches}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -15168,7 +15160,7 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches"
 							},
 							"response": [
 								{
@@ -15247,7 +15239,7 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches"
 							},
 							"response": [
 								{
@@ -15313,8 +15305,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -15326,8 +15317,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -15339,8 +15329,7 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"header": []
 							},
 							"response": []
 						}
@@ -20147,12 +20136,12 @@
 	],
 	"variable": [
 		{
-			"id": "e081ed75-7067-4c2f-92d6-d48908ee65c0",
+			"id": "32537cd5-d324-4c23-8c9c-c09f883d331a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "48d49771-77fd-439f-8a2e-a4065ab64eb7",
+			"id": "58dfc1b6-ab92-480b-b2ae-ebc2a877182a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
