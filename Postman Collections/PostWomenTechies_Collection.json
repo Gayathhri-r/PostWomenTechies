@@ -23496,6 +23496,105 @@
 			"item": [
 				{
 					"name": "Grades by StudentID invalid tc",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1755bdeb-d446-44aa-969a-3f95c4d59dd3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"pm.test(\"Status message is OK\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"    \r",
+									"});\r",
+									"\r",
+									"\r",
+									"//Get the response result\r",
+									"var jsonResponse = pm.response.json();\r",
+									"var schema = \r",
+									"{\r",
+									"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+									"  \"type\": \"array\",\r",
+									"  \"items\": [\r",
+									"    {\r",
+									"      \"type\": \"object\",\r",
+									"      \"properties\": {\r",
+									"        \"submissionId\": {\r",
+									"          \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"assignmentId\": {\r",
+									"          \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"userId\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subDesc\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subComments\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subPathAttach1\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subPathAttach2\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subPathAttach3\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subPathAttach4\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subPathAttach5\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"subDateTime\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"gradedBy\": {\r",
+									"          \"type\": \"integer\"\r",
+									"        },\r",
+									"        \"gradedDateTime\": {\r",
+									"          \"type\": \"string\"\r",
+									"        },\r",
+									"        \"grade\": {\r",
+									"          \"type\": \"integer\"\r",
+									"        }\r",
+									"      },\r",
+									"      \"required\": [\r",
+									"        \"submissionId\",\r",
+									"        \"assignmentId\",\r",
+									"        \"userId\",\r",
+									"        \"subDesc\",\r",
+									"        \"subComments\",\r",
+									"        \"subPathAttach1\",\r",
+									"        \"subPathAttach2\",\r",
+									"        \"subPathAttach3\",\r",
+									"        \"subPathAttach4\",\r",
+									"        \"subPathAttach5\",\r",
+									"        \"subDateTime\",\r",
+									"        \"gradedBy\",\r",
+									"        \"gradedDateTime\",\r",
+									"        \"grade\"\r",
+									"      ]\r",
+									"    }\r",
+									"  ]\r",
+									"}\r",
+									"pm.test(\"Validate Schema\", () => {\r",
+									"  //using tv4 validatory library and validate method\r",
+									" pm.expect(tv4.validate(jsonResponse,schema))\r",
+									" })"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "eea9ea31-7512-4d72-a088-1fda448b5b6a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -23503,6 +23602,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U"
 					},
 					"response": []
@@ -23840,17 +23943,17 @@
 	],
 	"variable": [
 		{
-			"id": "69166f0a-e0c1-4bd9-9315-00ab34ab0d4f",
+			"id": "eb37fbcb-b060-48e3-aeb8-bf00e6bed77d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e6da186d-6571-47e6-a4bb-a10d2171e47e",
+			"id": "9fed9800-03f6-472f-95c0-8d8962bd473e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0a3657a9-aebd-4b39-8c2f-11ed2d3be1e7",
+			"id": "99328b8a-8e55-44e4-8d1d-c9619beef106",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
