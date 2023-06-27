@@ -21668,7 +21668,7 @@
 					"id": "1434f0ec-4575-4f41-9f12-faaf70d0fa19"
 				},
 				{
-					"name": "New Folder",
+					"name": "PUT Request",
 					"item": [],
 					"id": "ad42c8e6-882e-4efe-adfa-0578b456179e"
 				},
@@ -21795,12 +21795,12 @@
 	],
 	"variable": [
 		{
-			"id": "7efd066a-fc72-4f09-90eb-cfe9b419fb84",
+			"id": "bea61a8b-3a4a-481e-a929-8fa85545d0ff",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "25f151c2-131c-40c4-b280-5adc77be2512",
+			"id": "1fd49be7-682f-44e6-9740-9e2053f64e0c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
