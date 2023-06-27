@@ -15437,6 +15437,56 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": "{\n    \"timestamp\": \"2023-06-23T19:13:06.410+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/lms/batche\"\n}"
+								},
+								{
+									"id": "c50c5522-0675-4b23-83a2-fdcbe7ce2144",
+									"name": "Program_Batch_TC_077_Program_Id_as_zero_negative_value",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": -3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100-update\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "Cowboy"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 27 Jun 2023 14:04:07 GMT"
+										},
+										{
+											"key": "Via",
+											"value": "1.1 vegur"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"message\": \"Program not found with Id : -3168 \",\n    \"success\": false\n}"
 								}
 							]
 						},
@@ -20787,12 +20837,12 @@
 	],
 	"variable": [
 		{
-			"id": "5b2a1ddd-d34d-40c6-b830-c8de0fde3c6a",
+			"id": "c871a580-a517-48cd-8db0-cfb0937e6417",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "bcf2b002-9c84-46cf-99fe-71080e8f1067",
+			"id": "b705875a-64bf-4e04-9b92-9f73e0bfe5c2",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
