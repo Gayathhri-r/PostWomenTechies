@@ -15160,7 +15160,7 @@
 											"        console.log(jsonResponse.batchDescription);\r",
 											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
-											"        pm.expect(jsonResponse.batchDescription).to.eql(\"\");\r",
+											"        pm.expect(jsonResponse.batchDescription).to.eql(null);\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
 											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
@@ -20462,12 +20462,12 @@
 	],
 	"variable": [
 		{
-			"id": "62127262-cf3b-4f90-bc88-bd054b87082e",
+			"id": "07ff4292-f081-4a4d-840e-5a1d33efda05",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d6536749-7952-487c-8323-e3b41878a05c",
+			"id": "f68b87b6-acc2-4213-98cd-b0fc31b36b15",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
