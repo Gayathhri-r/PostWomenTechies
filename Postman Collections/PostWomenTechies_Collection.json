@@ -22003,7 +22003,7 @@
 					"response": []
 				},
 				{
-					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/grades/0",
+					"name": "GET Grades by BatchID invalid tc",
 					"id": "303e3c33-4c83-4f04-bf37-5fe72a1fba82",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -22021,17 +22021,17 @@
 	],
 	"variable": [
 		{
-			"id": "4aeaf160-4cc9-4398-a695-ab1e1282afce",
+			"id": "838a3d72-0ae5-48b3-a608-faf10b91e23b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "713b3274-6b5f-4c3e-afbb-8551f2f68804",
+			"id": "02e2d776-3fd0-41eb-882c-f8f2d65811ee",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e3d95280-6e0a-4964-9315-6575e36a0652",
+			"id": "f8682f4c-ac77-4769-ad56-7e6eda3b0953",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
