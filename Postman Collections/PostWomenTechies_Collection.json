@@ -5594,12 +5594,16 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{deletebyprogid}}/{programId}?ProgramID=11",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms /deletebyprogid/{programId}?ProgramID=11",
+									"protocol": "https",
 									"host": [
-										"{{baseURL}}"
+										"lms-api-hackathon-june2023-930a8b0f895d",
+										"herokuapp",
+										"com"
 									],
 									"path": [
-										"{{deletebyprogid}}",
+										"lms ",
+										"deletebyprogid",
 										"{programId}"
 									],
 									"query": [
@@ -22012,17 +22016,17 @@
 	],
 	"variable": [
 		{
-			"id": "843fcd12-67c7-4f88-9525-13f12e060bad",
+			"id": "ab2e120d-5a30-4542-b106-3b7edc371be8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d3e35f3b-dcc8-48d5-adb9-684b3fad2e57",
+			"id": "ddc70fae-71f0-43cf-96ac-165aa4e218e1",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "88c2d160-ba93-4308-b2d9-89df2e1accb0",
+			"id": "293a22a2-48f6-4248-85fe-f7f73f7e20c5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
