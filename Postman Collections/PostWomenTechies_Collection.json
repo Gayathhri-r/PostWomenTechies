@@ -21515,7 +21515,7 @@
 			"id": "cc47accc-9311-4a65-979c-b971c30b4332"
 		},
 		{
-			"name": "Assignment_submit_Module",
+			"name": "DELETE Request",
 			"item": [
 				{
 					"name": "GET Request",
@@ -21668,6 +21668,11 @@
 					"id": "1434f0ec-4575-4f41-9f12-faaf70d0fa19"
 				},
 				{
+					"name": "PUT Request",
+					"item": [],
+					"id": "ad42c8e6-882e-4efe-adfa-0578b456179e"
+				},
+				{
 					"name": "Grade Assignment Submission",
 					"id": "7841784b-4dbf-428f-9917-fd8bfc65906b",
 					"protocolProfileBehavior": {
@@ -21790,12 +21795,12 @@
 	],
 	"variable": [
 		{
-			"id": "9316f097-d979-401a-8129-d75914c652af",
+			"id": "7de20588-03bb-42d1-9752-f3fbc6d5c606",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5b60cdec-c490-489f-aefd-4aeba3b6f00f",
+			"id": "c859c79e-01e0-433b-a43f-06710e42e9ca",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
