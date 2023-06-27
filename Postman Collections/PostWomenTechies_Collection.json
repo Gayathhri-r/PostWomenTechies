@@ -5537,7 +5537,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PATCH",
+								"method": "DELETE",
 								"header": [],
 								"body": {
 									"mode": "raw",
@@ -22008,17 +22008,17 @@
 	],
 	"variable": [
 		{
-			"id": "153eddf3-e1bb-47f1-ad97-acc182b7ce83",
+			"id": "941958fb-8332-4ac1-9349-3e980abab349",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a5dac73d-80d0-4042-a4fa-4c12aeab84bf",
+			"id": "2d8cad1f-815f-40d8-845a-4638be820d0e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0a012cda-7d17-4d72-9ab9-679492a07722",
+			"id": "ec54394f-fac3-4bb0-910e-7e12c19e6f2d",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
