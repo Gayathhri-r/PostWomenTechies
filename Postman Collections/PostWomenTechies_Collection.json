@@ -2006,12 +2006,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/allPrograms",
+									"raw": "{{baseURL}}/{{allPrograms}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"allPrograms"
+										"{{allPrograms}}"
 									],
 									"query": [
 										{
@@ -2133,12 +2133,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/alPrograms",
+									"raw": "{{baseURL}}/allPrograams",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"alPrograms"
+										"allPrograams"
 									],
 									"query": [
 										{
@@ -21486,17 +21486,17 @@
 	],
 	"variable": [
 		{
-			"id": "3cc29aa0-5644-4e32-92ff-32e49214a42b",
+			"id": "404879ba-dc35-4bf2-a779-88d1b870584d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "f7fba8ba-9e03-4c3c-b82d-a969a97f73b9",
+			"id": "1ba082bb-faf6-49a1-bf63-199068a63b74",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c11b6637-6be5-4000-89cd-ddd4d16ecdc4",
+			"id": "ad342fbe-557e-4b03-9d5b-4e0c2092220d",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
