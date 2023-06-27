@@ -21651,7 +21651,7 @@
 					"response": []
 				},
 				{
-					"name": " https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/gradesubmission/211",
+					"name": "Grade Assignment Submission valid tc",
 					"id": "2f86f25d-daff-4d10-9e29-9f7eedcf9350",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21678,17 +21678,17 @@
 	],
 	"variable": [
 		{
-			"id": "29fc8410-09ee-4c8d-9095-61e81ffa1bd3",
+			"id": "b4c81085-0dfa-4b2d-a267-ecfdbf75a56e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7aadb730-9c4b-4ddf-a2f7-d6049350296d",
+			"id": "d1150a7c-1a1a-4d08-91a9-019be6bd6db7",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2ce7fa72-c88f-4ffa-a461-92d9d4231f76",
+			"id": "890fea12-0978-4856-9581-13417066a424",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
