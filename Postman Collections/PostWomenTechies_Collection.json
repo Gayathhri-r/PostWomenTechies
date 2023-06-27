@@ -14241,6 +14241,37 @@
 						},
 						{
 							"name": "Program_Batch_TC_067_Invalid_baseURL",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "21bb2abe-1181-4312-a919-f590cde7882f",
+										"exec": [
+											"console.log(\"Due to application error displays XML code, response body validation cannot be done\");\r",
+											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
+											"console.log(\"This Test Scenario cannot be tested\");\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.expect(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "86bac963-9032-4915-b7c7-8d12e78ed9a3",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -20016,12 +20047,12 @@
 	],
 	"variable": [
 		{
-			"id": "04fb6dcd-3797-4d4c-adb3-862b21c03e98",
+			"id": "8bbd3b02-1b32-4df9-9144-c21d2fb78cef",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7c354b79-db7f-4a04-b4d0-a19c5dc4e894",
+			"id": "04084c4e-cbd9-4f1e-8530-383297990267",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
