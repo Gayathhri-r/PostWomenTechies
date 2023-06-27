@@ -3766,7 +3766,7 @@
 								"body": {
 									"mode": "file",
 									"file": {
-										"src": "/C:/Users/antih/Documents/API.xlsx"
+										"src": ""
 									}
 								},
 								"url": {
@@ -4709,6 +4709,89 @@
 						},
 						{
 							"name": "PUT Program(UpdateByProgramId)-Program Name Null",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bd7fc01e-e18d-42f0-a8f7-3eda7885cd8c",
+										"exec": [
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "221029bd-a305-481b-ae8f-70446860a70a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5018,12 +5101,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/putprogram/2298",
+									"raw": "{{baseURL}}/{{putprogram}}/2298",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"putprogram",
+										"{{putprogram}}",
 										"2298"
 									],
 									"query": [
@@ -5415,12 +5498,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/putprogram/2298",
+									"raw": "{{baseURL}}/{{putprogram}}/2298",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"putprogram",
+										"{{putprogram}}",
 										"2298"
 									],
 									"query": [
@@ -5466,12 +5549,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogid/1232",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/1232",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										"1232"
 									],
 									"query": [
@@ -5511,16 +5594,12 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms /deletebyprogid/{programId}?ProgramID=11",
-									"protocol": "https",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/{programId}?ProgramID=11",
 									"host": [
-										"lms-api-hackathon-june2023-930a8b0f895d",
-										"herokuapp",
-										"com"
+										"{{baseURL}}"
 									],
 									"path": [
-										"lms ",
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										"{programId}"
 									],
 									"query": [
@@ -21933,17 +22012,17 @@
 	],
 	"variable": [
 		{
-			"id": "80912426-1465-4bff-a8b9-0ee3f89a6192",
+			"id": "9919ba63-903d-400a-9e6c-33258f08b6c1",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "399065c5-6418-4e38-9645-21439152a8dd",
+			"id": "c31c9307-f0fa-4520-a43d-33a9a57c8c4c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "48ad7e35-db7d-44dc-a005-0f9df649c527",
+			"id": "c09116aa-7b8d-4737-b746-dc8ebd9cdcea",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
