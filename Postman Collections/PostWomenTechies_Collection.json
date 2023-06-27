@@ -21581,7 +21581,7 @@
 			"name": "Assignment_Submit_Module",
 			"item": [
 				{
-					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U",
+					"name": "Grades by StudentID invalid tc",
 					"id": "eea9ea31-7512-4d72-a088-1fda448b5b6a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21594,7 +21594,7 @@
 					"response": []
 				},
 				{
-					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U22",
+					"name": "Grades by StudentID valid tc",
 					"id": "6f34f120-1eec-4b80-a154-736b9866e04e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21634,17 +21634,17 @@
 	],
 	"variable": [
 		{
-			"id": "1e5a5c88-4300-4de8-a4c7-6581f1eaff6d",
+			"id": "27ef7ccc-75b3-415f-8a29-4608cccc7e2a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3d985e1d-d4a6-4ab7-98dd-86ac749477c2",
+			"id": "0233a00b-1e0d-4248-baf9-ad8b5f2d41eb",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a7ac4f05-dcfd-4267-8081-9c8f13ffa9a6",
+			"id": "02fa15e5-53a0-42dd-a31d-552df1f150bb",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
