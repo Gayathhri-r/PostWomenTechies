@@ -14563,6 +14563,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  //\"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
@@ -20174,12 +20183,12 @@
 	],
 	"variable": [
 		{
-			"id": "d0d6de81-2306-434f-89b1-1512d6ea115f",
+			"id": "6a3386ed-5dc7-49ca-a15f-ef5481ab46da",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "53246fdf-431b-4317-a903-a43316e20c26",
+			"id": "c33be54a-babd-468b-b14a-c8740ea44cf3",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
