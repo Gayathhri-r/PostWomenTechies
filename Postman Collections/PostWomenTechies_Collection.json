@@ -15281,7 +15281,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "DELETE",
+								"method": "PUT",
 								"header": [],
 								"url": "{{invalidBaseUrl}}"
 							},
@@ -19873,12 +19873,12 @@
 	],
 	"variable": [
 		{
-			"id": "b49e1698-0716-4187-9bd1-1743e3a96d15",
+			"id": "a701fad6-f297-4dd1-a03f-81cdd6ab2b14",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "78e5ce4b-6765-490b-851e-8dfc4c5bb80c",
+			"id": "fd749e14-02b4-473d-9d2c-dccd030e071d",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
