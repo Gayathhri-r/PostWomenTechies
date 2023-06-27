@@ -13926,7 +13926,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}\r\n",
+									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -20459,12 +20459,12 @@
 	],
 	"variable": [
 		{
-			"id": "f4f07c95-2cd3-4523-ad82-6464367e82ff",
+			"id": "7e6ba1e9-74cc-4f19-9011-391bd7fd1f8c",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a45c208d-53ab-4388-8fec-1498940dd146",
+			"id": "d8857fe8-8a40-46c2-a334-8d8b0c67fb56",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
