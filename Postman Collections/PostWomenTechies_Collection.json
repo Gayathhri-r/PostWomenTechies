@@ -15867,7 +15867,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \" \",\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}\r\n",
+									"raw": "",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -21042,12 +21042,12 @@
 	],
 	"variable": [
 		{
-			"id": "4f70e4cc-4713-4f0c-b00a-db27f46dff23",
+			"id": "888b103f-e48e-4ae9-8491-d3adfdd506aa",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "568c248d-53de-40d9-b527-9371cddfd6c6",
+			"id": "0f58eeec-094e-44cc-a1c7-8f4010004a79",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
