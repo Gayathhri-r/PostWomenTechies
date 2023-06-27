@@ -14259,7 +14259,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}"
 							},
 							"response": []
 						},
@@ -19940,12 +19941,12 @@
 	],
 	"variable": [
 		{
-			"id": "4af98376-4132-4204-924c-b1ef704d5a70",
+			"id": "d4220dd1-9c53-4364-bd3d-1ed4e73dd7f0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e072248a-45bb-448c-92ac-0ff50bbf527b",
+			"id": "9646971a-16a7-4839-b4cd-aa6d9cf5cde3",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
