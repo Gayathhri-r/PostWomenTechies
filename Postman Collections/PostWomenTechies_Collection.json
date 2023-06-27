@@ -14131,19 +14131,6 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_066_Invalid_Request_GET_POST Copy",
-							"id": "1b163a13-474f-4a00-95c3-1ff1efa3ec75",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
-							},
-							"response": []
-						},
-						{
 							"name": "Program_Batch_TC_066_Invalid_Request_GET_POST Copy 2",
 							"id": "e5011968-f95d-4d94-ae78-b7cb0f8c8060",
 							"protocolProfileBehavior": {
@@ -21403,12 +21390,12 @@
 	],
 	"variable": [
 		{
-			"id": "e62d19ab-c24a-4db5-ae4a-bae8fa15b15a",
+			"id": "18de5457-3282-4f7b-b457-4d496ded5c8a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d3bd39bf-3077-42bc-b78f-61bb9765c3f3",
+			"id": "76ecf0d8-74bc-4162-be26-69bee066072a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
