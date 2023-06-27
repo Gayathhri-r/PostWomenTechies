@@ -13945,7 +13945,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13961,7 +13962,8 @@
 								"body": {
 									"mode": "file",
 									"file": {}
-								}
+								},
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13986,7 +13988,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -13998,7 +14001,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14010,7 +14014,8 @@
 							},
 							"request": {
 								"method": "PUT",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -20140,12 +20145,12 @@
 	],
 	"variable": [
 		{
-			"id": "cc7a3549-2010-4a59-aaa4-e691d1938848",
+			"id": "f9edb87f-2870-4708-88c0-ed5e61f47cc3",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "39d733e2-35f6-4de2-a1aa-29c5d3755843",
+			"id": "da89290f-8de0-4166-bd18-37c9c9019954",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
