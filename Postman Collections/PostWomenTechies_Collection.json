@@ -6971,6 +6971,80 @@
 						},
 						{
 							"name": "DELETE by ProgramName_wothout program name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "657bffb7-c670-4eca-9203-eefb99beeaa1",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"\r",
+											"        \r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"       \r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        \r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\",\r",
+											"       \r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											"})\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "2ddc255b-0c6f-49b0-96c4-333b5c015cd1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -23368,17 +23442,17 @@
 	],
 	"variable": [
 		{
-			"id": "2f11f079-7496-4c17-a0da-c46290356510",
+			"id": "5c545b36-3a1e-4f22-916f-7a119a9cab40",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7e662a17-9abe-4a47-8d78-fffe1de663ac",
+			"id": "b928a38a-08b8-465c-b085-37bdf42266a9",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "376629a8-279e-4434-89b1-193151073115",
+			"id": "7b30758d-c094-4fa8-92c8-2c13186979e7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
