@@ -21629,7 +21629,7 @@
 					"response": []
 				},
 				{
-					"name": "Resubmit Assignment",
+					"name": "Resubmit Assignment valid tc",
 					"id": "91f5d7f7-0f61-40ed-98fd-3fa76ae9e4a8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21678,17 +21678,17 @@
 	],
 	"variable": [
 		{
-			"id": "a9fabdcb-3726-46cc-b36d-522943034210",
+			"id": "29fc8410-09ee-4c8d-9095-61e81ffa1bd3",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "200bfb81-0e07-454a-aa08-6c9bc863c0fc",
+			"id": "7aadb730-9c4b-4ddf-a2f7-d6049350296d",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "71f5bb43-1694-4986-b25b-67a8901ca865",
+			"id": "2ce7fa72-c88f-4ffa-a461-92d9d4231f76",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
