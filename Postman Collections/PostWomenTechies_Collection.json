@@ -120,12 +120,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"saveprogram"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -254,12 +254,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "{{baseURL}}/saveprograam",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"saveprogram"
+										"saveprograam"
 									],
 									"query": [
 										{
@@ -499,12 +499,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"saveprogram"
+										"{{{{saveprogram}}}}"
 									],
 									"query": [
 										{
@@ -2631,15 +2631,11 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/02",
-									"protocol": "https",
+									"raw": "{{baseURL}}/programs/02",
 									"host": [
-										"lms-api-hackathon-june2023-930a8b0f895d",
-										"herokuapp",
-										"com"
+										"{{baseURL}}"
 									],
 									"path": [
-										"lms",
 										"programs",
 										"02"
 									],
@@ -2785,7 +2781,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/02",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/programs/",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -2795,7 +2791,7 @@
 									"path": [
 										"lms",
 										"programs",
-										"02"
+										""
 									],
 									"query": [
 										{
@@ -5599,7 +5595,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n{\r\n    \"programId\": ,\r\n    \"programName\": \"Jun23-PostWomenTechies-SDET0002\",\r\n    \"programDescription\": \"selenium\",\r\n    \"programStatus\": \"Active\",\r\n    \"creationTime\": \"2023-06-25T07:14:26.017+00:00\",\r\n    \"lastModTime\": \"2023-06-25T07:14:26.017+00:00\"\r\n}\r\n",
+									"raw": "\r\n{\r\n\r\n    \"programId\": 1711,\r\n    \"programName\": \"Jun23-PostWomenTechies-P5_0\",\r\n    \"programDescription\": \"selenium\",\r\n    \"programStatus\": \"Active\",\r\n    \"creationTime\": \"2023-06-24T23:21:55.228+00:00\",\r\n    \"lastModTime\": \"2023-06-24T23:21:55.228+00:00\"\r\n\r\n\r\n\r\n  },\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5607,13 +5603,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}",
+									"raw": "{{baseURL}}/deletebyprogname/Jun23-PostWomenTechies-P5_0",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"deletebyprogname",
-										"{programName}"
+										"Jun23-PostWomenTechies-P5_0"
 									],
 									"query": [
 										{
@@ -21513,21 +21509,34 @@
 				}
 			],
 			"id": "cc47accc-9311-4a65-979c-b971c30b4332"
+		},
+		{
+			"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U",
+			"id": "eea9ea31-7512-4d72-a088-1fda448b5b6a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/getGradesByStudentId/U"
+			},
+			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "1357feca-8ffb-4713-9c5b-e8b934a6741e",
+			"id": "9e9cfb55-1472-401a-9e60-65966d07c0b9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "334801f0-b3e1-483e-b5db-9c85cba8fd64",
+			"id": "6f4fef30-12fd-4ac5-bde8-70f06bd8afc3",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c67be391-275c-4e45-9163-0c2c9c85aafb",
+			"id": "cdb6ff54-66c7-42ef-8bb7-b86a1e58234a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
