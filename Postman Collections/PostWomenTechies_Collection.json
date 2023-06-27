@@ -21629,7 +21629,7 @@
 					"response": []
 				},
 				{
-					"name": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/196",
+					"name": "Resubmit Assignment",
 					"id": "91f5d7f7-0f61-40ed-98fd-3fa76ae9e4a8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -21649,6 +21649,28 @@
 						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/196"
 					},
 					"response": []
+				},
+				{
+					"name": " https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/gradesubmission/211",
+					"id": "2f86f25d-daff-4d10-9e29-9f7eedcf9350",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"assignmentId\": 197,\r\n        \"userId\": \"U234\",\r\n        \"subDesc\": \"Assignment submission by U234\",\r\n        \"subComments\": \"submitted succesfully\",\r\n        \"subPathAttach1\": \"file1.json\",\r\n        \"subPathAttach2\": \"file2.json\",\r\n        \"subPathAttach3\": \"file3.json\",\r\n        \"subPathAttach4\": \"file4.json\",\r\n        \"subPathAttach5\": \"file5.json\",\r\n        \"subDateTime\": \"06-26-2023 20:48:47\",\r\n        \"gradedBy\": \"U1172\",\r\n        \"gradedDateTime\": null,\r\n        \"grade\": 2\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/assignmentsubmission/gradesubmission/211"
+					},
+					"response": []
 				}
 			],
 			"id": "43ce9408-6808-4626-a790-514df62b97cf"
@@ -21656,17 +21678,17 @@
 	],
 	"variable": [
 		{
-			"id": "5d7dc3b9-54d6-4219-a35b-add9d0bb68fd",
+			"id": "afbe6b37-eb2c-4412-9bf7-ca26edb80730",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a32128f4-eeb8-41f9-89d9-4fe1151e4690",
+			"id": "3d2bfa5f-954b-44ff-b343-e11de8baa634",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "323f31ba-d23e-443a-8a99-69c0897601ac",
+			"id": "df637a8d-357d-45f2-9871-9cb9d47ed59f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
