@@ -14138,7 +14138,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14150,7 +14151,8 @@
 							},
 							"request": {
 								"method": "POST",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14161,8 +14163,9 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
-								"header": []
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -20171,12 +20174,12 @@
 	],
 	"variable": [
 		{
-			"id": "0d872f1a-4057-4c92-b703-1337a59f5463",
+			"id": "d0d6de81-2306-434f-89b1-1512d6ea115f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2d7d9ccd-f2e0-4cb5-b2e1-8bab76f12cf5",
+			"id": "53246fdf-431b-4317-a903-a43316e20c26",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
