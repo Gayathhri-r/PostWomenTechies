@@ -15250,59 +15250,6 @@
 							},
 							"response": [
 								{
-									"id": "7a3c302c-d6f0-43ba-82e5-736a857a025e",
-									"name": "New Request",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batche"
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "Cowboy"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Vary",
-											"value": "Origin"
-										},
-										{
-											"key": "Vary",
-											"value": "Access-Control-Request-Method"
-										},
-										{
-											"key": "Vary",
-											"value": "Access-Control-Request-Headers"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 23 Jun 2023 19:13:05 GMT"
-										},
-										{
-											"key": "Via",
-											"value": "1.1 vegur"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"timestamp\": \"2023-06-23T19:13:06.410+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/lms/batche\"\n}"
-								},
-								{
 									"id": "232ff111-2fba-46d9-9f26-80e2dd3b5c98",
 									"name": "Program_Batch_TC_076_Without_Batch_Description",
 									"originalRequest": {
@@ -20512,12 +20459,12 @@
 	],
 	"variable": [
 		{
-			"id": "364d44e7-f982-4294-aabc-09e2c42db43a",
+			"id": "f4f07c95-2cd3-4523-ad82-6464367e82ff",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e3233e18-69de-403b-a280-5b2a4f170a67",
+			"id": "a45c208d-53ab-4388-8fec-1498940dd146",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
