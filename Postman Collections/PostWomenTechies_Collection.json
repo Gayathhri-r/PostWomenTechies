@@ -5643,12 +5643,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogid/1232",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/1232",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										"1232"
 									],
 									"query": [
@@ -5688,12 +5688,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogid/",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										""
 									],
 									"query": [
@@ -5779,16 +5779,12 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms /deletebyprogid/{programId}?ProgramID=11",
-									"protocol": "https",
+									"raw": "{{baseURL}} /{{deletebyprogid}}/{programId}?ProgramID=11",
 									"host": [
-										"lms-api-hackathon-june2023-930a8b0f895d",
-										"herokuapp",
-										"com"
+										"{{baseURL}} "
 									],
 									"path": [
-										"lms ",
-										"deletebyprogid",
+										"{{deletebyprogid}}",
 										"{programId}"
 									],
 									"query": [
@@ -5806,8 +5802,7 @@
 										},
 										{
 											"key": "ProgramID",
-											"value": "11",
-											"type": "text"
+											"value": "11"
 										}
 									]
 								}
@@ -22013,17 +22008,17 @@
 	],
 	"variable": [
 		{
-			"id": "690bcd11-b361-4cf4-8fbf-a6fac1c35fa1",
+			"id": "b9a1b910-cd02-4df9-ba0d-a98f3ea76047",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "aa78ce4b-472d-4781-b454-1baffc0e0aa8",
+			"id": "2534a583-1ea2-4a80-9242-a1469a3f91ee",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "388967bc-becb-41af-9d97-c5c903cd4142",
+			"id": "6e2cf581-56c2-464d-b62e-39b3f9ffce43",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
