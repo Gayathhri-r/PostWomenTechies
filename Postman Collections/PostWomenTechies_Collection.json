@@ -14248,7 +14248,7 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
-								"url": "{{baseURL}}/"
+								"url": "{{invalidBaseUrl}}"
 							},
 							"response": []
 						},
@@ -20016,12 +20016,12 @@
 	],
 	"variable": [
 		{
-			"id": "f7aa413c-076b-4d96-b707-3ce14539c1de",
+			"id": "04fb6dcd-3797-4d4c-adb3-862b21c03e98",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b445a92d-6fda-45b5-adc4-cd159e45bc1b",
+			"id": "7c354b79-db7f-4a04-b4d0-a19c5dc4e894",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
