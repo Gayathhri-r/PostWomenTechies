@@ -5637,6 +5637,111 @@
 					"item": [
 						{
 							"name": "DELETE by Valid End points",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e98b988f-98f3-49fa-bbfc-3e9e7d542afb",
+										"exec": [
+											"//validate status code\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate Response body\r",
+											"    pm.test(\"Validate Response body\", function() {\r",
+											"         \r",
+											"        pm.expect(jsonResponse.programId, pm.environment.get(\"programId\"));\r",
+											"        pm.expect(jsonResponse. programName,pm.environment.get (\"programName\"));\r",
+											"        pm.expect(jsonResponse.programDescription,pm.environment.get(\"programDescription\"));\r",
+											"        pm.expect(jsonResponse.programStatus, pm.environment.get(\"programStatus\"));\r",
+											"        pm.expect(jsonResponse.creationTime, pm.environment.get(\"creationTime\"));\r",
+											"        pm.expect(jsonResponse.lastModTime, pm.environment.get(\"lastModTime\"));\r",
+											"        \r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =  \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"   \r",
+											"    \"programId\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"programName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"programDescription\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"programStatus\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"creationTime\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"lastModTime\": {\r",
+											"      \"type\":  \"integer\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"     \"programId\",\r",
+											"     \"programName\",\r",
+											"     \"programDescription\",\r",
+											"     \"programStatus\",\r",
+											"     \"creationTime\",\r",
+											"     \"lastModTime\",\r",
+											"\r",
+											"  ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"    \r",
+											"\r",
+											"\r",
+											"    \r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "df0c6767-5ecf-4c46-b8a9-fbdcb008c26b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -5654,13 +5759,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{deletebyprogid}}/1232",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/{programId}?programId",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{deletebyprogid}}",
-										"1232"
+										"{programId}"
 									],
 									"query": [
 										{
@@ -5674,6 +5779,11 @@
 											"value": "Active",
 											"type": "text",
 											"disabled": true
+										},
+										{
+											"key": "programId",
+											"value": null,
+											"type": "text"
 										}
 									]
 								}
@@ -22360,17 +22470,17 @@
 	],
 	"variable": [
 		{
-			"id": "d3aec346-ec3b-4518-89be-e08d82e5c7a0",
+			"id": "7b025a27-1eb1-4dd2-a64a-9398c8c322bc",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "f4116366-17ec-4563-836d-44f6e1a9f369",
+			"id": "974555e5-74e8-4453-868e-df0c7306a50b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5b704169-1e33-41f7-b67f-c04a06da09c9",
+			"id": "ff43d63a-b443-4e12-946d-22d8a4721fa6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
