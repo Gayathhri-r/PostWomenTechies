@@ -13845,8 +13845,9 @@
 											"        console.log(jsonResponse.batchId);\r",
 											"\r",
 											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
-											"        pm.expect(jsonResponse.batchName).to.eql(pm.environment.get(\"batchName\"))\r",
-											"       // pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
+											"        \r",
+											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\"); \r",
+											"        pm.expect(jsonResponse.batchDescription).to.eql(pm.environment.get(\"batchDescription\"))\r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon update\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
@@ -13927,7 +13928,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchDescription\": \"This batch is for Postman hackathon update\",\r\n  \"batchId\": 0,\r\n  \"batchName\": {{batchName}},\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}\r\n",
+									"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -19985,12 +19986,12 @@
 	],
 	"variable": [
 		{
-			"id": "317ab4a5-ba54-4133-bed9-7b0cc8535ad1",
+			"id": "7ec982d6-f5e9-456c-b8d0-f9f855505ad5",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "af2194f3-8cd3-4eb8-b390-2d813279b3b5",
+			"id": "8cf8fdca-1273-4f2c-80a2-ca5c1208c464",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
