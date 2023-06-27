@@ -14138,7 +14138,8 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14149,8 +14150,22 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "PUT",
-								"header": []
+								"method": "POST",
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_066_Invalid_Request_GET_POST Copy 2",
+							"id": "e5011968-f95d-4d94-ae78-b7cb0f8c8060",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
 						},
@@ -14535,6 +14550,57 @@
 									"script": {
 										"id": "e3095c08-4d12-4d60-8de0-7571f671fc51",
 										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.message,\"Batch status is needed\");\r",
+											"    pm.expect(jsonResponse.success,\"false\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
 											""
 										],
 										"type": "text/javascript"
@@ -14548,6 +14614,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  //\"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
@@ -14614,6 +14689,57 @@
 									"script": {
 										"id": "e3095c08-4d12-4d60-8de0-7571f671fc51",
 										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.message,\" No of Classes is needed; It should be a positive number \");\r",
+											"    pm.expect(jsonResponse.success,\"false\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
 											""
 										],
 										"type": "text/javascript"
@@ -14627,6 +14753,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  //\"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
@@ -14693,6 +14828,57 @@
 									"script": {
 										"id": "e3095c08-4d12-4d60-8de0-7571f671fc51",
 										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.message,\" ProgramId field is needed; It should be a positive number \");\r",
+											"    pm.expect(jsonResponse.success,\"false\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
 											""
 										],
 										"type": "text/javascript"
@@ -14706,6 +14892,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\"\r\n  //\"programId\": 3168\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
@@ -14930,6 +15125,105 @@
 									"script": {
 										"id": "e3095c08-4d12-4d60-8de0-7571f671fc51",
 										"exec": [
+											"//validate status code\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//random batchName serial number generation\r",
+											"\r",
+											"var random = Math.random().toString(36).substring(2);\r",
+											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
+											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
+											"/*var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
+											"pm.environment.set(\"batchDescription\",batchDescription)*/\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"    \r",
+											"//validate Response body\r",
+											"    pm.test(\"Validate Response body\", function() {\r",
+											"        console.log(jsonResponse.batchId);\r",
+											"        console.log(jsonResponse.batchName);\r",
+											"        console.log(jsonResponse.batchDescription);\r",
+											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
+											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
+											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
+											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
+											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
+											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
+											"})\r",
+											"\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =  \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"batchId\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"batchName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"batchDescription\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"batchStatus\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"batchNoOfClasses\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"programId\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"programName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"batchId\",\r",
+											"    \"batchName\",\r",
+											"    \"batchDescription\",\r",
+											"    \"batchStatus\",\r",
+											"    \"batchNoOfClasses\",\r",
+											"    \"programId\",\r",
+											"    \"programName\"\r",
+											"  ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validate Schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema))\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
 											""
 										],
 										"type": "text/javascript"
@@ -14943,6 +15237,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  //\"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168\r\n  \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": [
@@ -20159,12 +20462,12 @@
 	],
 	"variable": [
 		{
-			"id": "24c1d88f-1a8d-4ac3-b56e-abc60ac9023a",
+			"id": "da56ab39-d5c5-4b2f-a6b2-460e9ba519a1",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1ebb7a2d-54e0-48fd-8445-e05f22e58e83",
+			"id": "e0bac51b-8100-4c8c-b104-a0f7e7fda664",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
