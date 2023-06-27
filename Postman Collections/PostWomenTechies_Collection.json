@@ -16372,13 +16372,13 @@
 										"id": "dab9668c-30f5-4205-8b21-1f21b77d6eb4",
 										"exec": [
 											"//validate status code \r",
-											"pm.test(\"Status code is 405\", function () {\r",
-											"    pm.response.to.have.status(405);\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
+											"    pm.response.to.have.status(\"OK\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -16392,8 +16392,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Batch with Id-\" + \"pm.variables.get(batchId)\" + \" deleted Successfully!\");\r",
+											"    pm.expect(jsonResponse.message,200);\r",
+											"    pm.expect(jsonResponse.success,\"Batch with Id-\" + \"pm.variables.get(batchId)\" + \" deleted Successfully!\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -21531,12 +21531,12 @@
 	],
 	"variable": [
 		{
-			"id": "a4f28805-bbcc-4c5f-8f74-7ca4eeb2b438",
+			"id": "5512f1ab-f5ec-4bb2-8365-f91876ccdad2",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ffda44b3-e73b-4c41-ad57-5a43fb824077",
+			"id": "1ffcf1d6-df23-4f3c-b805-887ca6e8e6fa",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		}
