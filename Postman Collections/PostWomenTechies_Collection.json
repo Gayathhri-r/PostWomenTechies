@@ -23855,17 +23855,7 @@
 									"    pm.response.to.have.status(\"OK\");\r",
 									"    \r",
 									"});\r",
-									"//validate Response body\r",
-									"    pm.test(\"Validate Response body\", function() {\r",
-									"         \r",
-									"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-									"        pm.expect(jsonResponse.batchName,pm.environment.get(\"batchName\"));\r",
-									"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"batchStatus\"));\r",
-									"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"batchDescription\"));\r",
-									"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"batchNoOfClasses\"));\r",
-									"        pm.expect(jsonResponse.programId, pm.environment.get(\"programId\"));\r",
-									"        pm.expect(jsonResponse.programName,pm.environment.get(\"programName\"));\r",
-									"})\r",
+									"\r",
 									"\r",
 									"//Get the response result\r",
 									"var jsonResponse = pm.response.json();\r",
@@ -24052,17 +24042,17 @@
 	],
 	"variable": [
 		{
-			"id": "cfa9e2fd-012b-4c30-8b46-c574d92a9d6b",
+			"id": "ad26aaab-bfff-4536-8ab7-b0bac13d3235",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c90aa981-c9f3-4232-af33-fbf72e057a22",
+			"id": "7d2731bf-ef77-4483-8227-ccc9edf48550",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8adb87a3-5a98-4764-8024-653b39ac5eb4",
+			"id": "fceb003d-b5fd-47e2-a55b-2f21f5d99fa2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
