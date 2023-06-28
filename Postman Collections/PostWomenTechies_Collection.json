@@ -18478,97 +18478,6 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_038_Invalid_Request_PUT_GET_DELETE Copy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "dab9668c-30f5-4205-8b21-1f21b77d6eb4",
-										"exec": [
-											"//validate status code \r",
-											"pm.test(\"Status code is 405\", function () {\r",
-											"    pm.response.to.have.status(405);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "155d7861-5901-4614-97b0-493d2419afb2",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseURL}}/{{createBatch}}"
-							},
-							"response": []
-						},
-						{
 							"name": "Program_Batch_TC_066_Invalid_Request_PUT_GET_DELETE",
 							"event": [
 								{
@@ -24042,17 +23951,17 @@
 	],
 	"variable": [
 		{
-			"id": "5bc9a692-9286-4179-b7b4-5c9b412c6098",
+			"id": "8e6ea434-6049-4f23-8d07-bb5440c587ce",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "174f8a80-9eec-40c6-ad3f-3e5c7f59028f",
+			"id": "6c9640e2-90e7-4134-8d6e-521526632f56",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4e89eede-2c1b-494b-a74d-306d4b440506",
+			"id": "e52b12b8-11bf-4d80-bc0d-f05d74130d1a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
