@@ -7403,7 +7403,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lmsfoo/deletebyprogname/{programName}",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/deletebyprogname/{programName}",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -7411,7 +7411,7 @@
 										"com"
 									],
 									"path": [
-										"lmsfoo",
+										"lms",
 										"deletebyprogname",
 										"{programName}"
 									],
@@ -24599,17 +24599,17 @@
 	],
 	"variable": [
 		{
-			"id": "85868f45-5913-49b4-8074-e7555122445d",
+			"id": "bf0f3cda-a5f8-4012-8869-c8bbdde3c7bb",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "076782a6-ade6-4add-a589-5b9e2369cb4d",
+			"id": "655daa8b-ed2f-48ac-8428-ba36d5250f15",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0a5f8f35-ce9a-43bb-9e96-33ff266f7744",
+			"id": "335cd985-d3cc-4597-928f-117f30fdede8",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
