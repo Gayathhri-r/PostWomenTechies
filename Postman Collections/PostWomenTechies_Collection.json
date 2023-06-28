@@ -6948,13 +6948,13 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}",
+									"raw": "{{baseURL}}/deletebyprogname/",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"deletebyprogname",
-										"{programName}"
+										""
 									],
 									"query": [
 										{
@@ -26112,17 +26112,17 @@
 	],
 	"variable": [
 		{
-			"id": "4ba2b2a7-4f6b-4096-ad67-bb0aa9014072",
+			"id": "26dcae69-ede0-4b25-8def-c74187dd42fe",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "dff3beae-d7af-47cd-82b8-2e56668ec81c",
+			"id": "afcd9ff4-6072-4a6b-b06e-b7c71f28a417",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1760832e-c818-4a7f-b4e4-e24617d28914",
+			"id": "958ff273-b5b0-4e62-a0bb-ee12ed015621",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
