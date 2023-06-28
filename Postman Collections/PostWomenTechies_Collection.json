@@ -120,12 +120,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -19727,7 +19727,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_067_Without_endpoint_only_Batch_Id",
+							"name": "Program_Batch_TC_098_Without_endpoint_only_Batch_Id",
 							"id": "9301ed13-ad0f-4c0d-a0a7-603e8e087f4f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24706,17 +24706,17 @@
 	],
 	"variable": [
 		{
-			"id": "552937ce-fa96-4f8a-9ec8-969cdeb98ba8",
+			"id": "f7507521-9ad0-4d03-9fbd-d20120753e18",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "652183f9-7fa2-4690-aab9-d5f3651a70de",
+			"id": "e6e11e40-719e-4c10-baa9-fec23e955230",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d0d9243f-a497-40f8-9bdf-f224d683600f",
+			"id": "5c07c894-4783-4f2b-bd79-e54a04876d67",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
