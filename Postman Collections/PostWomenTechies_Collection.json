@@ -16164,7 +16164,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
+									"raw": "\r\n[{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n},\r\n\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3739,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}\r\n]",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -24420,17 +24420,17 @@
 	],
 	"variable": [
 		{
-			"id": "2249eff3-183d-4ae6-8616-73d05fe9585c",
+			"id": "c5bc01e7-dddf-4a5f-9eb6-5c61e3f301c9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3c9e24be-446a-414c-9e51-86bf987b4751",
+			"id": "77a0a9d2-71ca-4369-beaf-cf89d47d263f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cf1bf59e-d0e5-4d9b-8370-78308746b32b",
+			"id": "88d3a07b-2d71-4fa4-82d1-20a4a60c63e5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
