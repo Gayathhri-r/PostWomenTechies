@@ -3749,50 +3749,22 @@
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
-											" {\r",
-											"     \r",
+											"{\r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
+											"    \"message\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
 											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											""
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -19949,7 +19921,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24949,17 +24921,17 @@
 	],
 	"variable": [
 		{
-			"id": "810e0db4-1938-4c70-ab11-c7df3a0dede1",
+			"id": "f41d2195-44d2-40f2-8a22-6cb0e42e04db",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b63b4b86-41fe-4b02-bc71-f45834049fab",
+			"id": "83f25c3b-66ca-4ced-8b3d-76f2d757ec88",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e0d0eefc-835b-47ce-9447-859f99f32045",
+			"id": "08d35f93-5d40-4406-9917-6457b20c8ff2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
