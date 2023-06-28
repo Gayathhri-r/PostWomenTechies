@@ -19778,7 +19778,7 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.message,\"Batch \"+ pm.variables.get(\"delBatchId\") +\"with\" + pm.variables.get(\"delBatchId\")+\"already exists: ; Please give a different batch Name or Choose a different Program\");\r",
+											"    pm.expect(jsonResponse.message,\"Batch \"+ pm.variables.get(delBatchId) +\"with\" + pm.variables.get(delBatchId)+\"already exists: ; Please give a different batch Name or Choose a different Program\");\r",
 											"    pm.expect(jsonResponse.success,\"false\");\r",
 											"})\r",
 											"\r",
@@ -24845,17 +24845,17 @@
 	],
 	"variable": [
 		{
-			"id": "e8ea582b-a28e-4949-b1d3-25a25c805e4c",
+			"id": "f43f883e-4afd-401e-80be-89d67c010106",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "acc8c936-b040-4747-bc8b-3871bf30f039",
+			"id": "8ab80f46-6e46-468c-bfe1-db661efd9744",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5b88ca8d-08fa-4d3b-99f2-42d8fd860fee",
+			"id": "eccb1cab-9c83-4150-81ed-01729a1245a0",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
