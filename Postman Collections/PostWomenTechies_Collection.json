@@ -5600,7 +5600,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-AP19\",\r\n    \"programDescription\": null,\r\n    \"programStatus\": \"Active\",\r\n    \"programId\": \"6588\"\r\n\r\n\r\n}\r\n\r\n",
+									"raw": "{\r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-AP19\",\r\n    \"programDescription\": null,\r\n    \"programStatus\": \"12\",\r\n    \"programId\": \"6588\"\r\n\r\n\r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -26111,17 +26111,17 @@
 	],
 	"variable": [
 		{
-			"id": "f8d22897-ba0a-4312-8f56-c7625f660c21",
+			"id": "347ab02d-0eb7-4b39-96b8-647ed3dbb174",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1e0f25a8-a569-4dd7-ad9b-ad8d0574bdc2",
+			"id": "a0a8405c-485f-4de6-8830-cedba3013817",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8e69f442-1760-444a-bd11-2b7ff31fe29e",
+			"id": "1038d0fb-7283-411e-ba8d-079712fa883f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
