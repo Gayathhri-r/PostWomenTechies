@@ -19749,6 +19749,69 @@
 						},
 						{
 							"name": "Program_Batch_TC_093_Already_Deleted_Batch_Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6eab565c-9ffe-4786-8c51-6d1246956e74",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.message,\"Batch \"+ pm.variables.get(\"delBatchId\") +\"with\" + pm.variables.get(\"delBatchId\")+\"already exists: ; Please give a different batch Name or Choose a different Program\");\r",
+											"    pm.expect(jsonResponse.success,\"false\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "b18e77bc-bf1c-42ea-9494-4cbe92a14ccf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24782,17 +24845,17 @@
 	],
 	"variable": [
 		{
-			"id": "a8f06215-c159-478a-96fc-e09096db14ca",
+			"id": "094683b0-e2a2-40fb-b8c3-43df32b1d03e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c9258889-097c-4c77-993a-1afa16704b4d",
+			"id": "73915d29-b09d-4fb2-b7ba-fa6e1e9d5b64",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5ae83836-68d6-44b6-80d6-e729adb2328a",
+			"id": "1f555c93-7ed3-4305-90e6-c1447dee0b20",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
