@@ -19620,7 +19620,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_090_Multiple_Batches_same_Program",
+							"name": "Program_Batch_TC_087_Multiple_Batches_same_Program",
 							"id": "57906b35-8d12-48ef-bc44-710d5c1fc004",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24695,17 +24695,17 @@
 	],
 	"variable": [
 		{
-			"id": "bacb2626-adf4-43d1-a0f4-05f23351ba39",
+			"id": "f65d6bfc-325c-4db3-b2de-075644002c3d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8fa4f90e-1d5f-4835-abf9-54c9b6d30334",
+			"id": "fdebd81d-a46b-4ade-90ee-fe6a03f5e35f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "45728665-4118-4317-a6e7-5f041a9adbec",
+			"id": "4ff3ae21-75e4-4be6-a7bc-2e739859f75b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
