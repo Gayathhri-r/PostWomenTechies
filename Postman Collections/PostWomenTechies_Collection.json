@@ -19646,8 +19646,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -19659,8 +19658,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -19672,8 +19670,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -19697,8 +19694,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -19710,8 +19706,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -19723,8 +19718,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -19736,8 +19730,7 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"header": []
 							},
 							"response": []
 						},
@@ -24733,17 +24726,17 @@
 	],
 	"variable": [
 		{
-			"id": "bbe52f9a-31fa-4cc0-8377-5221296dc82c",
+			"id": "e5a85abd-3a66-4496-aa25-52a611c7ce4f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "cb7edc61-f515-422d-ae14-6bf451f66973",
+			"id": "a45a502b-ce37-40f7-9ff4-98e1c51d7f02",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d101632e-3353-4125-93d6-6725fdd895f9",
+			"id": "c1a24953-7a77-4a93-9b6e-f420064e437d",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
