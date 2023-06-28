@@ -19700,7 +19700,7 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    var environmentVar = pm.variables.get(\"programId\");\r",
+											"    var environmentVar = pm.variables.get(\"delBatchId\");\r",
 											"    \r",
 											"   pm.expect(jsonResponse.message,'Batch not found with Id :' + environmentVar);\r",
 											"    pm.expect(jsonResponse.success,\"false\")\r",
@@ -24782,17 +24782,17 @@
 	],
 	"variable": [
 		{
-			"id": "f2aaa2d9-ce0f-4141-b5f4-8c711100ba10",
+			"id": "694d5b68-66f1-4c9a-b9ff-03085a1e68ac",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7a316bfd-cf48-4a71-b0bf-04b42e189fbc",
+			"id": "dcd87f7b-bf74-45c9-97fc-a6c5f982e667",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "bc5eb7b1-5ebd-47bb-8c04-508cddd09367",
+			"id": "456c5453-2d36-4cab-ba7d-688102040362",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
