@@ -16136,6 +16136,78 @@
 						},
 						{
 							"name": "Program_Batch_TC_063_Batch_Id_in_Alphanumeric",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0026711b-7889-47b7-aa24-e137cd376736",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,400);\r",
+											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "fe3a43f3-aecb-4e9c-8b25-d734e260f446",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16145,7 +16217,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": " {\r\n  \"batchId\": \"U123\",\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": " {\r\n  \"batchId\": \"3130U\",\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -23951,17 +24023,17 @@
 	],
 	"variable": [
 		{
-			"id": "279d7a36-eff4-454d-a0e2-f7661dacc6f4",
+			"id": "2819a68a-0049-43a6-b4c9-e2ede085a4da",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0423e9a7-83ae-49f7-91b5-b61c4e7252bb",
+			"id": "65aa0479-8a17-470f-9627-18bcf2f297da",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "056df25d-256a-4baf-9146-0fca83152eff",
+			"id": "489a1e42-4726-407d-b7ca-5699807a2914",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
