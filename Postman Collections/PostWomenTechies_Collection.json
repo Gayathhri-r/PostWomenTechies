@@ -7380,39 +7380,33 @@
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
-											" {\r",
+											" \r",
 											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+											"  \"title\": \"Generated schema for Root\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
-											""
+											"    \"status\": {\r",
+											"      \"type\": \"number\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -7426,13 +7420,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=%23",
+									"raw": "{{baseURL}}/deletebyprogname#",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogname",
-										"{programName}"
+										"deletebyprogname"
 									],
 									"query": [
 										{
@@ -7446,12 +7439,9 @@
 											"value": "Active",
 											"type": "text",
 											"disabled": true
-										},
-										{
-											"key": "programName",
-											"value": "#"
 										}
-									]
+									],
+									"hash": ""
 								}
 							},
 							"response": []
@@ -26078,17 +26068,17 @@
 	],
 	"variable": [
 		{
-			"id": "8c073453-d45b-4c4a-b1df-a6436e9f906c",
+			"id": "7dd793db-7f77-419c-b34f-26c81cf5a014",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "28fad746-6908-4397-b44a-991472d47932",
+			"id": "e5d74509-0973-46da-9779-ee1bc85c9861",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8916f789-1736-45a1-b3b4-ee8a80919d5d",
+			"id": "40c89375-1b05-4b91-9719-96cb851980bf",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
