@@ -12593,7 +12593,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_034_Data_Driven_Testing_Valid_data_from_CSV_file",
+							"name": "Program_Batch_TC_034_Data_Driven_Testing_from_CSV_file",
 							"event": [
 								{
 									"listen": "test",
@@ -16060,100 +16060,6 @@
 									"script": {
 										"id": "5aad067e-d9ba-49e5-bee4-22d8020d3880",
 										"exec": [
-											"\r",
-											"\r",
-											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "dcef43c8-a952-4eed-8274-a38cb1dc3e5c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "\r\n[{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n},\r\n\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3739,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}\r\n]",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
-							},
-							"response": []
-						},
-						{
-							"name": "Data_Driven_Testing_Valid_data_from_CSV_file",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "99796661-877e-4b93-af1a-2496d53c15c0",
-										"exec": [
 											"//validate status code\r",
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
@@ -16259,6 +16165,28 @@
 									}
 								}
 							],
+							"id": "dcef43c8-a952-4eed-8274-a38cb1dc3e5c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n[{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n},\r\n\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3739,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_058_Data_Driven_Testing_ Multiple Batches",
 							"id": "9bebc4bd-e5c3-48ad-89dd-89679b5ef479",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24502,17 +24430,17 @@
 	],
 	"variable": [
 		{
-			"id": "dbf6916f-e1aa-4217-a3fb-2d54749cf8d4",
+			"id": "0099f767-1341-4a1a-bf8d-1d9e314a3426",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6c72defb-96a2-4b9b-9bd5-11a3cf9c4fa8",
+			"id": "37bcd04d-17a9-4214-a313-957cc5f0b06e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "39a9fa3a-97d2-4e17-a4e4-dfa23567a1ca",
+			"id": "dbbe7ffb-e2ab-4c7b-a984-1b32613e3dde",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
