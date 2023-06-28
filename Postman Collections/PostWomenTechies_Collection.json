@@ -20020,19 +20020,6 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT Copy",
-							"id": "4047a270-ebd0-46b0-8e34-dc0f5e3b6e38",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
-							},
-							"response": []
-						},
-						{
 							"name": "Program_Batch_TC_100_Invalid_baseURL",
 							"event": [
 								{
@@ -24976,17 +24963,17 @@
 	],
 	"variable": [
 		{
-			"id": "3cbe241d-c990-4b3e-8687-cef98ac5df14",
+			"id": "f7084def-f28b-4c93-bcb7-a821134339c2",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a58f50c0-036b-48e2-85f4-de6343d38d77",
+			"id": "01c02bad-4e9a-4431-bb6d-ed2cc787f3bd",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d235b364-31b1-4ec0-99d2-f555b67872c3",
+			"id": "352f168e-8d00-46b9-9b8e-047b6b1d1f77",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
