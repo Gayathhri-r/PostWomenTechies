@@ -4762,157 +4762,6 @@
 							"response": []
 						},
 						{
-							"name": "PUT Program(UpdatebyProgramName)-DataDrivenTesting-csvfile",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "98d0694f-50dd-4ab4-938d-7afcb691de37",
-										"exec": [
-											"//validate status code\r",
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate Response body\r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"         \r",
-											"        pm.expect(jsonResponse.programId, pm.environment.get(\"programId\"));\r",
-											"        pm.expect(jsonResponse. programName,pm.environment.get (\"programName\"));\r",
-											"        pm.expect(jsonResponse.programDescription,pm.environment.get(\"programDescription\"));\r",
-											"        pm.expect(jsonResponse.programStatus, pm.environment.get(\"programStatus\"));\r",
-											"        pm.expect(jsonResponse.creationTime, pm.environment.get(\"creationTime\"));\r",
-											"        pm.expect(jsonResponse.lastModTime, pm.environment.get(\"lastModTime\"));\r",
-											"        \r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =  \r",
-											" {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"   \r",
-											"    \"programId\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"programName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"programDescription\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"programStatus\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"creationTime\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"lastModTime\": {\r",
-											"      \"type\":  \"integer\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"     \"programId\",\r",
-											"     \"programName\",\r",
-											"     \"programDescription\",\r",
-											"     \"programStatus\",\r",
-											"     \"creationTime\",\r",
-											"     \"lastModTime\",\r",
-											"\r",
-											"  ]\r",
-											"}\r",
-											"\r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"    \r",
-											"\r",
-											"\r",
-											"    \r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "83906328-1c4a-4c87-a83f-01c1fbe5538f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"{{Selenium_Java}}\",\r\n  \"programName\": \"{{Jun23-PostWomenTechies-SDET-0101_16}}\",\r\n  \"programStatus\":\"{{Active}}\"\r\n}\r\n\r\n\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{baseURL}}/{{program}}/\"Jun23-PostWomenTechies-SDET-0101\"",
-									"host": [
-										"{{baseURL}}"
-									],
-									"path": [
-										"{{program}}",
-										"\"Jun23-PostWomenTechies-SDET-0101\""
-									],
-									"query": [
-										{
-											"key": "programName",
-											"value": "Jun23-PostWomen Techies-SDET-102",
-											"type": "text",
-											"disabled": true
-										},
-										{
-											"key": " programStatus",
-											"value": "Active",
-											"type": "text",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "PUT Program(UpdateByProgramName)-Without Program Desription",
 							"event": [
 								{
@@ -26691,17 +26540,17 @@
 	],
 	"variable": [
 		{
-			"id": "0bce865f-e8c3-4200-8fcc-13080054f110",
+			"id": "b10874e3-d22d-4b50-a268-a8b6c82c7205",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "04a9c731-d88d-4a09-858f-5bb93881cdea",
+			"id": "102f0baa-e3d5-4a17-969c-55b4a2af8304",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "3e3d588a-1b61-410f-b7a0-917660a975c9",
+			"id": "5a2bf517-da1e-4e37-a21b-19f11a2402e6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
