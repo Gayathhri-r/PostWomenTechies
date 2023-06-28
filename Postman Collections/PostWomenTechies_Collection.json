@@ -16053,7 +16053,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_057_Update Multiple Batches",
+							"name": "Program_Batch_TC_057_Update Multiple Batches_same_Program",
 							"event": [
 								{
 									"listen": "test",
@@ -24411,17 +24411,17 @@
 	],
 	"variable": [
 		{
-			"id": "87b54a4e-cc02-43b5-b63c-186cf2f4c203",
+			"id": "cff502dc-7be3-498a-bee5-757c8c3dde1e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5e25de66-4831-4532-8b48-27301b0099e6",
+			"id": "e496d385-718d-480c-916a-bd2f7f9fd904",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "7bc9f6f6-4e98-4c53-b692-ac726a9814d1",
+			"id": "e04dc4ab-41fb-4a6e-a3cc-79b8e209c05f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
