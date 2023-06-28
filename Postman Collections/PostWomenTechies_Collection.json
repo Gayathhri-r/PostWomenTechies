@@ -1185,7 +1185,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium_java\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0101-2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -26638,17 +26638,17 @@
 	],
 	"variable": [
 		{
-			"id": "767fbacd-d58e-460e-aa0c-ca84ff5baa58",
+			"id": "53fddb68-b35f-457b-a329-a4eb4a118ba7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "42b98d1f-01e6-4bfe-9415-d21632642143",
+			"id": "d91c49a6-821b-43b0-8451-1f7e5bac54a7",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cff1c527-0f94-4b18-81a8-65473bc7bb4e",
+			"id": "38fe1c46-4bb2-4a6a-9b86-a38f4d22ef5e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
