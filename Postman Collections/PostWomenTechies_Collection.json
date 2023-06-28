@@ -19739,7 +19739,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_096_Invalid_Request_GET_POST_PUT",
+							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT",
 							"id": "151bd855-d04d-480d-8773-d343663182e6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24706,17 +24706,17 @@
 	],
 	"variable": [
 		{
-			"id": "f7507521-9ad0-4d03-9fbd-d20120753e18",
+			"id": "6614db35-9404-41ea-afd0-2e0e58192674",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e6e11e40-719e-4c10-baa9-fec23e955230",
+			"id": "08a6a1b5-b508-4773-ade4-bc5d45aa3431",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5c07c894-4783-4f2b-bd79-e54a04876d67",
+			"id": "dd2e232f-1c49-427a-a7f9-e8e196cbb3d5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
