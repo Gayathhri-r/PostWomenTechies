@@ -19655,7 +19655,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_089_Non_Existing_Batch_Id",
+							"name": "Program_Batch_TC_092_Non_Existing_Batch_Id",
 							"id": "be97324e-5e6c-43eb-9be8-a99908acfc77",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19667,7 +19667,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_090_Already_Deleted_Batch_Id",
+							"name": "Program_Batch_TC_093_Already_Deleted_Batch_Id",
 							"id": "b18e77bc-bf1c-42ea-9494-4cbe92a14ccf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19679,7 +19679,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_091_Batch_Id_in_Special_characters",
+							"name": "Program_Batch_TC_094_Batch_Id_in_Special_characters",
 							"id": "cfa4cab5-7c7a-4b3a-ad94-00709d83e78b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19691,7 +19691,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_092_Batch_Id_in_Alphanumeric",
+							"name": "Program_Batch_TC_095_Batch_Id_in_Alphanumeric",
 							"id": "5e7099e9-9182-43c5-9062-6c414e310b07",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19703,7 +19703,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_093_Without_Endpoints",
+							"name": "Program_Batch_TC_096_Without_Endpoints",
 							"id": "fdb5d7e7-2bad-4d70-8a9e-b08bf11c65c0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24706,17 +24706,17 @@
 	],
 	"variable": [
 		{
-			"id": "0e153378-0735-4e42-bc7c-9c5f842ef203",
+			"id": "59f0d68e-5f40-42c0-b966-3b5c1d571fa7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0d674283-5c06-4b34-a319-4c63df395744",
+			"id": "d6d77bc6-462b-46e2-af42-1823ec38f5a7",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d619250c-a099-40c3-87ab-a579f99d6a8e",
+			"id": "2f53dfbf-3142-4c72-9e1c-da723149e103",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
