@@ -1613,62 +1613,53 @@
 									"script": {
 										"id": "6b057780-6a1a-4bf3-ba41-19ecd3ee0ede",
 										"exec": [
-											"//validate status code \r",
+											"//Validating the status code\r",
 											"pm.test(\"Status code is 405\", function () {\r",
 											"    pm.response.to.have.status(405);\r",
 											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
+											"//validating the status message\r",
+											"pm.test(\"Status code name is Method Not Allowed\", function () {\r",
 											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
 											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"//Validating header\r",
+											"pm.test(\"Validating the Content-Type header is application/json\",() => {\r",
+											"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
 											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
+											"//validating the data type of the response body\r",
+											"var jsonData = pm.response.json();\r",
+											"pm.test(\"Validating the data of the response body\",() => {\r",
+											"    pm.expect(jsonData.status).to.eql(405);\r",
+											"    pm.expect(jsonData.error).to.eql(\"Method Not Allowed\");\r",
+											"});\r",
+											"//validating the JSON schema\r",
+											"var schema =\r",
+											"{\r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"    \r",
-											"     \"programDescription\": {\r",
+											"    \"timestamp\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
-											"     \"programName\": {\r",
+											"    \"status\": {\r",
 											"      \"type\": \"integer\"\r",
 											"    },\r",
-											"    \"programStatus\": {\r",
+											"    \"error\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
-											"  \r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"     \"programName\",\r",
-											"     \"programDescription\",\r",
-											"     \"programStatus\",\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
 											"  ]\r",
 											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
+											"pm.test(\"Validating schema\", function() {\r",
+											"    pm.expect(tv4.validate(jsonData,schema)).to.be.true;\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -1691,12 +1682,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -24721,17 +24712,17 @@
 	],
 	"variable": [
 		{
-			"id": "d55533e3-f4f3-4367-afc6-930d750868f1",
+			"id": "f20c926e-1d41-499c-94e9-ce9d581f270d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ba863835-2d97-44f1-9227-1c3428ad9046",
+			"id": "e8c5bef9-ea7b-46a4-9696-2433612c4ff2",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6c0f8212-b712-4991-a15d-99a3c59bc3d1",
+			"id": "e10cbe1e-5b3b-4bc0-9ece-8e507474cf08",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
