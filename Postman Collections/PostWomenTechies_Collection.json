@@ -19658,13 +19658,35 @@
 						},
 						{
 							"name": "Program_Batch_TC_091_Invalid_Batch_Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "bc54ac52-f332-4262-8cfe-1d9c55886b13",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "5d879718-2319-496d-ba53-e329644b431b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24716,17 +24738,17 @@
 	],
 	"variable": [
 		{
-			"id": "c4dcc5d3-96cc-4654-8af1-c0e0a6c7daaa",
+			"id": "d35114f5-2d0e-4cb6-892d-0a4f76f40774",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0ec3b090-6814-402d-b23e-c884659ee3bf",
+			"id": "31fc942a-da6d-4bbd-8a30-f14ed7c2ae62",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8c79ca6f-e2aa-4c4d-a7b3-00d4fb51632c",
+			"id": "c071ec2e-e7e2-471b-9be9-d252c32b522c",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
