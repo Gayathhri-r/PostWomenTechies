@@ -1944,12 +1944,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -19661,7 +19661,7 @@
 										}
 									}
 								},
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24713,17 +24713,17 @@
 	],
 	"variable": [
 		{
-			"id": "cd683e00-c106-4f38-a247-fe71a63de838",
+			"id": "6c4f07e2-888b-4088-b09b-d6d28ac27099",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "4502eebd-06e5-4cad-8863-3250c38215d4",
+			"id": "e04bbac3-cf2a-41e4-bf71-fa25623c83ed",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cb88659a-920c-4098-885c-fbf2bf7e5a2c",
+			"id": "6c862c57-fa28-4aa2-a5e5-28301f4dc1d6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
