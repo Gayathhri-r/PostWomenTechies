@@ -19703,7 +19703,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_093_Without_Endpoints",
+							"name": "Program_Batch_TC_096_Without_Endpoints",
 							"id": "fdb5d7e7-2bad-4d70-8a9e-b08bf11c65c0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19715,7 +19715,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_094_Invalid_Endpoints",
+							"name": "Program_Batch_TC_097_Invalid_Endpoints",
 							"id": "7de66250-ba4a-4859-b5d3-6aa373c74e1b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24706,17 +24706,17 @@
 	],
 	"variable": [
 		{
-			"id": "5b5f60ea-1765-4d78-b75d-909af759e51f",
+			"id": "552937ce-fa96-4f8a-9ec8-969cdeb98ba8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "071e7908-1a89-4db4-a5f9-adededd86beb",
+			"id": "652183f9-7fa2-4690-aab9-d5f3651a70de",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "dca9a53c-2d3d-4678-ad2b-bf47359c8015",
+			"id": "d0d9243f-a497-40f8-9bdf-f224d683600f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
