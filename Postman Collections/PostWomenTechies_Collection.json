@@ -568,41 +568,21 @@
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
 											" {\r",
-											"     \r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"       \"programId\": {\r",
-											"      \"type\": \"integer\" \r",
-											"      },\r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \"programId\",\r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"\r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse[0],schema)).to.be.true\r",
-											"})\r",
-											"\r",
-											"\r",
-											""
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -24749,17 +24729,17 @@
 	],
 	"variable": [
 		{
-			"id": "955f36c0-64f5-46ae-ae83-51d70757f5f9",
+			"id": "27f0fb75-698f-4683-b67a-9cf0df526089",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "08c6e975-bab3-4f99-ab0e-0597f1d350c5",
+			"id": "bf02f74f-9678-4204-a45a-45e0d383ff70",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0a60168c-3116-4c13-aca7-499b8bf5caf8",
+			"id": "71fe3bad-a4ab-4cc1-87f9-d9af74682912",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
