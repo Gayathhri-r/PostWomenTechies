@@ -5764,13 +5764,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{deletebyprogid}}/{programId}?programId",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/6590",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{deletebyprogid}}",
-										"{programId}"
+										"6590"
 									],
 									"query": [
 										{
@@ -5784,11 +5784,6 @@
 											"value": "Active",
 											"type": "text",
 											"disabled": true
-										},
-										{
-											"key": "programId",
-											"value": null,
-											"type": "text"
 										}
 									]
 								}
@@ -26108,17 +26103,17 @@
 	],
 	"variable": [
 		{
-			"id": "64422556-7f4c-425d-a230-ada67a59a4ae",
+			"id": "73b8f92a-52ec-4b2d-9c2a-d21cd4866392",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "95365502-ee93-4c03-9b9d-84e3fbbc6108",
+			"id": "1ad5bb88-0808-40a2-9b55-28abd55ecf3c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "213ce15f-f507-4b1c-bfdc-17b014a4875e",
+			"id": "15968a42-bed5-43c0-895a-0665488e29f4",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
