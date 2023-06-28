@@ -20111,7 +20111,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_88_Multiple_Batch_Program",
+							"name": "Program_Batch_TC_88_Delete_program_for_existing_Batch_Batch_Program",
 							"id": "c7e8d322-d163-45ed-8ab5-45cae0dcf338",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26120,17 +26120,17 @@
 	],
 	"variable": [
 		{
-			"id": "e68d19d8-87af-473a-85a0-883bdb5b926a",
+			"id": "4afd3a9b-f88c-426e-981a-c51b3b358ab3",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8426c1d4-6035-4ab9-8c7c-536723f0b240",
+			"id": "f3d25160-537f-4af0-b967-cc574db153d5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "68bc9e66-3975-4ee0-ad48-15132739d3e5",
+			"id": "64018307-7038-41be-9789-9efbf9d599d1",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
