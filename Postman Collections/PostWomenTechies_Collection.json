@@ -20000,9 +20000,35 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [],
 								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT",
+							"id": "2f2d2e3c-578c-4bab-9fc9-8b392312a57f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT Copy",
+							"id": "4047a270-ebd0-46b0-8e34-dc0f5e3b6e38",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24950,17 +24976,17 @@
 	],
 	"variable": [
 		{
-			"id": "af87ba11-2c43-44eb-b346-e6d1ff66f867",
+			"id": "d377e0a8-2d39-4c90-b53b-514a0a763418",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d433a75a-02d8-46a8-b304-4ec5ad343757",
+			"id": "ad1160a6-2244-4ed3-a665-104e58c25440",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "caf48880-7fa0-4840-8d3a-8fcbad5edef7",
+			"id": "cf38c631-371d-4bbe-8d7d-7e094421648a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
