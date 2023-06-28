@@ -16075,8 +16075,13 @@
 								"method": "PUT",
 								"header": [],
 								"body": {
-									"mode": "file",
-									"file": {}
+									"mode": "raw",
+									"raw": "{\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
 								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
@@ -24305,17 +24310,17 @@
 	],
 	"variable": [
 		{
-			"id": "4f8dcd9d-d247-4586-a9e7-e231488e86f3",
+			"id": "d17c6715-e90a-4402-b3f1-d77a45ccefb5",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "162c5286-02d5-4968-87ce-b1ff31d3781a",
+			"id": "a3029c6c-58a7-40d0-bc54-d5c8968bf893",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "f155d53c-ea67-44f3-b06e-bfe738983309",
+			"id": "3fe8e568-51f7-4f43-b40d-dd6131ce5674",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
