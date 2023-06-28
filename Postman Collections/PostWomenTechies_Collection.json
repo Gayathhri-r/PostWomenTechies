@@ -19646,7 +19646,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19658,7 +19659,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19670,7 +19672,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19694,7 +19697,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19706,7 +19710,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19718,7 +19723,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19730,7 +19736,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19742,7 +19749,8 @@
 							},
 							"request": {
 								"method": "DELETE",
-								"header": []
+								"header": [],
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24726,17 +24734,17 @@
 	],
 	"variable": [
 		{
-			"id": "e5a85abd-3a66-4496-aa25-52a611c7ce4f",
+			"id": "fe77b49c-943e-49a3-856a-8053e6342096",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a45a502b-ce37-40f7-9ff4-98e1c51d7f02",
+			"id": "c19545aa-0a27-4bad-ad00-4e6591dd4c93",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c1a24953-7a77-4a93-9b6e-f420064e437d",
+			"id": "ae22bf8c-886f-4fd5-9a45-ba1fffff60b2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
