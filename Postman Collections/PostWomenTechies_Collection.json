@@ -16151,7 +16151,7 @@
 											"        console.log(jsonResponse.batchDescription);\r",
 											"        pm.expect(jsonResponse.batchId).to.not.eql(123123);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
-											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
+											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This batch is for Postman hackathon\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
 											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
@@ -24224,17 +24224,17 @@
 	],
 	"variable": [
 		{
-			"id": "1b711dde-9f1a-4e91-83c8-86515a87d99c",
+			"id": "6000aad0-58dc-43a1-b91c-ca58708c3e36",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "03d571cc-27e8-49c8-8609-f9b0d4644522",
+			"id": "9c88ca1c-383d-451d-a80e-a3e7a7ceca3c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0496f0b3-464e-4c95-98a7-fdeea47daf76",
+			"id": "042f4d49-78ec-46b2-9ec9-7de5f67f3100",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
