@@ -120,12 +120,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -19739,7 +19739,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_096_Invalid_Request_GET_POST_PUT",
+							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT",
 							"id": "151bd855-d04d-480d-8773-d343663182e6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19751,19 +19751,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_097_Invalid_Endpoints",
-							"id": "a13c25b9-c0fa-4e92-a11e-cebda304b099",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": []
-							},
-							"response": []
-						},
-						{
-							"name": "Program_Batch_TC_098_Invalid_baseURL",
+							"name": "Program_Batch_TC_100_Invalid_baseURL",
 							"event": [
 								{
 									"listen": "test",
@@ -24706,17 +24694,17 @@
 	],
 	"variable": [
 		{
-			"id": "a84cbbb6-5cd6-48cd-8992-49c987a7be67",
+			"id": "3562b897-121c-48d2-8c00-8755b390a0e2",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ddc2a91f-9b53-431a-8777-94cce285decd",
+			"id": "921b7f89-c9ee-4c4b-9780-6accc49768e0",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b2cb5399-15e0-4de6-a786-a3c83753eea8",
+			"id": "4ae0becd-53e8-4d08-ad25-ba064ebff004",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
