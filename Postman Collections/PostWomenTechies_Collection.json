@@ -19667,7 +19667,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_090_Already_Deleted_Batch_Id",
+							"name": "Program_Batch_TC_093_Already_Deleted_Batch_Id",
 							"id": "b18e77bc-bf1c-42ea-9494-4cbe92a14ccf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19679,7 +19679,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_091_Batch_Id_in_Special_characters",
+							"name": "Program_Batch_TC_094_Batch_Id_in_Special_characters",
 							"id": "cfa4cab5-7c7a-4b3a-ad94-00709d83e78b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24706,17 +24706,17 @@
 	],
 	"variable": [
 		{
-			"id": "20c791fe-c5db-418d-aba4-332bbc9d33c4",
+			"id": "280fa28e-79d8-46b4-b68a-cff46468195f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3499818f-9c24-455f-8e41-1677554635c6",
+			"id": "4c26201a-e3e5-4c33-9327-a744c6090417",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2bb3534c-86a9-4904-9230-7b22eec9ea04",
+			"id": "54fbbd95-a219-41dc-8b5b-a27dac47fc2b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
