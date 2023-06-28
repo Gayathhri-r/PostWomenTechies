@@ -7812,39 +7812,31 @@
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"{\r",
+											"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+											"  \"title\": \"Generated schema for Root\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
-											""
+											"    \"status\": {\r",
+											"      \"type\": \"number\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -7858,13 +7850,13 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programNamee}",
+									"raw": "{{baseURL}}/deletebyprognamee/{programName}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogname",
-										"{programNamee}"
+										"deletebyprognamee",
+										"{programName}"
 									],
 									"query": [
 										{
@@ -26013,17 +26005,17 @@
 	],
 	"variable": [
 		{
-			"id": "63d3210d-6796-40b5-b6d1-947b9d6973c3",
+			"id": "adae29cb-e884-40be-8eb2-a94b35c99eb8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "31ba1849-9ed0-4132-b3e3-ad21718421bb",
+			"id": "a27c60ff-fed3-4b55-b186-470e78fbcfaf",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "588d9d38-e72a-4267-864c-f0bfcb0efea4",
+			"id": "7abe4eef-2109-49e2-b5e4-f8e8c3025d49",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
