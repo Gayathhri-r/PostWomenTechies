@@ -515,7 +515,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-0101_13\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n}\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-0101_13\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n    \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -917,7 +917,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-0101_15\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-0101_16\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1051,7 +1051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-0101_15\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-0101_17\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1846,39 +1846,22 @@
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
-											" {\r",
-											"     \r",
+											"{\r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
-											""
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -26092,17 +26075,17 @@
 	],
 	"variable": [
 		{
-			"id": "a7742d30-50c8-48b4-8652-31d9a1744c60",
+			"id": "5eced8df-3fe6-454a-ac41-9f2b06f58755",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "165565eb-dfb8-44e5-8ade-b198152af1d5",
+			"id": "66912d7c-5207-463e-93e6-c82183c329c2",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "da46d808-9fe3-4980-8dcd-ff958f9f11ae",
+			"id": "1b7be283-46fd-4847-8a33-c10dce22cc33",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
