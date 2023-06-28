@@ -532,16 +532,14 @@
 									"script": {
 										"id": "45169673-d2c0-4d3d-b034-676929078e50",
 										"exec": [
-											"\r",
-											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -549,14 +547,13 @@
 											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -567,33 +564,47 @@
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
 											"}\r",
-											"\r",
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
 											""
 										],
 										"type": "text/javascript"
@@ -7239,6 +7250,80 @@
 						},
 						{
 							"name": "DELETE by ProgramName_Invalid endpoint",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "58f779d8-0217-4e29-a7e6-f21706123be3",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"\r",
+											"        \r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"       \r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        \r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\",\r",
+											"       \r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											"})\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "1a079962-2ad6-4b0a-b9fa-23ff53108927",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7247,13 +7332,13 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=Jun23-PostWomenTechies-SDET-0101",
+									"raw": "{{baseURL}}/deletebyprogname/{programNamee}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"deletebyprogname",
-										"{programName}"
+										"{programNamee}"
 									],
 									"query": [
 										{
@@ -7271,7 +7356,7 @@
 										{
 											"key": "programName",
 											"value": "Jun23-PostWomenTechies-SDET-0101",
-											"type": "text"
+											"disabled": true
 										}
 									]
 								}
@@ -18858,7 +18943,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_098_Without_Program_name",
+							"name": "Program_Batch_TC_084_Without_Program_name",
 							"event": [
 								{
 									"listen": "test",
@@ -24599,17 +24684,17 @@
 	],
 	"variable": [
 		{
-			"id": "bf0f3cda-a5f8-4012-8869-c8bbdde3c7bb",
+			"id": "e465a8cd-a9ca-48a9-856c-23c49596abe8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "655daa8b-ed2f-48ac-8428-ba36d5250f15",
+			"id": "af2699cb-4a22-4628-819a-7354e0457610",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "335cd985-d3cc-4597-928f-117f30fdede8",
+			"id": "124567a9-81aa-498b-b340-f06ef0df86ea",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
