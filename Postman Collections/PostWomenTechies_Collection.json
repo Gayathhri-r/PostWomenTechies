@@ -2634,9 +2634,8 @@
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"   \r",
 											"    \"programId\": {\r",
-											"      \"type\": \"string\"\r",
+											"      \"type\": \"integer\"\r",
 											"    },\r",
 											"    \"programName\": {\r",
 											"      \"type\": \"string\"\r",
@@ -2645,51 +2644,24 @@
 											"      \"type\": \"string\"\r",
 											"    },\r",
 											"    \"programStatus\": {\r",
-											"      \"type\": \"integer\"\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
 											"    \"creationTime\": {\r",
-											"      \"type\": \"integer\"\r",
+											"      \"type\": \"null\"\r",
 											"    },\r",
 											"    \"lastModTime\": {\r",
-											"      \"type\":  \"integer\"\r",
+											"      \"type\": \"null\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"     \"programId\",\r",
-											"     \"programName\",\r",
-											"     \"programDescription\",\r",
-											"     \"programStatus\",\r",
-											"     \"creationTime\",\r",
-											"     \"lastModTime\",\r",
-											"\r",
+											"    \"programId\",\r",
+											"    \"programName\",\r",
+											"    \"programDescription\",\r",
+											"    \"programStatus\",\r",
+											"    \"creationTime\",\r",
+											"    \"lastModTime\"\r",
 											"  ]\r",
 											"}\r",
-											"\r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"    \r",
-											"\r",
-											"\r",
-											"    \r",
-											"\r",
 											""
 										],
 										"type": "text/javascript"
@@ -2713,13 +2685,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{programs}}/02",
+									"raw": "{{baseURL}}/{{programs}}/717",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{programs}}",
-										"02"
+										"717"
 									],
 									"query": [
 										{
@@ -24713,17 +24685,17 @@
 	],
 	"variable": [
 		{
-			"id": "6c4f07e2-888b-4088-b09b-d6d28ac27099",
+			"id": "388d87dd-82ba-4f69-be91-1e90bbe832bc",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e04bbac3-cf2a-41e4-bf71-fa25623c83ed",
+			"id": "0e77ee7e-301a-4aea-a121-e74b45fda75d",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6c862c57-fa28-4aa2-a5e5-28301f4dc1d6",
+			"id": "f23c6eff-545e-4449-b3e6-4ff1a84b78cf",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
