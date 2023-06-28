@@ -19584,7 +19584,7 @@
 					"name": "DELETE Batch",
 					"item": [
 						{
-							"name": "Program_Batch_TC_084_Delete Batch",
+							"name": "Program_Batch_TC_087_Delete Batch",
 							"id": "6c821924-58c5-4cd7-820f-e09390604b8e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19608,7 +19608,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_086_Data_Driven_Testing_ Multiple Batches",
+							"name": "Program_Batch_TC_086_Data_Driven_Testing_ Valid_Batches",
 							"id": "7c54e59a-5b9a-4742-b837-cba3ffcfbf02",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24695,17 +24695,17 @@
 	],
 	"variable": [
 		{
-			"id": "b891176d-737f-41e3-b7eb-bcf5543da0c6",
+			"id": "855349b1-a442-424b-b083-fe1ac92fc3ad",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fb21f5d0-4270-4813-83e1-89f8e9ae8039",
+			"id": "e0d1d2ac-7d68-4d12-8000-9c25c3f69e34",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "23f79481-9f18-427d-9c39-8086fd1ed102",
+			"id": "5e43930a-b1fe-46dd-83b7-f3f52c23a5ab",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
