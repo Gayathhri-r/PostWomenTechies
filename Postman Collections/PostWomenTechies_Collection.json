@@ -20119,7 +20119,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -26012,17 +26012,17 @@
 	],
 	"variable": [
 		{
-			"id": "aa50640f-112f-4041-a18a-5d5acafb4ae1",
+			"id": "be1ee1ff-eb1e-4e5c-bd1b-849e4a7565ee",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8ab81943-9bf9-47e3-92e6-25d7ce56c112",
+			"id": "54272cfb-c635-40da-8fd0-d7b7c060c110",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "da7f3d49-dc4e-4cad-8389-ae37b2677243",
+			"id": "4d80b7c5-aac6-4cd2-86b3-7adfb0d97510",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
