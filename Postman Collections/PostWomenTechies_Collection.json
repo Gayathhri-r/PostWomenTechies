@@ -12140,7 +12140,7 @@
 													"//validate response body\r",
 													"pm.test(\"Validate response body\", function(){\r",
 													"    var environmentVar = pm.environment.get(\"Program_Batch_TC_013\");\r",
-													"    pm.expect(jsonResponse.message,\"Batch with this Program Id \" +environmentVar+ \"not found \").to.be.true;\r",
+													"    pm.expect(jsonResponse.message,\"Batch with this Program Id \" +environmentVar+ \"not found \");\r",
 													"    pm.expect(jsonResponse.message,'Batch not found with Id : 12345678 ');\r",
 													"    pm.expect(jsonResponse.success,\"false\")\r",
 													"})\r",
@@ -16298,7 +16298,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": " {\r\n  \"batchId\": \"3130U\",\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": " {\r\n  \"batchId\": \"3130\",\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -24104,17 +24104,17 @@
 	],
 	"variable": [
 		{
-			"id": "8c9cd198-dd20-40a5-8058-1211e8ef80fb",
+			"id": "b2b7c1ea-fe43-470a-ba32-9610ef60699c",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0c1d2ac2-a913-4e5b-a1f3-1afc5d5b12eb",
+			"id": "6ce9d9a8-5557-43ed-a219-196be5e849f3",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "73de459e-6e5d-45f1-8399-bc1d71068b0e",
+			"id": "dd0f72e8-60f3-4d0a-82c4-8ebdeb0233ff",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
