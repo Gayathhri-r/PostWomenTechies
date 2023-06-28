@@ -803,6 +803,8 @@
 									"script": {
 										"id": "44adad33-b7ff-4550-b531-a0e9c49c7346",
 										"exec": [
+											"\r",
+											"\r",
 											"//validate status code \r",
 											"pm.test(\"Status code is 404\", function () {\r",
 											"    pm.response.to.have.status(404);\r",
@@ -817,6 +819,7 @@
 											"pm.test(\"Content-type is application/json\",function(){\r",
 											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
+											"\r",
 											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
@@ -835,47 +838,33 @@
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
-											"      \"type\": \"string\"\r",
+											"\r",
+											"        \r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"       \r",
 											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
-											"  ]\r",
+											"    \"required\" :[\r",
+											"        \r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\",\r",
+											"       \r",
+											"    ]\r",
 											"}\r",
+											"\r",
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											"})\r",
 											""
 										],
 										"type": "text/javascript"
@@ -19595,7 +19584,7 @@
 					"name": "DELETE Batch",
 					"item": [
 						{
-							"name": "Program_Batch_TC_087_Delete Batch",
+							"name": "Program_Batch_TC_084_Delete Batch",
 							"id": "6c821924-58c5-4cd7-820f-e09390604b8e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19607,7 +19596,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_88_Delete Multiple_programs_Batches",
+							"name": "Program_Batch_TC_85_Delete Multiple_programs_Batches",
 							"id": "c7e8d322-d163-45ed-8ab5-45cae0dcf338",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19619,7 +19608,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_089_Data_Driven_Testing_ Valid_Batches",
+							"name": "Program_Batch_TC_086_Data_Driven_Testing_ Valid_Batches",
 							"id": "7c54e59a-5b9a-4742-b837-cba3ffcfbf02",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19631,7 +19620,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_090_Multiple_Batches_same_Program",
+							"name": "Program_Batch_TC_087_Multiple_Batches_same_Program",
 							"id": "57906b35-8d12-48ef-bc44-710d5c1fc004",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19643,7 +19632,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_091_Invalid_Batch_Id",
+							"name": "Program_Batch_TC_088_Invalid_Batch_Id",
 							"id": "5d879718-2319-496d-ba53-e329644b431b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19655,7 +19644,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_092_Non_Existing_Batch_Id",
+							"name": "Program_Batch_TC_089_Non_Existing_Batch_Id",
 							"id": "be97324e-5e6c-43eb-9be8-a99908acfc77",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19667,7 +19656,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_093_Already_Deleted_Batch_Id",
+							"name": "Program_Batch_TC_090_Already_Deleted_Batch_Id",
 							"id": "b18e77bc-bf1c-42ea-9494-4cbe92a14ccf",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19679,7 +19668,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_094_Batch_Id_in_Special_characters",
+							"name": "Program_Batch_TC_091_Batch_Id_in_Special_characters",
 							"id": "cfa4cab5-7c7a-4b3a-ad94-00709d83e78b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19691,7 +19680,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_095_Batch_Id_in_Alphanumeric",
+							"name": "Program_Batch_TC_092_Batch_Id_in_Alphanumeric",
 							"id": "5e7099e9-9182-43c5-9062-6c414e310b07",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -19703,7 +19692,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_096_Without_Endpoints",
+							"name": "Program_Batch_TC_093_Without_Endpoints",
 							"id": "fdb5d7e7-2bad-4d70-8a9e-b08bf11c65c0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24706,17 +24695,17 @@
 	],
 	"variable": [
 		{
-			"id": "59f0d68e-5f40-42c0-b966-3b5c1d571fa7",
+			"id": "258af8b5-848b-4d1f-917d-b65ed6ea1db7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d6d77bc6-462b-46e2-af42-1823ec38f5a7",
+			"id": "59546914-db08-4050-9db2-ba6fb0c844e9",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2f53dfbf-3142-4c72-9e1c-da723149e103",
+			"id": "869872b2-2ab6-42fd-8d5f-99f365faf009",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
