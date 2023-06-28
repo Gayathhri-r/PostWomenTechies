@@ -800,13 +800,13 @@
 										"id": "44adad33-b7ff-4550-b531-a0e9c49c7346",
 										"exec": [
 											"//validate status code \r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
+											"pm.test(\"Status code is 500\", function () {\r",
+											"    pm.response.to.have.status(500);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
+											"    pm.response.to.have.status(\"Internal Server Error\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -819,8 +819,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,404);\r",
-											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"    pm.expect(jsonResponse.status,500);\r",
+											"    pm.expect(jsonResponse.error,\"Internal Server Error\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -895,12 +895,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -24691,17 +24691,17 @@
 	],
 	"variable": [
 		{
-			"id": "5ed7b4d3-de16-4008-9fbe-064c4573d3c1",
+			"id": "52796bab-1c4f-4ffb-9e79-397b18533fd8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "55057698-fe67-422d-99b8-24ed03608247",
+			"id": "0c987546-c528-4ec4-b455-58d4f1ea5eb7",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e2232cb0-bdde-4a52-8564-f7a33edffea4",
+			"id": "17afc13d-4a59-445f-a65d-396e22d43efc",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
