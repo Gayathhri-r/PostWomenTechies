@@ -16486,15 +16486,6 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"//random batchName serial number generation\r",
-											"\r",
-											"var random = Math.random().toString(36).substring(2);\r",
-											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
-											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
-											"/*var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
-											"pm.environment.set(\"batchDescription\",batchDescription)*/\r",
-											"\r",
-											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
@@ -25969,17 +25960,17 @@
 	],
 	"variable": [
 		{
-			"id": "b65a9a86-fb1d-475c-8bec-57919d2677a1",
+			"id": "9f204256-b296-4fd2-ad3c-c8597033b764",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e5ec975d-f105-48ac-a2d4-d2c6f8069fdc",
+			"id": "c2b594b4-76b2-49b4-8d06-34fdc6c0a018",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "9af7fe87-0f5e-40a8-bbbc-44ba0b404757",
+			"id": "29d64a32-e51a-4208-9c80-721d0c607628",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
