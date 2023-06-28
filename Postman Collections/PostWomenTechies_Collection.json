@@ -21176,6 +21176,20 @@
 						},
 						{
 							"name": "Bug-Get Alll staff",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c6137122-70dc-4ada-b728-6e9dc38763e7",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "a765ca13-6868-468c-8a06-158e1f4a053e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26582,17 +26596,17 @@
 	],
 	"variable": [
 		{
-			"id": "0b35fc07-f88e-4259-808d-9df3adc2250f",
+			"id": "87589bc2-3560-47a5-a11f-e065d4812bbd",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "26c72b68-cc10-4395-ac5d-552ed4638074",
+			"id": "6e8ae920-6cdf-48a5-875b-973deca34587",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "caadc1fa-bdc1-470e-95ac-ec9fbfdae7d0",
+			"id": "563aad58-fe15-4dc2-8a14-972c585ccf24",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
