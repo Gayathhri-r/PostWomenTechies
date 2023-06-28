@@ -20125,60 +20125,6 @@
 						},
 						{
 							"name": "Program_Batch_TC_089_Data_Driven_Testing_ Valid_Batches",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "062af5ae-86c9-4826-b357-c3cdaed97d2b",
-										"exec": [
-											"//validate status code\r",
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"    \r",
-											"//validate Response body\r",
-											"    \r",
-											"var jsonResponse = pm.response.json();\r",
-											"pm.test(\"Validate response body\",() => {\r",
-											"    pm.expect(response.message).to.eql(\"Batch deleted successfully\");\r",
-											"    \r",
-											"});\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
 							"id": "7c54e59a-5b9a-4742-b837-cba3ffcfbf02",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -20186,7 +20132,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -26066,17 +26012,17 @@
 	],
 	"variable": [
 		{
-			"id": "5ce4d93f-b3b3-4482-847e-616bcc0ef952",
+			"id": "bc4ade71-1735-461a-adec-d71cf5d077f9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b18a9746-ad16-481b-9fe0-73edd7c8a67a",
+			"id": "ee21f6cb-a4c8-4f0c-a7b3-40b79eb89eab",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "fd9228ed-bc5b-464f-8b67-ef04c5a55e62",
+			"id": "faf25770-25f3-4693-9f42-52e83402d4f8",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
