@@ -13,7 +13,7 @@
 					"name": "Post Program",
 					"item": [
 						{
-							"name": "Post Program-valid end points and base url",
+							"name": "Post Program-10_Program",
 							"event": [
 								{
 									"listen": "test",
@@ -7219,13 +7219,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}} /{{deletebyprogid}}/1122",
+									"raw": "{{baseURL}} /deletebypro0gid/{programId}",
 									"host": [
 										"{{baseURL}} "
 									],
 									"path": [
-										"{{deletebyprogid}}",
-										"1122"
+										"deletebypro0gid",
+										"{programId}"
 									],
 									"query": [
 										{
@@ -7579,38 +7579,22 @@
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
 											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+											"  \"title\": \"Generated schema for Root\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
-											""
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -7624,7 +7608,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=",
+									"raw": "{{baseURL}}/deletebyprogname/{programName}",
 									"host": [
 										"{{baseURL}}"
 									],
@@ -7644,10 +7628,6 @@
 											"value": "Active",
 											"type": "text",
 											"disabled": true
-										},
-										{
-											"key": "programName",
-											"value": ""
 										}
 									]
 								}
@@ -7692,39 +7672,24 @@
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"{\r",
+											"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+											"  \"title\": \"Generated schema for Root\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
 											"}\r",
-											"\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
-											""
+											" "
 										],
 										"type": "text/javascript"
 									}
@@ -7847,39 +7812,31 @@
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"{\r",
+											"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+											"  \"title\": \"Generated schema for Root\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
-											""
+											"    \"status\": {\r",
+											"      \"type\": \"number\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -7893,53 +7850,12 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programNamee}",
+									"raw": "{{baseURL}}/deletebyprognamee/{programName}",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"deletebyprogname",
-										"{programNamee}"
-									],
-									"query": [
-										{
-											"key": "programName",
-											"value": "Jun23-PostWomen Techies-SDET-101",
-											"type": "text",
-											"disabled": true
-										},
-										{
-											"key": " programStatus",
-											"value": "Active",
-											"type": "text",
-											"disabled": true
-										},
-										{
-											"key": "programName",
-											"value": "Jun23-PostWomenTechies-SDET-0101",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "DELETE by ProgramName_Invalid endpoint Copy",
-							"id": "399e17e7-2f8c-48c0-9011-7a40e9fe7db4",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=Jun23-PostWomenTechies-SDET-0101",
-									"host": [
-										"{{baseURL}}"
-									],
-									"path": [
-										"deletebyprogname",
+										"deletebyprognamee",
 										"{programName}"
 									],
 									"query": [
@@ -7958,7 +7874,7 @@
 										{
 											"key": "programName",
 											"value": "Jun23-PostWomenTechies-SDET-0101",
-											"type": "text"
+											"disabled": true
 										}
 									]
 								}
@@ -8049,7 +7965,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/deletebyprogname/{programName}",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foolms/deletebyprogname/{programName}",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -8057,7 +7973,7 @@
 										"com"
 									],
 									"path": [
-										"lms",
+										"foolms",
 										"deletebyprogname",
 										"{programName}"
 									],
@@ -26048,17 +25964,17 @@
 	],
 	"variable": [
 		{
-			"id": "b7c756c9-c488-49c8-a37e-c7ad32ddb42b",
+			"id": "21c18772-6da6-4981-be2f-67e0da4b72d3",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c1596bca-8dc1-4ff5-8c30-3a18ade7db74",
+			"id": "689e69d7-baab-4763-a3b5-2acabbdf3b25",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a25dc18d-8ebc-4318-8215-80c31dbc2130",
+			"id": "700cdc4b-a52e-4c8f-81fd-74854423cee1",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
