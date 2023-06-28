@@ -20159,75 +20159,6 @@
 						},
 						{
 							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT Copy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "546b60e5-6163-4497-b8ca-72310bcc3a90",
-										"exec": [
-											"//validate status code \r",
-											"pm.test(\"Status code is 405\", function () {\r",
-											"    pm.response.to.have.status(405);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
 							"id": "4047a270-ebd0-46b0-8e34-dc0f5e3b6e38",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -25183,17 +25114,17 @@
 	],
 	"variable": [
 		{
-			"id": "5c441451-165e-483d-8227-661c49d0230c",
+			"id": "705b854e-4220-4c84-b1c1-d57bfa4b6096",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a2b5d8eb-6533-4649-ac46-ded590b84273",
+			"id": "6c029226-e335-4d27-9b02-032699304ed9",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "9f1a0c7e-5eda-423d-9ef8-f70a0c254a79",
+			"id": "6c64abf8-430d-46f0-920f-3e8717e96a67",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
