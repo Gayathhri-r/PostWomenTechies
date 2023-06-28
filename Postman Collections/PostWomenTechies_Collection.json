@@ -12140,7 +12140,7 @@
 													"//validate response body\r",
 													"pm.test(\"Validate response body\", function(){\r",
 													"    var environmentVar = pm.environment.get(\"Program_Batch_TC_013\");\r",
-													"    pm.expect(jsonResponse.message,\"Batch with this Program Id \" +environmentVar+ \" not found \").to.be.true;\r",
+													"    pm.expect(jsonResponse.message,\"Batch with this Program Id \" +environmentVar+ \"  not found \").to.be.true;\r",
 													"    pm.expect(jsonResponse.message,'Batch not found with Id : 12345678 ');\r",
 													"    pm.expect(jsonResponse.success,\"false\")\r",
 													"})\r",
@@ -24104,17 +24104,17 @@
 	],
 	"variable": [
 		{
-			"id": "3c1626e4-815b-489f-a952-e3b9c87516f4",
+			"id": "cf5e3bb0-e302-4501-8724-0d95dd563255",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3d21d7b0-abfa-48cf-ba8a-a8c6e6ae9676",
+			"id": "c3e94adb-e5f8-43be-bc97-9226882bc0d6",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "fe1dce3e-601c-447a-971c-5b68ef87221d",
+			"id": "37681f46-5da9-437c-9e39-3f506f13b578",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
