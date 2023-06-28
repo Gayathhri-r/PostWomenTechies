@@ -20000,9 +20000,22 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT",
+							"id": "2f2d2e3c-578c-4bab-9fc9-8b392312a57f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24950,17 +24963,17 @@
 	],
 	"variable": [
 		{
-			"id": "f5e27a3a-7559-4c7b-922d-f269c07a174c",
+			"id": "dbdfbd61-a0d5-44be-9c18-dfd376a90ddb",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "30e025bb-6282-4540-a6cc-56076abcf57b",
+			"id": "96953114-5779-4cd5-b6ce-fa37ec03c924",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "76352ec4-b564-4d49-8e11-f6f5c683122d",
+			"id": "b4bce788-2c32-46aa-b5fd-82fa7a8c3bf4",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
