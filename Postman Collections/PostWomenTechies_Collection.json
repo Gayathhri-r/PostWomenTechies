@@ -16488,7 +16488,6 @@
 											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
-											"\r",
 											"    \r",
 											"//validate Response body\r",
 											"    pm.test(\"Validate Response body\", function() {\r",
@@ -16505,7 +16504,6 @@
 											"\r",
 											"\r",
 											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
 											"var schema =  \r",
 											" {\r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
@@ -25960,17 +25958,17 @@
 	],
 	"variable": [
 		{
-			"id": "9f204256-b296-4fd2-ad3c-c8597033b764",
+			"id": "38e68a01-f6fe-4e6d-8ed5-5581ba153603",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c2b594b4-76b2-49b4-8d06-34fdc6c0a018",
+			"id": "5888b6b0-53cf-49ed-8ab3-d9421ad4d9ab",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "29d64a32-e51a-4208-9c80-721d0c607628",
+			"id": "44d4a255-740a-4341-948d-33f49a64127a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
