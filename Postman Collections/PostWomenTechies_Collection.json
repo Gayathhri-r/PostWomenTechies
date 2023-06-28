@@ -247,7 +247,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\"programDescription\": \"Selenium_Java\",\r\n  \"programId\": 2299,\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0101_11\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n\"programDescription\": \"Selenium_Java\",\r\n  \"programId\": 2299,\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-3\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -381,7 +381,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-0101_12\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-4\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -515,7 +515,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-0101_13\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n    \r\n}\r\n\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-5\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n    \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -649,7 +649,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-0101_14\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n}\r\n",
+									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-6\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -783,7 +783,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-0101_15\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-7\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -917,7 +917,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-0101_16\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-8\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1051,7 +1051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-0101_17\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-9\",\r\n    \"programDescription\": \"Selenium_Java\",\r\n    \"programStatus\": \"Active\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1185,7 +1185,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium_java\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0102\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium_java\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0101-2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -21103,6 +21103,20 @@
 						},
 						{
 							"name": "Get User Info by userId",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d57753a1-496f-449e-9ef3-107aa627af48",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "065e9a5d-5acb-4187-ad16-3cea7a81a7ce",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26540,17 +26554,17 @@
 	],
 	"variable": [
 		{
-			"id": "ad1c9c98-7aec-4836-b3d1-182889aed079",
+			"id": "dce6caab-67a9-4bdb-af2e-b82f4b14a34b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c1bc70db-b858-4997-8bff-23676cc6a096",
+			"id": "0ee69a3b-9286-4c97-aaec-f8126511ee7f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4f214bcd-d954-4c81-8325-a1bb914ff011",
+			"id": "446aab72-8075-412d-90a0-69d26cf9efda",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
