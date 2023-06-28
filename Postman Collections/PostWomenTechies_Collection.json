@@ -21090,6 +21090,20 @@
 					"item": [
 						{
 							"name": "TC_Get All users",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "be669cff-529f-4df6-bc24-76982a2c45bb",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "09418cee-59d3-4c0b-bcd0-3711116cb727",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26554,17 +26568,17 @@
 	],
 	"variable": [
 		{
-			"id": "dce6caab-67a9-4bdb-af2e-b82f4b14a34b",
+			"id": "fa4ae328-0c8e-4ac5-95ed-d9ff033330c9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0ee69a3b-9286-4c97-aaec-f8126511ee7f",
+			"id": "b1e2663a-0651-4ae3-a643-15d6c4c82c7d",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "446aab72-8075-412d-90a0-69d26cf9efda",
+			"id": "032c40ef-862e-4119-b66a-41186b41d707",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
