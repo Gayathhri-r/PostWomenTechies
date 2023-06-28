@@ -5912,34 +5912,59 @@
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
+											"   \r",
 											"    \"programId\": {\r",
-											"      \"type\": \"integer\"\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
 											"    \"programName\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
 											"    \"programDescription\": {\r",
-											"      \"type\": \"null\"\r",
-											"    },\r",
-											"    \"programStatus\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
+											"    \"programStatus\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
 											"    \"creationTime\": {\r",
-											"      \"type\": \"null\"\r",
+											"      \"type\": \"integer\"\r",
 											"    },\r",
 											"    \"lastModTime\": {\r",
-											"      \"type\": \"null\"\r",
+											"      \"type\":  \"integer\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"    \"programId\",\r",
-											"    \"programName\",\r",
-											"    \"programDescription\",\r",
-											"    \"programStatus\",\r",
-											"    \"creationTime\",\r",
-											"    \"lastModTime\"\r",
+											"     \"programId\",\r",
+											"     \"programName\",\r",
+											"     \"programDescription\",\r",
+											"     \"programStatus\",\r",
+											"     \"creationTime\",\r",
+											"     \"lastModTime\",\r",
+											"\r",
 											"  ]\r",
 											"}\r",
+											"\r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"    \r",
+											"\r",
 											"\r",
 											"    \r",
 											"\r",
@@ -5958,7 +5983,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-0101_15\",\r\n    \"programDescription\": null,\r\n    \"programStatus\": \"Active\",\r\n    \"programId\": \"6635\"\r\n\r\n\r\n}\r\n\r\n",
+									"raw": "{\r\n  \"programDescription\": null,\r\n  \"programId\": 2299,\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0001\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5966,13 +5991,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{putprogram}}/6625",
+									"raw": "{{baseURL}}/{{putprogram}}/2298",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{putprogram}}",
-										"6625"
+										"2298"
 									],
 									"query": [
 										{
@@ -25821,17 +25846,17 @@
 	],
 	"variable": [
 		{
-			"id": "add45509-194c-4d6e-8523-fb3759e4d9ed",
+			"id": "98a04d5f-a1e5-42a1-832a-89b22fe926c9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "bd9d681e-3286-4592-b886-b47fdb35ad90",
+			"id": "fddaeb7a-04b9-41e7-bbc1-5ce7c64a2989",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e9bab57f-75c6-44f7-96ff-17dc559c1d1b",
+			"id": "54049302-e7b0-4a75-b46e-5da6f1d6e6af",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
