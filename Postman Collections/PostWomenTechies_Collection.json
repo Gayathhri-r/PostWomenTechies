@@ -19541,7 +19541,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
 											" })\r",
 											""
 										],
@@ -19626,7 +19626,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
 											" })\r",
 											""
 										],
@@ -19711,7 +19711,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
 											" })\r",
 											""
 										],
@@ -25175,17 +25175,17 @@
 	],
 	"variable": [
 		{
-			"id": "bff402e1-79da-4042-aa4d-f469f8e86b8c",
+			"id": "0806bb7a-5121-4e74-b6ec-893ec30e8fd9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "159be2a0-0307-4476-9813-e6e947d382f0",
+			"id": "4c003e06-3942-4ded-acf4-78fc9c52002c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "453e5b48-3454-4ccb-883a-6444385c1d55",
+			"id": "4f12260a-4447-4036-8cde-22558ae80c91",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
