@@ -3674,46 +3674,6 @@
 							"response": []
 						},
 						{
-							"name": "PUT Program(UpdateByProgramName)-External File",
-							"id": "416732d3-d27c-4203-b5f6-e7293520ce28",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
-									"host": [
-										"{{baseURL}}"
-									],
-									"path": [
-										"{{program}}",
-										"Jun23-PostWomenTechies-SDET-0001"
-									],
-									"query": [
-										{
-											"key": "programName",
-											"value": "Jun23-PostWomen Techies-SDET-102",
-											"type": "text",
-											"disabled": true
-										},
-										{
-											"key": " programStatus",
-											"value": "Active",
-											"type": "text",
-											"disabled": true
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "PUT Program(UpdateByProgramName)-ProgramName Null",
 							"event": [
 								{
@@ -20016,7 +19976,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -20029,7 +19989,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24990,17 +24950,17 @@
 	],
 	"variable": [
 		{
-			"id": "86b59d75-0a9a-4412-9d73-e70e8621e2df",
+			"id": "f5e27a3a-7559-4c7b-922d-f269c07a174c",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3548af35-336c-4ffe-9cf7-f783f2a98278",
+			"id": "30e025bb-6282-4540-a6cc-56076abcf57b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "7db4b86b-00fc-4c0f-9585-ec477679ecd5",
+			"id": "76352ec4-b564-4d49-8e11-f6f5c683122d",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
