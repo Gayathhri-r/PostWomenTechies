@@ -1480,11 +1480,8 @@
 									"script": {
 										"id": "d21f27ef-c505-49da-9851-5768bed1f325",
 										"exec": [
-											"console.log(\"Due to application error, response body validation cannot be done\")\r",
-											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
-											"\r",
 											"//validate status code \r",
-											"/*pm.test(\"Status code is 404\", function () {\r",
+											"pm.test(\"Status code is 404\", function () {\r",
 											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
@@ -1497,7 +1494,6 @@
 											"pm.test(\"Content-type is application/json\",function(){\r",
 											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
-											"\r",
 											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
@@ -1540,7 +1536,22 @@
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
 											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })*/\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
 											""
 										],
 										"type": "text/javascript"
@@ -1564,7 +1575,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foo/lms/{{{{saveprogram}}}}",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/foo/lms/saveprogram",
 									"protocol": "https",
 									"host": [
 										"lms-api-hackathon-june2023-930a8b0f895d",
@@ -1574,7 +1585,7 @@
 									"path": [
 										"foo",
 										"lms",
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -24710,17 +24721,17 @@
 	],
 	"variable": [
 		{
-			"id": "8824c9d3-bd60-40c5-8073-28ea59edcfc1",
+			"id": "d55533e3-f4f3-4367-afc6-930d750868f1",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ca4cb5fb-e1fd-4197-9acc-0e9026bd5627",
+			"id": "ba863835-2d97-44f1-9227-1c3428ad9046",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "03280b45-5a0e-48a2-82fc-31b9905d1d1a",
+			"id": "6c0f8212-b712-4991-a15d-99a3c59bc3d1",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
