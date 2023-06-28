@@ -19304,7 +19304,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_066_Invalid_Request_GET_POST",
+							"name": "Program_Batch_TC_066_Invalid_Request_GET_POST_DELETE",
 							"event": [
 								{
 									"listen": "test",
@@ -24695,17 +24695,17 @@
 	],
 	"variable": [
 		{
-			"id": "85991f9f-7e7c-40c1-98d1-dcbf90bf53b0",
+			"id": "1113c9dd-2dbb-4d91-a8e8-539802ee58bc",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fa3778fe-5468-4d16-9b34-923db68cf283",
+			"id": "c66c1993-b55b-4630-baaa-042a7be28924",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e3f24f53-51ad-4637-8e07-9ed7aa2986c9",
+			"id": "0da4e5e6-eab4-460e-972c-1e7c6bbf7fde",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
