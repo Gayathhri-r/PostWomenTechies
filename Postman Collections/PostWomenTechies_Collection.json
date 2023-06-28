@@ -19747,14 +19747,16 @@
 									"script": {
 										"id": "f50ad158-e651-43cc-993e-2e78741d5528",
 										"exec": [
+											"\r",
+											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 405\", function () {\r",
-											"    pm.response.to.have.status(405);\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -19768,8 +19770,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -19804,7 +19806,8 @@
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
 											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
+											" })\r",
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -25181,17 +25184,17 @@
 	],
 	"variable": [
 		{
-			"id": "014e519a-a9bf-4f3e-87d8-274ec1a4efbd",
+			"id": "7ce2ea47-80d2-42c8-929a-533cca70f683",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6bbf56d9-1442-457e-b2e6-78f1bf15cea2",
+			"id": "e728d5c1-394d-4613-a124-b327de5646ff",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5a6e8a3e-7081-488c-8e10-18ce49389a86",
+			"id": "e635606a-42de-434d-ab28-dff155355969",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
