@@ -1003,12 +1003,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -1129,12 +1129,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -1156,6 +1156,74 @@
 						},
 						{
 							"name": "Post Program-Empty payload/request body",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4ddb5d5e-4c9e-4ce9-8ac8-a10ce315a632",
+										"exec": [
+											"//Valiate status Code\r",
+											"pm.test(\"Status code is 415\", function () {\r",
+											"    pm.response.to.have.status(415);\r",
+											"});\r",
+											"\r",
+											"//Validate status message\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Unsupported Media Type\")\r",
+											"});\r",
+											"\r",
+											"//Validate response header - Content-Type\r",
+											"pm.test(\"Content-Type is application/json\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//Validate response body\r",
+											"    pm.test(\"Validate response body\", function(){\r",
+											"       \r",
+											"        pm.expect(jsonResponse.timestamp,pm.environment.get(\"2023-06-28T04:19:11.863+00:00\"));\r",
+											"        pm.expect(jsonResponse.status,pm.environment.get(415));\r",
+											"        pm.expect(jsonResponse.error,pm.environment.get(\"Unsupported Media Type\"));\r",
+											"       \r",
+											"    })\r",
+											"\r",
+											"//Validate response json Schema\r",
+											"//using json to json Schema converter\r",
+											"\r",
+											"var schema=\r",
+											"\r",
+											"    {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
+											"  \"title\": \"Generated schema for Root\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"number\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "2bf4beb7-bfae-4afb-9437-98566ceaa88c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1173,12 +1241,12 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{{{saveprogram}}}}",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
-										"{{{{saveprogram}}}}"
+										"saveprogram"
 									],
 									"query": [
 										{
@@ -24681,17 +24749,17 @@
 	],
 	"variable": [
 		{
-			"id": "02917557-c4ff-4155-94b9-c7e9e618b769",
+			"id": "955f36c0-64f5-46ae-ae83-51d70757f5f9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a07f4bc3-6d6a-439f-b8b1-87d0bfe9df4b",
+			"id": "08c6e975-bab3-4f99-ab0e-0597f1d350c5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "f905aa45-34af-484a-a915-bdc9ffe0e1e6",
+			"id": "0a60168c-3116-4c13-aca7-499b8bf5caf8",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
