@@ -3890,7 +3890,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"{{Selenium}}\",\r\n  \"programName\": \"{{Jun23-PostWomenTechies-SDET-0102}}\",\r\n  \"programStatus\":\"{{Active}}\"\r\n}\r\n\r\n\r\n",
+									"raw": "{\r\n  \"programDescription\": \"{{Selenium}}\",\r\n  \"programName\": \"{{Jun23-PostWomenTechies-SDET-0101}}\",\r\n  \"programStatus\":\"{{Active}}\"\r\n}\r\n\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3898,13 +3898,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{program}}/\"Jun23-PostWomenTechies-SDET-0102\"",
+									"raw": "{{baseURL}}/{{program}}/\"Jun23-PostWomenTechies-SDET-0101\"",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{program}}",
-										"\"Jun23-PostWomenTechies-SDET-0102\""
+										"\"Jun23-PostWomenTechies-SDET-0101\""
 									],
 									"query": [
 										{
@@ -19378,7 +19378,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
 											" })\r",
 											""
 										],
@@ -25175,17 +25175,17 @@
 	],
 	"variable": [
 		{
-			"id": "698d3630-cab6-4e3d-a966-ce54ecd0cc06",
+			"id": "7becb4bd-107c-4a6c-b646-3a1366979b05",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5ef4d65f-b3ce-454e-aa9a-cc1019310776",
+			"id": "7093a243-4f9d-4872-b0a7-321a7b1b6fd8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a79876af-4ee7-4c52-8c84-11c3c7157e32",
+			"id": "84f5210c-1607-4a5c-b29b-0f53e5cf15e6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
