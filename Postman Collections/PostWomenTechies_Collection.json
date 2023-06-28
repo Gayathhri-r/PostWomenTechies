@@ -16147,7 +16147,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_058_Data_Driven_Testing_ Multiple Batches",
+							"name": "Program_Batch_TC_058_Data_Driven_Testing_Valid_Batches",
 							"id": "9bebc4bd-e5c3-48ad-89dd-89679b5ef479",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24391,17 +24391,17 @@
 	],
 	"variable": [
 		{
-			"id": "e6d2196c-b986-4c82-89d3-370faf3fc18f",
+			"id": "e4c0084e-dd0b-4b54-8e44-1f00746aef40",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d790d033-32b9-4103-94b7-170934fafc07",
+			"id": "87ca4ec7-29cf-4058-9e36-6c9a91b9009e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0b182851-e603-4700-8b9d-1c999d5b0995",
+			"id": "6bc4ddf9-2003-4453-8711-a21cfbbc9b9e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
