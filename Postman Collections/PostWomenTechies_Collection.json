@@ -7323,6 +7323,36 @@
 						},
 						{
 							"name": "DELETE by ProgramId-Invalid Base Url",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "dcb115f0-8bf1-43e1-9aef-f4b46bcf6c1c",
+										"exec": [
+											"console.log(\"Due to application error displays XML code, response body validation cannot be done\");\r",
+											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.expect(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "33af7f6c-581d-4eea-b29c-e2f9d2754b67",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26056,17 +26086,17 @@
 	],
 	"variable": [
 		{
-			"id": "8f51db31-69c8-4ec7-8f60-7e8834722d1d",
+			"id": "70decba2-1791-4c13-8ce3-a01c0187c5c9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "23b1dcdc-ef98-463c-b940-dfd36ed6745b",
+			"id": "7bf4e6ef-5f65-452b-be97-4081ca712258",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "3ae4153f-bab6-4d77-bad5-34d0b207befa",
+			"id": "e7f47600-ed98-4096-bd12-3b3626b42d91",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
