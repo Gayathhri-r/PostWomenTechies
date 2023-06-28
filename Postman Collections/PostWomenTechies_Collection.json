@@ -21203,6 +21203,20 @@
 						},
 						{
 							"name": "Get All users with invalid endpoint",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6356b3ab-056c-4c46-abe2-3740aca1c1ea",
+										"exec": [
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "4d1c5b17-f8c3-4754-9956-48f95c9bd2e8",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26596,17 +26610,17 @@
 	],
 	"variable": [
 		{
-			"id": "87589bc2-3560-47a5-a11f-e065d4812bbd",
+			"id": "f7ee8d78-aefa-46e7-86aa-33ee51c75132",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6e8ae920-6cdf-48a5-875b-973deca34587",
+			"id": "f51f875e-3776-4b83-81bf-70bb3a3220ef",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "563aad58-fe15-4dc2-8a14-972c585ccf24",
+			"id": "1b598268-06ec-4180-8f50-8f24034be473",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
