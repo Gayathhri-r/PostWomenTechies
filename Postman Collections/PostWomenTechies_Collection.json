@@ -3674,6 +3674,46 @@
 							"response": []
 						},
 						{
+							"name": "PUT Program(UpdateByProgramName)-External File",
+							"id": "416732d3-d27c-4203-b5f6-e7293520ce28",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{baseURL}}/{{program}}/Jun23-PostWomenTechies-SDET-0001",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"{{program}}",
+										"Jun23-PostWomenTechies-SDET-0001"
+									],
+									"query": [
+										{
+											"key": "programName",
+											"value": "Jun23-PostWomen Techies-SDET-102",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": " programStatus",
+											"value": "Active",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "PUT Program(UpdateByProgramName)-ProgramName Null",
 							"event": [
 								{
@@ -19989,7 +20029,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -20000,22 +20040,9 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
-							},
-							"response": []
-						},
-						{
-							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT",
-							"id": "2f2d2e3c-578c-4bab-9fc9-8b392312a57f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{Baseurl}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -24963,17 +24990,17 @@
 	],
 	"variable": [
 		{
-			"id": "f7084def-f28b-4c93-bcb7-a821134339c2",
+			"id": "994cdd06-a326-418e-9262-4a3a3c11a281",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "01c02bad-4e9a-4431-bb6d-ed2cc787f3bd",
+			"id": "fe7196ac-59b5-4752-aa10-b1b98a07096d",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "352f168e-8d00-46b9-9b8e-047b6b1d1f77",
+			"id": "aeacebeb-cded-4e9d-837c-0b27904cb827",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
