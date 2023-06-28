@@ -6546,40 +6546,21 @@
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
 											" {\r",
-											"     \r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"\r",
-											"        \r",
-											"        \"programName\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },    \r",
-											"        \"programDescription\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"        \"programStatus\": {\r",
-											"            \"type\": \"string\"\r",
-											"        },\r",
-											"       \r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"required\" :[\r",
-											"        \r",
-											"        \"programName\",\r",
-											"        \"programDescription\",\r",
-											"        \"programStatus\",\r",
-											"       \r",
-											"    ]\r",
-											"}\r",
-											"\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"    //using tv4 validatroty library and validate method\r",
-											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											"})\r",
-											"\r",
-											"\r",
-											""
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -6602,13 +6583,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{deletebyprogid}}/programName?programID",
+									"raw": "{{baseURL}}/{{deletebyprogid}}/2307",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{deletebyprogid}}",
-										"programName"
+										"2307"
 									],
 									"query": [
 										{
@@ -6622,11 +6603,6 @@
 											"value": "Active",
 											"type": "text",
 											"disabled": true
-										},
-										{
-											"key": "programID",
-											"value": null,
-											"type": "text"
 										}
 									]
 								}
@@ -26054,17 +26030,17 @@
 	],
 	"variable": [
 		{
-			"id": "77ba0fbe-a265-4b4a-9a5a-3bd8aa398f07",
+			"id": "5da4f925-8245-42d1-aee1-422f74036def",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "564a5c96-b754-44dd-b544-8f7d4d502316",
+			"id": "f3526928-a61b-409e-994e-f93cc12d9a71",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4e464e36-4c82-4910-b810-3cacbc55da20",
+			"id": "902017a2-fbc8-4dd5-b9a1-4a8cc8c10406",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
