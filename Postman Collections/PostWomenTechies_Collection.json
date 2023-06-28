@@ -6710,7 +6710,7 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=Jun23-PostWomenTechies-SDET-0101",
+									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=Jun23-PostWomenTechies-SDET-0102",
 									"host": [
 										"{{baseURL}}"
 									],
@@ -6733,8 +6733,7 @@
 										},
 										{
 											"key": "programName",
-											"value": "Jun23-PostWomenTechies-SDET-0101",
-											"type": "text"
+											"value": "Jun23-PostWomenTechies-SDET-0102"
 										}
 									]
 								}
@@ -24622,17 +24621,17 @@
 	],
 	"variable": [
 		{
-			"id": "52592916-d171-4e1f-aa3a-32a8f25a45bc",
+			"id": "cce123af-e1ef-4b00-877c-c1ca3fd78539",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "9c64772a-b3f8-426e-956c-90d9f1c6e40c",
+			"id": "2aacfce5-8135-475d-9541-f2a78262b5e2",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ec2dd187-243c-4d01-b8fa-42994cdbb792",
+			"id": "99ffc2aa-54f4-450d-adfd-eff5f57a0bac",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
