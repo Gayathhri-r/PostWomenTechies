@@ -146,7 +146,7 @@
 							"response": []
 						},
 						{
-							"name": "Post Program-valid end points and base url _2nd program",
+							"name": "Post Program-2nd program_valid end points and base url",
 							"event": [
 								{
 									"listen": "test",
@@ -6743,13 +6743,13 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=Jun23-PostWomenTechies-SDET-0102",
+									"raw": "{{baseURL}}/deletebyprogname/Jun23-PostWomenTechies-SDET-0102",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"deletebyprogname",
-										"{programName}"
+										"Jun23-PostWomenTechies-SDET-0102"
 									],
 									"query": [
 										{
@@ -6766,7 +6766,8 @@
 										},
 										{
 											"key": "programName",
-											"value": "Jun23-PostWomenTechies-SDET-0102"
+											"value": "Jun23-PostWomenTechies-SDET-0102",
+											"disabled": true
 										}
 									]
 								}
@@ -24694,17 +24695,17 @@
 	],
 	"variable": [
 		{
-			"id": "3cd8bbdd-5df8-4579-aeac-dbf7ec6bc6cd",
+			"id": "38b43e26-bdf4-47a2-a922-e412c06205b9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a0423ff3-795d-476d-a6ea-40aaf0275096",
+			"id": "b1de7ca2-82f6-4562-b4aa-b4d4ac93e229",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "def8112b-ee21-4e27-9edc-a78995023197",
+			"id": "833cd2a8-1667-4fc2-985e-89cd9209405f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
