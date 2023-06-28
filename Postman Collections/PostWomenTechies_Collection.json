@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "35867b11-1125-42b3-a0a2-f793ee689912",
 		"name": "Team18-PostWomen-Techies-API-Hackathon-2023",
+		"description": "<div class=\"postman-run-button\"\ndata-postman-action=\"collection/fork\"\ndata-postman-visibility=\"private\"\ndata-postman-var-1=\"28069049-35867b11-1125-42b3-a0a2-f793ee689912\"\ndata-postman-collection-url=\"entityId=28069049-35867b11-1125-42b3-a0a2-f793ee689912&entityType=collection&workspaceId=75bf3eff-9272-4023-8ada-ff5931da7a35\"></div>\n<script type=\"text/javascript\">\n  (function (p,o,s,t,m,a,n) {\n    !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });\n    !o.getElementById(s+t) && o.getElementsByTagName(\"head\")[0].appendChild((\n      (n = o.createElement(\"script\")),\n      (n.id = s+t), (n.async = 1), (n.src = m), n\n    ));\n  }(window, document, \"_pm\", \"PostmanRunObject\", \"https://run.pstmn.io/button.js\"));\n</script>",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -5911,59 +5912,34 @@
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"   \r",
 											"    \"programId\": {\r",
-											"      \"type\": \"string\"\r",
+											"      \"type\": \"integer\"\r",
 											"    },\r",
 											"    \"programName\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
 											"    \"programDescription\": {\r",
-											"      \"type\": \"string\"\r",
+											"      \"type\": \"null\"\r",
 											"    },\r",
 											"    \"programStatus\": {\r",
-											"      \"type\": \"integer\"\r",
+											"      \"type\": \"string\"\r",
 											"    },\r",
 											"    \"creationTime\": {\r",
-											"      \"type\": \"integer\"\r",
+											"      \"type\": \"null\"\r",
 											"    },\r",
 											"    \"lastModTime\": {\r",
-											"      \"type\":  \"integer\"\r",
+											"      \"type\": \"null\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"     \"programId\",\r",
-											"     \"programName\",\r",
-											"     \"programDescription\",\r",
-											"     \"programStatus\",\r",
-											"     \"creationTime\",\r",
-											"     \"lastModTime\",\r",
-											"\r",
+											"    \"programId\",\r",
+											"    \"programName\",\r",
+											"    \"programDescription\",\r",
+											"    \"programStatus\",\r",
+											"    \"creationTime\",\r",
+											"    \"lastModTime\"\r",
 											"  ]\r",
 											"}\r",
-											"\r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"    \r",
-											"\r",
 											"\r",
 											"    \r",
 											"\r",
@@ -5982,7 +5958,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": null,\r\n  \"programId\": 2299,\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-0001\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n\r\n",
+									"raw": "{\r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-0101_15\",\r\n    \"programDescription\": null,\r\n    \"programStatus\": \"Active\",\r\n    \"programId\": \"6635\"\r\n\r\n\r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5990,13 +5966,13 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/{{putprogram}}/2298",
+									"raw": "{{baseURL}}/{{putprogram}}/6625",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"{{putprogram}}",
-										"2298"
+										"6625"
 									],
 									"query": [
 										{
@@ -25845,17 +25821,17 @@
 	],
 	"variable": [
 		{
-			"id": "15166b9a-c7bf-4cc4-a8aa-9fa09bd330a2",
+			"id": "488520a3-77ef-40b5-a774-0b11370c5621",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "69c31ce7-29df-49ad-851d-af9549e68f4a",
+			"id": "b92c675c-52a3-47e5-b5fb-81c50e200112",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1516e21c-c927-46b6-8851-34a398f9e17e",
+			"id": "0f4fe59e-66a1-4b71-b8a0-d197b92a1da7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
