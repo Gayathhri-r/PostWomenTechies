@@ -21145,6 +21145,20 @@
 						},
 						{
 							"name": "Get all users with roles",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "efb76cd3-3841-48ca-8c77-2155ec0a0ab8",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "b8b7f922-a65a-4002-b119-189d7e9841fb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26568,17 +26582,17 @@
 	],
 	"variable": [
 		{
-			"id": "fa4ae328-0c8e-4ac5-95ed-d9ff033330c9",
+			"id": "0b35fc07-f88e-4259-808d-9df3adc2250f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b1e2663a-0651-4ae3-a643-15d6c4c82c7d",
+			"id": "26c72b68-cc10-4395-ac5d-552ed4638074",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "032c40ef-862e-4119-b66a-41186b41d707",
+			"id": "caadc1fa-bdc1-470e-95ac-ec9fbfdae7d0",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
