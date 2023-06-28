@@ -7882,47 +7882,6 @@
 							"response": []
 						},
 						{
-							"name": "DELETE by ProgramName_Invalid endpoint Copy",
-							"id": "399e17e7-2f8c-48c0-9011-7a40e9fe7db4",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/{programName}?programName=Jun23-PostWomenTechies-SDET-0101",
-									"host": [
-										"{{baseURL}}"
-									],
-									"path": [
-										"deletebyprogname",
-										"{programName}"
-									],
-									"query": [
-										{
-											"key": "programName",
-											"value": "Jun23-PostWomen Techies-SDET-101",
-											"type": "text",
-											"disabled": true
-										},
-										{
-											"key": " programStatus",
-											"value": "Active",
-											"type": "text",
-											"disabled": true
-										},
-										{
-											"key": "programName",
-											"value": "Jun23-PostWomenTechies-SDET-0101",
-											"type": "text"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "DELETE by ProgramName_invalid BaseUrl",
 							"event": [
 								{
@@ -26005,17 +25964,17 @@
 	],
 	"variable": [
 		{
-			"id": "adae29cb-e884-40be-8eb2-a94b35c99eb8",
+			"id": "5e05c084-6204-48e5-9b25-0e64ffad7fe0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a27c60ff-fed3-4b55-b186-470e78fbcfaf",
+			"id": "034a6b66-5871-49b8-8418-71fbbb420fb2",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "7abe4eef-2109-49e2-b5e4-f8e8c3025d49",
+			"id": "03775f26-4051-420c-a810-0f532eaf46c0",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
