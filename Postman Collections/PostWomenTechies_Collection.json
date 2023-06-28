@@ -16110,6 +16110,117 @@
 						},
 						{
 							"name": "Program_Batch_TC_061_Non-Existing_Batch_Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "77d3d028-f310-4b78-8f1f-546e274064c4",
+										"exec": [
+											"//validate status code\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//random batchName serial number generation\r",
+											"\r",
+											"var random = Math.random().toString(36).substring(2);\r",
+											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
+											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
+											"/*var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
+											"pm.environment.set(\"batchDescription\",batchDescription)*/\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"    \r",
+											"//validate Response body\r",
+											"    pm.test(\"Validate Response body\", function() {\r",
+											"        console.log(jsonResponse.batchId);\r",
+											"        console.log(jsonResponse.batchName);\r",
+											"        console.log(jsonResponse.batchDescription);\r",
+											"        pm.expect(jsonResponse.batchId).to.not.eql(123123);\r",
+											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
+											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
+											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
+											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
+											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
+											"})\r",
+											"\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =  \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"batchId\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"batchName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"batchDescription\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"batchStatus\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"batchNoOfClasses\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"programId\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"programName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"batchId\",\r",
+											"    \"batchName\",\r",
+											"    \"batchDescription\",\r",
+											"    \"batchStatus\",\r",
+											"    \"batchNoOfClasses\",\r",
+											"    \"programId\",\r",
+											"    \"programName\"\r",
+											"  ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validate Schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema))\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "5f446f4e-4dc1-43fd-97e9-aeb7a4e7729d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -16117,6 +16228,15 @@
 							"request": {
 								"method": "PUT",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n  \"batchId\": \"123123\",\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
 							},
 							"response": []
@@ -24104,17 +24224,17 @@
 	],
 	"variable": [
 		{
-			"id": "b2b7c1ea-fe43-470a-ba32-9610ef60699c",
+			"id": "1b711dde-9f1a-4e91-83c8-86515a87d99c",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6ce9d9a8-5557-43ed-a219-196be5e849f3",
+			"id": "03d571cc-27e8-49c8-8609-f9b0d4644522",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "dd0f72e8-60f3-4d0a-82c4-8ebdeb0233ff",
+			"id": "0496f0b3-464e-4c95-98a7-fdeea47daf76",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
