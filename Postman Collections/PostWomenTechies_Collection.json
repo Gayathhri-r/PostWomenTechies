@@ -6954,7 +6954,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n\r\n",
+									"raw": "{\r\n   \"programId\": \"{{6703}}\"\r\n    \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6962,7 +6962,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}} /{{deletebyprogid}}/{programId}?ProgramID=11",
+									"raw": "{{baseURL}} /{{deletebyprogid}}/{programId}",
 									"host": [
 										"{{baseURL}} "
 									],
@@ -6982,10 +6982,6 @@
 											"value": "Active",
 											"type": "text",
 											"disabled": true
-										},
-										{
-											"key": "ProgramID",
-											"value": "11"
 										}
 									]
 								}
@@ -25964,17 +25960,17 @@
 	],
 	"variable": [
 		{
-			"id": "54f66e2b-d620-47e8-8863-71edce72f120",
+			"id": "e85381ae-8c4a-437a-a9dd-b3c4685048a9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "28aa1a25-ede9-4952-b585-2542b5b54e24",
+			"id": "2174e7de-6840-4186-ab6e-642ad89bbba7",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "bbb54b23-15b5-4feb-8992-771a1c7df67c",
+			"id": "ae45b162-690c-4401-8080-f862a5179a03",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
