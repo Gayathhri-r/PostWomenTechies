@@ -2694,6 +2694,268 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Post Program-Empty  Program Status",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "45169673-d2c0-4d3d-b034-676929078e50",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 500\", function () {\r",
+											"    pm.response.to.have.status(500);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Internal Server Error\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,500);\r",
+											"    pm.expect(jsonResponse.error,\"Internal Server Error\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "4086a2c3-2a05-4bee-b6df-bdb7831e0513",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-P2\",\r\n   \"programStatus\":\"\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/saveprogram",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"saveprogram"
+									],
+									"query": [
+										{
+											"key": "programName",
+											"value": "Jun23-PostWomen Techies-SDET-101",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": " programStatus",
+											"value": "Active",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Post Program-Empty Program Description",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "99585ce8-7151-4f8e-bb18-0829415fe3dd",
+										"exec": [
+											"//Valiate status Code\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
+											"});\r",
+											"\r",
+											"//Validate status message\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Created\")\r",
+											"});\r",
+											"\r",
+											"//Validate response header - Content-Type\r",
+											"pm.test(\"Content-Type is application/json\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//Validate response body\r",
+											"    pm.test(\"Validate response body\", function(){\r",
+											"        \r",
+											"        \r",
+											"        pm.expect(jsonResponse.programName,pm.environment.get(\"Jun23-PostWomenTechies-P5_0\"));\r",
+											"        pm.expect(jsonResponse.programDescription,pm.environment.get(\"selenium\"));\r",
+											"       // pm.expect(jsonResponse.programStatus,pm.environment.get(\"Active\"));\r",
+											"      \r",
+											"      \r",
+											"    })\r",
+											"\r",
+											"//Validate response json Schema\r",
+											"//using json to json Schema converter\r",
+											"\r",
+											"var schema=\r",
+											"{\r",
+											"    \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"    \"Type\":\"Object\",\r",
+											"    \"properties\": {\r",
+											"        \r",
+											"        \r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"     \r",
+											"     \r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        \r",
+											"        \r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\"\r",
+											"       \r",
+											"       \r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse[0],schema)).to.be.true\r",
+											"})\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"    \r",
+											"\r",
+											"\r",
+											"    \r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "e3252f53-2f4c-4502-a1de-c7cb74fac445",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-101-9\",\r\n   \"programStatus\": \"Active\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/saveprogram",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"saveprogram"
+									],
+									"query": [
+										{
+											"key": "programName",
+											"value": "Jun23-PostWomen Techies-SDET-101",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": " programStatus",
+											"value": "Active",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "3c6d017f-f65f-4a15-8f84-47a9be280a8b"
@@ -26261,17 +26523,17 @@
 	],
 	"variable": [
 		{
-			"id": "f6bcb866-5231-4158-845a-b3a4092d95eb",
+			"id": "d9df7398-ff62-4090-a1aa-6fced51003b2",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "4f11884f-b0fd-4b15-ac20-73204b549608",
+			"id": "58e0f346-6c56-496a-b7fd-c58c8b273189",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "09edbfd9-535f-4a9c-968c-e1723228de46",
+			"id": "8d7d206c-3be7-480a-b2c7-76ad7efba84b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
