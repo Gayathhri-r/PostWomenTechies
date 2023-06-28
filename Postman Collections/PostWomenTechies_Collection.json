@@ -1174,16 +1174,15 @@
 											"\r",
 											"var schema=\r",
 											"\r",
-											"    {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\r",
-											"  \"title\": \"Generated schema for Root\",\r",
+											"  {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
 											"    \"timestamp\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
 											"    \"status\": {\r",
-											"      \"type\": \"number\"\r",
+											"      \"type\": \"integer\"\r",
 											"    },\r",
 											"    \"error\": {\r",
 											"      \"type\": \"string\"\r",
@@ -24729,17 +24728,17 @@
 	],
 	"variable": [
 		{
-			"id": "27f0fb75-698f-4683-b67a-9cf0df526089",
+			"id": "48f795b8-4d48-4e73-a81f-91a0a5fefb67",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "bf02f74f-9678-4204-a45a-45e0d383ff70",
+			"id": "715339f5-0fa9-4e5e-84fe-9b5a3f9ef421",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "71fe3bad-a4ab-4cc1-87f9-d9af74682912",
+			"id": "6c9199f6-c3b2-463d-b332-b76f211c22c3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
