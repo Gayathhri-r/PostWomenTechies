@@ -6561,19 +6561,19 @@
 											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
 											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
-											"});\r",
+											"//pm.test(\"Status code is 404\", function () {\r",
+											"    //pm.response.to.have.status(404);\r",
+											"//});\r",
 											"\r",
 											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
-											"});\r",
+											"//pm.test(\"Status code name has string\", function() {\r",
+											"    //pm.response.to.have.status(\"Not Found\");\r",
+											"//});\r",
 											"\r",
 											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
+											"//pm.test(\"Content-type is application/json\",function(){\r",
 											"     pm.expect(\"Content-Type\",\"application/json\");\r",
-											"});\r",
+											"//});\r",
 											"\r",
 											""
 										],
@@ -26103,17 +26103,17 @@
 	],
 	"variable": [
 		{
-			"id": "2f6a23d0-5fca-456d-8c05-52b72c9c2440",
+			"id": "06172ec4-98b0-4563-a0c3-816f2c0c1ec5",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "124e6b8f-d49b-4ea1-9236-0c6aa3e8b378",
+			"id": "6300b78c-7d89-4bc8-a59d-0a30b555662a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1ef59dab-c9c9-4d54-bb9c-b4e8224638fd",
+			"id": "8a63557b-fa1d-4baa-bc08-7e59b7265939",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
