@@ -19785,6 +19785,78 @@
 						},
 						{
 							"name": "Program_Batch_TC_094_Batch_Id_in_Special_characters",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "81c106f0-036e-4634-94b5-6be353c13962",
+										"exec": [
+											"\r",
+											"\r",
+											"//validate status code \r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "cfa4cab5-7c7a-4b3a-ad94-00709d83e78b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -24805,17 +24877,17 @@
 	],
 	"variable": [
 		{
-			"id": "7313072c-d58a-4eb6-91d3-bc4470b66951",
+			"id": "4b1f6b95-092c-40ed-88f1-9efd2bacc5c7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0d731418-6c3b-4197-8bd2-7393d341fedf",
+			"id": "6647ce6a-3728-4603-bdae-cf371178d6e0",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a388380e-1fe5-44ba-b606-a0cdab722a1f",
+			"id": "01c3777a-a8e2-4d0e-95a1-6b9454994d9b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
