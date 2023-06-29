@@ -12272,7 +12272,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_033_34_35Create Batch_data_driven",
+							"name": "Program_Batch_TC_033_34_54_35Create Batch_data_driven",
 							"event": [
 								{
 									"listen": "test",
@@ -15061,129 +15061,6 @@
 									"body": "{\n    \"timestamp\": \"2023-06-23T19:13:06.410+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/lms/batche\"\n}"
 								}
 							]
-						},
-						{
-							"name": "Program_Batch_TC_054_Same_batch_multiple_program",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "17571bda-3a44-4517-9529-b54308f1c591",
-										"exec": [
-											"//validate status code\r",
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Created\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"var id = jsonResponse.batchId;\r",
-											"console.log(id);\r",
-											"//validate Response body\r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"         \r",
-											"        pm.expect(jsonResponse.batchId, \"batchId\");\r",
-											"        pm.expect(jsonResponse.batchName, \"batchName\");\r",
-											"        pm.expect(jsonResponse.batchStatus, \"batchStatus\");\r",
-											"        pm.expect(jsonResponse.batchDescription, \"batchDescription\");\r",
-											"        pm.expect(jsonResponse.batchNoOfClasses, \"batchNoOfClasses\");\r",
-											"        pm.expect(jsonResponse.programId, \"programId\");\r",
-											"            \r",
-											"\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =  \r",
-											" {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"batchId\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"batchName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchDescription\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchStatus\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchNoOfClasses\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"programId\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"programName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"batchId\",\r",
-											"    \"batchName\",\r",
-											"    \"batchDescription\",\r",
-											"    \"batchStatus\",\r",
-											"    \"batchNoOfClasses\",\r",
-											"    \"programId\",\r",
-											"    \"programName\"\r",
-											"  ]\r",
-											"}\r",
-											"\r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "936bf30c-a059-42ec-8914-08d5b831d9d4",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{sameBatchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{diffProgramId}}\r\n       // \"programName\": {{programName}}\r\n\r\n        \r\n}\r\n\r\n/*{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-101-1\",\r\n  \"batchDescription\": \"This Batch is for Postman Hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun23-PostWomenTechies-DA-101\"\r\n}*/",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseURL}}/{{createBatch}}"
-							},
-							"response": []
 						},
 						{
 							"name": "Program_Batch_TC_055_Invalid_Json_format",
@@ -27894,17 +27771,17 @@
 	],
 	"variable": [
 		{
-			"id": "8a4b0a9b-dfa0-4a5c-a941-ecced8c412b5",
+			"id": "8bb6af3d-20ae-407b-b38e-72af3a912842",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c9576807-223a-467d-bd94-12caf796c4c4",
+			"id": "79a1a16a-8d9f-460e-b124-092a5a667706",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "27512525-7479-45ca-aadf-679a78d7bdc1",
+			"id": "b622a09d-c4a1-4ee3-9410-1d2ca507ed87",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
