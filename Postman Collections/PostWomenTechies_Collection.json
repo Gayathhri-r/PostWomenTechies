@@ -12284,10 +12284,6 @@
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
-											"var jsonResponse = pm.response.json();\r",
-											"var id = jsonResponse.batchId;\r",
-											"//pm.environment.set(\"CreatedBatchId\", id);\r",
-											"console.log(id);\r",
 											"\r",
 											"//validate status message\r",
 											"\r",
@@ -12314,7 +12310,7 @@
 											"    \r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"\r",
-											"        pm.expect(id,pm.environment.get(createdBatchId));\r",
+											"        pm.expect(id,pm.environment.get(\"createdBatchId\"));\r",
 											"        pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
 											"        \r",
 											"         pm.expect(jsonResponse.data.batchId).to.equal.pm.iterationData.get(\"batchId\");\r",
@@ -15227,11 +15223,6 @@
 											"pm.test(\"Status code is 201\", function () {\r",
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
-											"\r",
-											"var jsonResponse = pm.response.json();\r",
-											"var id = jsonResponse.batchId;\r",
-											"//pm.environment.set(\"CreatedBatchId\", id);\r",
-											"console.log(id);\r",
 											"\r",
 											"//validate status message\r",
 											"\r",
@@ -28860,17 +28851,17 @@
 	],
 	"variable": [
 		{
-			"id": "cbecf468-06e7-43b3-bfa9-3a62dfe59adc",
+			"id": "757342f7-7cd1-4640-abd8-6b2e234ddd25",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "588ae7fa-1ef0-4dc7-b716-a354faa6e7d0",
+			"id": "1a529c14-e55c-47d9-af57-203c9732f8f5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e9f1833b-b048-4b9b-9634-50f794aa2963",
+			"id": "bdfb04bc-84ef-4c42-aa41-f3a01790b2ef",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
