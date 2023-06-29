@@ -12385,13 +12385,15 @@
 										"id": "0b597a45-7a08-408b-a45f-2490b3020190",
 										"exec": [
 											"//validate status code\r",
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
+											"var programName = pm.variables.get(programName);\r",
+											"var batchName = pm.variables.get(batchName);\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Created\");\r",
+											"    pm.response.to.have.status(\"Program \"+ programName + \"with Batch-\"+batchName+\" already exists: ; Please give a different batch Name or Choose a different Program\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -26790,17 +26792,17 @@
 	],
 	"variable": [
 		{
-			"id": "da7e48b2-7474-4307-bedb-30aaff5bd092",
+			"id": "3517e956-b812-48c1-afcc-2b497ac81d5e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "05cd1c64-af95-41b1-9d96-6fef5ef80952",
+			"id": "c389fed3-4c8c-4794-932a-9d2db3134682",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d78ef118-0de1-4e9e-9922-accf7682bb15",
+			"id": "6323aa0a-0ba2-4df3-8f31-b18fb667229b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
