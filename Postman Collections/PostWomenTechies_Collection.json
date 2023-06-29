@@ -19129,16 +19129,14 @@
 									"script": {
 										"id": "45f76dc3-1477-4d72-ac71-2a660b780ed7",
 										"exec": [
-											"\r",
-											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
+											"pm.test(\"Status code is 405\", function () {\r",
+											"    pm.response.to.have.status(405);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
+											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -19152,8 +19150,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,404);\r",
-											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"    pm.expect(jsonResponse.status,405);\r",
+											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -19188,8 +19186,7 @@
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
 											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											""
+											" })"
 										],
 										"type": "text/javascript"
 									}
@@ -27285,17 +27282,17 @@
 	],
 	"variable": [
 		{
-			"id": "0f5d13b6-a862-4c8f-ace6-93158c395144",
+			"id": "c1b33973-9bf3-4aaf-9ad2-4bce3148803a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fad49cfb-f43a-43e9-945f-8938b9eb90a6",
+			"id": "a62d9591-1d16-4474-8596-bcf67330ce7e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e55983cd-5d88-4cad-90dc-9641ffd71277",
+			"id": "118a921b-c636-4502-aa6e-e0389bc294de",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
