@@ -18223,19 +18223,6 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_082_83_Multiple_batch_same_program",
-							"id": "e30a15b5-de20-45d6-a9ad-5ddd15745dac",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
-							},
-							"response": []
-						},
-						{
 							"name": "Program_Batch_TC_084_Without_Program_name",
 							"event": [
 								{
@@ -27614,17 +27601,17 @@
 	],
 	"variable": [
 		{
-			"id": "602c5f80-7998-4ca9-9884-c2c33d50d920",
+			"id": "d4125c7b-f4f3-4a1a-80e1-cec37f366bef",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ea8c402b-d0da-4df9-8eaa-39bf4a2b2fff",
+			"id": "d00f4e07-9965-45fa-98c9-9af556c58648",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "f5095864-e53f-402f-83af-d1ed2c618e17",
+			"id": "c6e18936-7525-4775-8ec7-2c9471515202",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
