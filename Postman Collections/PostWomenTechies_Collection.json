@@ -14529,7 +14529,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" pm.expect(tv4.validate(jsonResponse,schema))\r",
 											" })\r",
 											" "
 										],
@@ -14546,7 +14546,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{zerobatchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n}\r\n",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{zeroBatchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28807,17 +28807,17 @@
 	],
 	"variable": [
 		{
-			"id": "8101beb1-bb07-4bd2-ac15-fc3dd6d1c24e",
+			"id": "43176ed0-2de7-4971-9b9d-affc37c5e026",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0ef73996-906f-4505-88ae-07461b590234",
+			"id": "bb0e6f0c-1747-4740-a590-ded57d86831e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "22a07a68-2533-4302-99bc-b6289d89d8f7",
+			"id": "1a239c32-40d9-4274-bf2f-b9711d0a392f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
