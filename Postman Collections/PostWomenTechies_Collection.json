@@ -9698,7 +9698,7 @@
 													"        pm.expect(jsonResponse.batchDescription, rbatchNoOfClasses);\r",
 													"        pm.expect(jsonResponse.programId, rprogramId);\r",
 													"        pm.expect(jsonResponse.programName,rprogramName);\r",
-													"})*/\r",
+													"})\r",
 													"\r",
 													"\r",
 													" //validate response json schema\r",
@@ -27108,17 +27108,17 @@
 	],
 	"variable": [
 		{
-			"id": "ff5b0b8d-b651-414b-8ff5-3ccaf714a953",
+			"id": "beab027d-49ff-457e-bc5a-25b49583d912",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ed7a1926-48a9-4019-a1e9-5cb2ae7159e3",
+			"id": "4265780a-434f-49f8-ba38-30357e133943",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1e209ef8-8769-4640-aca6-0f71f06577b7",
+			"id": "d0402758-b37a-4f64-8098-d75acaf7b5db",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
