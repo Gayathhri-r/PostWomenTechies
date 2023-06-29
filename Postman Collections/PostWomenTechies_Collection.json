@@ -1051,7 +1051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-#101-9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -8511,7 +8511,7 @@
 												}
 											}
 										},
-										"url": "{{baseURL}}/{{getBatchById}}/{{batchId}}"
+										"url": "{{baseURL}}/{{getBatchById}}/{{getbatchId}}"
 									},
 									"response": [
 										{
@@ -26479,17 +26479,17 @@
 	],
 	"variable": [
 		{
-			"id": "ae173fbb-c0cc-42e1-936b-3077ddb75a76",
+			"id": "c7100300-7daf-42d6-90f8-4273c01fa099",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e583f465-25bf-4d6f-8b02-6c8d1081c692",
+			"id": "dca7d36e-23ac-4074-9e18-d78153cb5920",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5e028870-e6e9-4760-b991-a83566f5d45a",
+			"id": "d656d679-c1b7-4d54-ae6c-dee1378e25e2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
