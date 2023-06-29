@@ -9934,8 +9934,7 @@
 													"var jsonResponse = pm.response.json();\r",
 													"\r",
 													"pm.test(\"Validate response body\", function(){\r",
-													"    var batchName = pm.variables.set(batchName);\r",
-													"    var getbatchName = pm.variables.get(batchName);\r",
+													"\r",
 													"    //pm.expect(jsonResponse.message,\"programBatch with \"+ getbatchName+\"not found \").to.be.true\r",
 													"    pm.expect(jsonResponse.message).to.include(\"programBatch\");\r",
 													"    pm.expect(jsonResponse.success,\"false\")\r",
@@ -28061,17 +28060,17 @@
 	],
 	"variable": [
 		{
-			"id": "e42b3b8a-76c6-438c-b3a4-7edbf857d8d9",
+			"id": "eea916ac-6213-43b3-99d9-3b6624f939d7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2e764728-f3c6-4173-9c91-26e57b6a65ee",
+			"id": "defb045e-8dfd-4a54-b5e9-de1ae88a0433",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6077db11-bc09-4d3c-abeb-60aa0b5c28c3",
+			"id": "f614708e-3ca4-4e4b-979c-290f5f681d39",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
