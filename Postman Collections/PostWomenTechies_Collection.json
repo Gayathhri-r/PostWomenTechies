@@ -23106,6 +23106,66 @@
 						},
 						{
 							"name": "Negative-Invalid Time Zone",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d8b56490-f9da-4352-b66d-92d14d34ab52",
+										"exec": [
+											"//Validating the status code\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validating the status message\r",
+											"pm.test(\"Status Code Name has String\",() => {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//Validating header\r",
+											"pm.test(\"Validating the Content-Type header is application/json\",() => {\r",
+											"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
+											"});\r",
+											"\r",
+											"var jsonResponse = pm.response.json();\r",
+											"var id = jsonResponse.assignmentId;\r",
+											"pm.environment.set(\"Assign_CreatedId\", id);\r",
+											"console.log(id);\r",
+											"\r",
+											"//validating the JSON schema\r",
+											"var schema = \r",
+											"{\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validating schema\", function() {\r",
+											"    pm.expect(tv4.validate(jsonResponse,schema)).to.be.true;\r",
+											"});\r",
+											"\r",
+											"//validating the data type of the response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,400);\r",
+											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"})\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "9d837416-13ce-453b-99e0-2fe20cdb94c4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -28025,17 +28085,17 @@
 	],
 	"variable": [
 		{
-			"id": "88cc5f6a-4df5-4775-9e59-bbb1bf782c2e",
+			"id": "143f28e7-e2d4-474d-8d73-9d1a0159e252",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "722627ee-08af-4497-83fa-c35e7cab5d6f",
+			"id": "91767253-986f-4699-a6a2-9aa066086c39",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "f3f3c324-e9be-43b8-b01a-96ae3831e5b3",
+			"id": "ebaf1c0e-ecae-4ed1-8d62-d20e9a4cb294",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
