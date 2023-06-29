@@ -18638,70 +18638,6 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_088_89_90_Data_Driven_Testing_ Valid_Batches",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "062af5ae-86c9-4826-b357-c3cdaed97d2b",
-										"exec": [
-											"//validate status code\r",
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"    \r",
-											"//validate Response body\r",
-											"    \r",
-											"var jsonResponse = pm.response.json();\r",
-											"pm.test(\"Validate response body\",() => {\r",
-											"    pm.expect(response.message).to.eql(\"Batch deleted successfully\");\r",
-											"    \r",
-											"});\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "7c54e59a-5b9a-4742-b837-cba3ffcfbf02",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
-							},
-							"response": []
-						},
-						{
 							"name": "Program_Batch_TC_088_89_90_091_92_93_Non_Existing_Batch_Id",
 							"event": [
 								{
@@ -27148,17 +27084,17 @@
 	],
 	"variable": [
 		{
-			"id": "44bea2ee-7eaa-49ff-b480-cb7bf5fbac11",
+			"id": "3175bb8c-5598-43f1-8ff4-f9d497411a10",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d7e64ee3-9632-4e44-9f55-376c236c40e1",
+			"id": "1d02915b-9c55-476e-8f87-0dc4e560968c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ac7966ca-f4f5-4ee3-9c6d-5391c2b2dfc2",
+			"id": "c62ff2b4-079e-4741-948d-05051e17d40c",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
