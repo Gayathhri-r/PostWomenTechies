@@ -2182,7 +2182,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-AS-0.#13\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-0.#13\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -6687,13 +6687,13 @@
 								"method": "DELETE",
 								"header": [],
 								"url": {
-									"raw": "{{baseURL}}/deletebyprogname/\"Jun23-PostWomenTechies-SDET-101-0.#3\"",
+									"raw": "{{baseURL}}/deletebyprogname/Jun23-PostWomenTechies-SDET-#101-1",
 									"host": [
 										"{{baseURL}}"
 									],
 									"path": [
 										"deletebyprogname",
-										"\"Jun23-PostWomenTechies-SDET-101-0."
+										"Jun23-PostWomenTechies-SDET-"
 									],
 									"query": [
 										{
@@ -6714,7 +6714,7 @@
 											"disabled": true
 										}
 									],
-									"hash": "3\""
+									"hash": "101-1"
 								}
 							},
 							"response": []
@@ -26525,17 +26525,17 @@
 	],
 	"variable": [
 		{
-			"id": "0ba90150-c064-4578-86cc-3c7d892470a2",
+			"id": "c0f16d74-8215-41b4-bbe8-01e98ed17971",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1c054345-80dd-44b8-b9b9-f8bf3e8980b6",
+			"id": "372c9d61-c55f-4e08-9597-c06b7aa42f06",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "816098f3-972d-4b28-9b55-a9cf91370305",
+			"id": "e7342d76-aa85-4912-bf76-0a82966024bf",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
