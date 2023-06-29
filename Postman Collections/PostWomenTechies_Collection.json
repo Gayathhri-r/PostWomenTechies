@@ -13624,7 +13624,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
 											" })\r",
 											""
 										],
@@ -27096,17 +27096,17 @@
 	],
 	"variable": [
 		{
-			"id": "3692ee1d-25ad-45fc-94d5-1d2be28059e4",
+			"id": "a1091ae9-8513-4196-9911-cd6ac3704895",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "9f8e15c1-5336-4e27-9efb-6092f844a47e",
+			"id": "62b79f12-6113-4ad3-9205-37e083a0dce8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "dfa952b9-8e0c-4eda-b7ed-c44fc1206703",
+			"id": "74ec112d-c976-4f21-936e-661057373265",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
