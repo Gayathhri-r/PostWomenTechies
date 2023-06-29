@@ -12285,10 +12285,10 @@
 											"});\r",
 											"\r",
 											"//validate status message\r",
-											"var programName = pm.variables.get(programName);\r",
-											"var batchName = pm.variables.get(batchName);\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Program \"+ programName + \"with Batch-\"+batchName+\" already exists: ; Please give a different batch Name or Choose a different Program\");\r",
+											"    var programName = pm.variables.get(programName);\r",
+											"    var batchName = pm.variables.get(batchName);\r",
+											"    pm.test(\"Status code name has string\", function() {\r",
+											"    pm.expect(jsonResponse.message).to.include(\"already exists\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -28095,17 +28095,17 @@
 	],
 	"variable": [
 		{
-			"id": "5fb3fea6-e96e-4b62-a6de-d2df92c23c25",
+			"id": "8a07370f-6540-4e54-9ea7-1cb95d8f9fb9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0814be46-f9e4-48ea-b0ce-f6551dea8468",
+			"id": "e1ee111a-d023-418d-a8ff-d7b5e84d114f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0e77b692-fb0e-4469-80e9-15a36e03ba02",
+			"id": "0d65f155-2bb1-4595-8b98-7b749a4b5085",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
