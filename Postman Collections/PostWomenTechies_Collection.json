@@ -515,7 +515,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n    \r\n}\r\n\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n    \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -649,7 +649,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
+									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -783,7 +783,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#7\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#7\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -917,7 +917,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1051,7 +1051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1185,7 +1185,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1219,7 +1219,7 @@
 							"response": []
 						},
 						{
-							"name": "Post Program-1_program_valid end points and base url",
+							"name": "Post Program-1_program",
 							"event": [
 								{
 									"listen": "test",
@@ -1227,7 +1227,7 @@
 										"id": "e046177d-93de-449d-b914-90cd4d83bce3",
 										"exec": [
 											"//Valiate status Code\r",
-											"pm.test(\"Status code is 200\", function () {\r",
+											"pm.test(\"Status code is 201\", function () {\r",
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
@@ -26677,17 +26677,17 @@
 	],
 	"variable": [
 		{
-			"id": "77a29186-07d1-4d7a-90d3-71bfa4d9f730",
+			"id": "135b3396-b6db-45ee-b1b2-8d2a189c16e4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "acb35656-b28a-45a4-a3f8-93396e5e465f",
+			"id": "2e6261dc-e632-4c05-aafc-78c64d64c3fd",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cde649b2-e435-46c7-87f4-0ce547e04ffa",
+			"id": "229d340c-c0cb-4ec7-bea8-826717e195f3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
