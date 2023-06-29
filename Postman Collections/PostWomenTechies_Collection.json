@@ -18386,8 +18386,21 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_082_83_Multiple_batch_same_program",
+							"name": "Program_Batch_TC_082_Multiple_batch_same_program",
 							"id": "e30a15b5-de20-45d6-a9ad-5ddd15745dac",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+							},
+							"response": []
+						},
+						{
+							"name": "Program_Batch_TC_083_Same_batch_multiple_program",
+							"id": "fca2578e-eb85-49eb-a15d-3e860ca86255",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -18545,6 +18558,15 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
+											"//random batchName serial number generation\r",
+											"\r",
+											"var random = Math.random().toString(36).substring(2);\r",
+											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
+											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
+											"/*var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
+											"pm.environment.set(\"batchDescription\",batchDescription)*/\r",
+											"\r",
+											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
@@ -18555,7 +18577,7 @@
 											"        console.log(jsonResponse.batchName);\r",
 											"        console.log(jsonResponse.batchDescription);\r",
 											"        console.log(jsonResponse.programName);\r",
-											"        pm.expect(jsonResponse.batchId).to.eql(4140);\r",
+											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
@@ -27777,17 +27799,17 @@
 	],
 	"variable": [
 		{
-			"id": "8520f2b2-4778-48ba-a7b0-2a7f263ac6bf",
+			"id": "4a0af3e5-e193-4edc-923e-3160c40cc9ee",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "204ec130-664c-4661-a414-9a0359b71467",
+			"id": "475dd630-d6d1-429e-aa72-3fb6020b9ff8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "295df477-f86b-407b-aba7-3428f66f0556",
+			"id": "d90030f0-2a60-403e-ba56-8fb506de3d68",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
