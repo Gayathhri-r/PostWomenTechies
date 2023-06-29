@@ -1227,7 +1227,7 @@
 										"id": "e046177d-93de-449d-b914-90cd4d83bce3",
 										"exec": [
 											"//Valiate status Code\r",
-											"pm.test(\"Status code is 201\", function () {\r",
+											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
@@ -26677,17 +26677,17 @@
 	],
 	"variable": [
 		{
-			"id": "135b3396-b6db-45ee-b1b2-8d2a189c16e4",
+			"id": "9a110c81-8998-424f-b84f-5aa129848561",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2e6261dc-e632-4c05-aafc-78c64d64c3fd",
+			"id": "68dce94b-5a6e-4b13-b3c3-41b2367de421",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "229d340c-c0cb-4ec7-bea8-826717e195f3",
+			"id": "3e2f85a3-4ecd-4aa0-8ef7-0882add48ceb",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
