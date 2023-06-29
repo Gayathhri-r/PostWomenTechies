@@ -18740,7 +18740,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint1}}/123456789"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{alreadyDelBatchId}}"
 							},
 							"response": []
 						},
@@ -18752,16 +18752,14 @@
 									"script": {
 										"id": "81c106f0-036e-4634-94b5-6be353c13962",
 										"exec": [
-											"\r",
-											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
+											"pm.test(\"Status code is 405\", function () {\r",
+											"    pm.response.to.have.status(405);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -18775,35 +18773,43 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.message,\"Batch Name is mandatory\");\r",
-											"    pm.expect(jsonResponse.success,\"false\");\r",
+											"    pm.expect(jsonResponse.status,405);\r",
+											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =   \r",
 											" {\r",
+											"     \r",
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"    \"message\": {\r",
+											"    \"timestamp\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"success\": {\r",
-											"      \"type\": \"boolean\"\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"    \"message\",\r",
-											"    \"success\"\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
 											"  ]\r",
 											"}\r",
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema))\r",
-											" })\r",
-											""
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })"
 										],
 										"type": "text/javascript"
 									}
@@ -27142,17 +27148,17 @@
 	],
 	"variable": [
 		{
-			"id": "12f17a04-feb6-4a7e-804e-a7d0156eb915",
+			"id": "b154c9aa-12e3-4bb0-9f9e-c0f58f3d6949",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0c65077c-c0fc-476c-9790-1bc809ca9b7f",
+			"id": "5d5266db-4216-4008-a54a-68f289254779",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d3a65ada-0f78-4289-87fe-618d7dafd749",
+			"id": "ee64d921-cd26-4b81-bc8a-ea3c4aa01230",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
