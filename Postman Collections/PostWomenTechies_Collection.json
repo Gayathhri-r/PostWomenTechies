@@ -12272,7 +12272,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_033_Create Batch_with_existing_program",
+							"name": "Program_Batch_TC_033_Create Batch_with_multiple_program",
 							"event": [
 								{
 									"listen": "test",
@@ -28094,17 +28094,17 @@
 	],
 	"variable": [
 		{
-			"id": "3486b14a-f742-43cb-824b-bb5859a5d4ba",
+			"id": "066a55e9-f2c0-4bde-a934-4b3d639cc18c",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2a37e299-3f68-475c-935f-542b8dbf302a",
+			"id": "49969b7d-835f-4713-8218-c12bcace90b9",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "655e2b94-e2d4-4c48-b390-870ca559fdf2",
+			"id": "b5b353af-f430-4e4c-aa99-837fa223c9e7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
