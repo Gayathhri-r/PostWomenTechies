@@ -14883,13 +14883,13 @@
 											"\r",
 											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -14903,8 +14903,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,404);\r",
-											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"    pm.expect(jsonResponse.status,400);\r",
+											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -28620,17 +28620,17 @@
 	],
 	"variable": [
 		{
-			"id": "5518a382-2bbe-46e1-9687-abcf9adf88a4",
+			"id": "7bf5499b-bc01-4318-8531-a9700c36b2cb",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1e33e73e-c744-42f0-af33-d1d8544c9307",
+			"id": "002d68d1-8ede-4c4c-8539-60d9d1585c93",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6a8c9894-dd03-48a6-ad9e-ba4ebc8983d2",
+			"id": "22062f2f-f1f1-404a-a789-c3614d537649",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
