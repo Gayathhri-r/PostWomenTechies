@@ -12289,7 +12289,7 @@
 											"    var programName = pm.variables.get(programName);\r",
 											"    var batchName = pm.variables.get(batchName);\r",
 											"    pm.test(\"Status code name has string\", function() {\r",
-											"    pm.expect(jsonResponse.message).to.include(\"already exists\");\r",
+											"         pm.expect(jsonResponse.batchName).to.include(\"PostWomen\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -12384,7 +12384,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "\r\n {\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12530,7 +12530,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n        \r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12653,7 +12653,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n        \r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28094,17 +28094,17 @@
 	],
 	"variable": [
 		{
-			"id": "066a55e9-f2c0-4bde-a934-4b3d639cc18c",
+			"id": "15f4a671-e32d-470b-b803-1caaefa2d413",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "49969b7d-835f-4713-8218-c12bcace90b9",
+			"id": "d83c3b3a-da6a-4f15-bad8-72c32aa5b528",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b5b353af-f430-4e4c-aa99-837fa223c9e7",
+			"id": "57f7890c-504d-4eda-85ad-95b01506d404",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
