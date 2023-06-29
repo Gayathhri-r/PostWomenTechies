@@ -12311,6 +12311,7 @@
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"\r",
 											"        //pm.expect(id,pm.environment.get(\"createdBatchId\"));\r",
+											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
 											"        pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
 											"      \r",
 											"})\r",
@@ -28843,17 +28844,17 @@
 	],
 	"variable": [
 		{
-			"id": "96e72141-835a-4366-a3be-90fe59acb4de",
+			"id": "db227396-24d0-4acd-bec5-084b6c608ba3",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3d70658f-750e-4464-8c18-919ad6becb00",
+			"id": "12f1b9fe-5247-4c89-a936-71e285fde120",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "be4f5e5d-8265-42aa-b314-72ca53f297a3",
+			"id": "e1b2267e-7c0e-46a2-b7a0-7fb73c167db5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
