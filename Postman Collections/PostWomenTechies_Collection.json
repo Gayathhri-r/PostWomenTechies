@@ -19600,7 +19600,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -27601,17 +27601,17 @@
 	],
 	"variable": [
 		{
-			"id": "bb72e815-cf0e-463e-9f50-4dd10a2b83bb",
+			"id": "04b3c420-79f3-41f7-9741-ab7fc58b8c5a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b7252426-56a5-4257-941e-42e1189723c2",
+			"id": "4d038f8f-ef6c-4175-909f-f226f8f9c628",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5638f3ca-3b71-4010-8dd8-6f1afdbaf8bf",
+			"id": "20fa2232-e012-4a0c-80fc-3f95af0aa95a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
