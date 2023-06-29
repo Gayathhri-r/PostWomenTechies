@@ -10781,7 +10781,6 @@
 													"pm.test(\"Status code name has string\", function() {\r",
 													"    pm.response.to.have.status(\"OK\");\r",
 													"});\r",
-													"\r",
 													"//validate response header - Content-type\r",
 													"pm.test(\"Content-type is application/json\",function(){\r",
 													"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
@@ -10792,9 +10791,9 @@
 													"\r",
 													"    \r",
 													"//validate Response body\r",
-													"    pm.test(\"Validate Response body\", function() {\r",
-													"        pm.test(\"Validate response body\", function(){\r",
-													"      pm.test(\"Status code name has string\", function() {\r",
+													"\r",
+													"    pm.test(\"Validate response body\", function(){\r",
+													"    \r",
 													"    //pm.expect(jsonResponse.message,\"programBatch with \"+ invalidProgramId+\"not found \").to.be.true\r",
 													"    //pm.expect(jsonResponse.success,\"false\")\r",
 													"\r",
@@ -10849,23 +10848,10 @@
 													"  ]\r",
 													"}\r",
 													"\r",
-													"pm.test(\"Validate Schema\", () => {\r",
+													"pm.test(\"Validate schema\", () => {\r",
 													"  //using tv4 validatory library and validate method\r",
-													" pm.expect(tv4.validate(jsonResponse,schema))\r",
+													" pm.expect(tv4.validate(jsonResponse[0],schema))\r",
 													" })\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
-													"\r",
 													""
 												],
 												"type": "text/javascript"
@@ -27108,17 +27094,17 @@
 	],
 	"variable": [
 		{
-			"id": "beab027d-49ff-457e-bc5a-25b49583d912",
+			"id": "82bbcd81-0c73-4959-84cd-f82eb88bcfee",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "4265780a-434f-49f8-ba38-30357e133943",
+			"id": "0ef0200d-0cb6-442d-a82e-7ac57a160744",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d0402758-b37a-4f64-8098-d75acaf7b5db",
+			"id": "3284bbbf-ba6f-4112-a734-bf3240926bc6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
