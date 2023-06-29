@@ -20640,6 +20640,7 @@
 											"      \"userVisaStatus\"\r",
 											"    ]\r",
 											"}\r",
+											"}\r",
 											"\r",
 											"pm.test(\"Validating schema\", function() {\r",
 											"    pm.expect(tv4.validate(jsonData,schema)).to.be.true;\r",
@@ -26183,17 +26184,17 @@
 	],
 	"variable": [
 		{
-			"id": "8ebbd546-a1ec-4220-8fb4-6ead1055607d",
+			"id": "a7a8c13a-bda2-4817-8547-d503b8d58797",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8e0f7629-6fc6-4a23-8884-cc45539de641",
+			"id": "54e55591-789a-4a7a-b409-fec669f692e4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "be4b0863-b3a3-4c8d-9375-1b4803267689",
+			"id": "d859879d-c3d5-47ba-bdef-834dbb17b55e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
