@@ -13077,7 +13077,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13250,7 +13250,16 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"url": "{{invalidBaseUrl}}"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{invalidBaseUrl}}/{{createBatch}}"
 							},
 							"response": [
 								{
@@ -28112,17 +28121,17 @@
 	],
 	"variable": [
 		{
-			"id": "9893dcec-66c8-4b0f-981f-8efe9e20a2a3",
+			"id": "84e44498-062b-469c-a3fb-b467aa9c8fe4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c1287ca1-88cf-4ac3-8cd8-79832e98bb3f",
+			"id": "384de0fb-9303-4455-a05e-3f9c61c11411",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "115463f7-20e2-4680-88c6-8353f5f1202d",
+			"id": "fce43171-fc15-431c-943d-506f75b9dbdd",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
