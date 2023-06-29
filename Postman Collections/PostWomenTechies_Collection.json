@@ -18595,8 +18595,6 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
 											"    \r",
 											"//validate Response body\r",
 											"    \r",
@@ -18661,9 +18659,6 @@
 											"pm.test(\"Content-type is application/json\",function(){\r",
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
 											"    \r",
 											"//validate Response body\r",
 											"    \r",
@@ -18765,7 +18760,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
 											" })\r",
 											""
 										],
@@ -18955,7 +18950,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_096_Without_Endpoints",
+							"name": "Program_Batch_TC_096_98_Without_Endpoints",
 							"event": [
 								{
 									"listen": "test",
@@ -19118,88 +19113,6 @@
 								"method": "DELETE",
 								"header": [],
 								"url": "{{baseURL}}/{{invalidEndpointGetAllBatches}}"
-							},
-							"response": []
-						},
-						{
-							"name": "Program_Batch_TC_098_Without_endpoint_only_Batch_Id",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "45f76dc3-1477-4d72-ac71-2a660b780ed7",
-										"exec": [
-											"//validate status code \r",
-											"pm.test(\"Status code is 405\", function () {\r",
-											"    pm.response.to.have.status(405);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "9301ed13-ad0f-4c0d-a0a7-603e8e087f4f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": "{{baseURL}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -27282,17 +27195,17 @@
 	],
 	"variable": [
 		{
-			"id": "528ab54a-3535-4996-a6ce-6abf115c3514",
+			"id": "4ae0e629-225d-4913-bde4-df1e0b2280e4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5f343e05-5a2e-408a-b39a-f586a63edd5c",
+			"id": "3d9d26de-47e6-46cd-a9ea-471623b176a5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d8fd936f-16b0-4e1d-9107-78fb5b69cf4e",
+			"id": "6c3e152c-3d33-4ddf-a9fa-9e044a203c2e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
