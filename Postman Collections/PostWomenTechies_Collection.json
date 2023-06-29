@@ -16018,7 +16018,7 @@
 											"\r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema))\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
 											" })\r",
 											"\r",
 											"\r",
@@ -16048,7 +16048,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{sameBatchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{diffProgramId}}\r\n       // \"programName\": {{programName}}\r\n\r\n        \r\n}",
+									"raw": "/*{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{sameBatchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{diffProgramId}}\r\n       // \"programName\": {{programName}}\r\n\r\n        \r\n}*/\r\n\r\n{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-101-1\",\r\n  \"batchDescription\": \"This Batch is for Postman Hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 6812,\r\n  \"programName\": \"Jun23-PostWomenTechies-DA-101\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28768,17 +28768,17 @@
 	],
 	"variable": [
 		{
-			"id": "e68d7cb8-8978-435e-b129-220cc552ef76",
+			"id": "62ab7168-5128-4b0e-9183-d0f0b6e6d060",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0934ed47-1903-413d-8306-fb89a9f6e9c2",
+			"id": "8ddd99da-7368-4b3a-9405-fa7bcb934ef5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cb8e065d-d5bc-4a90-9531-969e9296b335",
+			"id": "172be8a3-83f6-433c-87a6-a5d6db639a24",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
