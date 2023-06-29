@@ -12272,7 +12272,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_033_34_35Create Batch",
+							"name": "Program_Batch_TC_033_34_35Create Batch_data_driven",
 							"event": [
 								{
 									"listen": "test",
@@ -12382,129 +12382,6 @@
 								"body": {
 									"mode": "raw",
 									"raw": "\r\n {\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseURL}}/{{createBatch}}"
-							},
-							"response": []
-						},
-						{
-							"name": "Program_Batch_TC_035_Multiple_Batch_same_Program",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "87e92917-b12a-423b-92f4-901bbfb3c08c",
-										"exec": [
-											"//validate status code\r",
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Created\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate Response body\r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"         console.log(\"batchId\");\r",
-											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata1\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata2\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata1\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata2\"));\r",
-											"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"createbatchDescriptiondata1\"));\r",
-											"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"createbatchNoOfClassesdata1\"));\r",
-											"        pm.expect(jsonResponse.programId, pm.environment.get(\"createprogramIdata1\"));\r",
-											"        pm.expect(jsonResponse.programName,pm.environment.get(\"createprogramIddata2\"));\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =  \r",
-											" {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"batchId\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"batchName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchDescription\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchStatus\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchNoOfClasses\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"programId\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"programName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"batchId\",\r",
-											"    \"batchName\",\r",
-											"    \"batchDescription\",\r",
-											"    \"batchStatus\",\r",
-											"    \"batchNoOfClasses\",\r",
-											"    \"programId\",\r",
-											"    \"programName\"\r",
-											"  ]\r",
-											"}\r",
-											"\r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse[7],schema))\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "ad8f91c2-d6ea-4335-a717-e6289498b91c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{multipleBatchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28204,17 +28081,17 @@
 	],
 	"variable": [
 		{
-			"id": "1f67f575-9b4d-4d3b-8bb9-8edd2cf48a8c",
+			"id": "b6eaad99-e97d-490a-9a28-00b8b5506bf2",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7f3820fb-ebc8-44fa-a2ef-98b6b10ecc41",
+			"id": "04c60516-dd3e-4719-80b7-5fbcf6db4e24",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "f8d4cdba-060d-4e23-9b9f-7bce709e503c",
+			"id": "bc75132e-58a2-4f45-8299-2106f591d5db",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
