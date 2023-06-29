@@ -16391,7 +16391,7 @@
 									"script": {
 										"id": "21bb2abe-1181-4312-a919-f590cde7882f",
 										"exec": [
-											"console.log(\"Due to application error displays XML code, response body validation cannot be done\");\r",
+											"console.log(\"Due to application error displays XML code, response body message validation cannot be done\");\r",
 											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
 											"\r",
 											"//validate status code \r",
@@ -18939,7 +18939,7 @@
 										}
 									}
 								},
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -27601,17 +27601,17 @@
 	],
 	"variable": [
 		{
-			"id": "09f43d60-49d0-43a2-aaec-6ebdb6711f03",
+			"id": "6ed54ccb-0297-4974-9ce8-a139b891e651",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d817d4c4-3d80-4394-b57b-458c23ba3ee4",
+			"id": "f12b7ad1-6f01-4550-b57b-4b80eb1599de",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e16996c6-4284-4c36-84df-44fc25e0c379",
+			"id": "f3eb70c7-a6a0-4fac-bdeb-b31d0ce811cf",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
