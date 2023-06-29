@@ -22024,6 +22024,27 @@
 						},
 						{
 							"name": "Delete Staff user valid userId",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "89412be5-cccf-4c50-8b62-905a9e7e669f",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "cb56ccea-3bc9-427e-9477-34cf54be1e41",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -27142,17 +27163,17 @@
 	],
 	"variable": [
 		{
-			"id": "6ffbb833-6805-4320-acf5-6f8a5a9f7360",
+			"id": "c2eb4091-6c3e-4597-abdd-9ee4886f898f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "bb1ec1bf-c976-4605-825b-6dcd23609501",
+			"id": "eac51236-18aa-4ac7-a83a-9bfbbe7854f2",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "80b17a1c-4c9d-4576-b78b-4bd4418c2a23",
+			"id": "030b85ec-e7e2-4913-9d03-7d2db08b9d1e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
