@@ -113,7 +113,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -247,7 +247,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#3\",\r\n  \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#3\",\r\n  \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -381,7 +381,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#4\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#4\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -515,7 +515,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n    \r\n}\r\n\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n    \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -649,7 +649,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
+									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -783,7 +783,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#7\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#7\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -917,7 +917,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1051,7 +1051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1185,7 +1185,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1319,7 +1319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#1\",\r\n  \"programStatus\":  \"InProgress\"\r\n}\r\n\r\n\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#2\",\r\n  \"programStatus\":  \"InProgress\"\r\n}\r\n\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1554,7 +1554,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n   \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1685,7 +1685,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-101-M-0.#12\"\r\n\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-101-P-0.#12\"\r\n\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -10115,7 +10115,7 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchByName}}/{{InvalidAlphanumericBatchId}}"
+										"url": "{{baseURL}}/{{getBatchByName}}/{{Program_Batch_TC_012}}"
 									},
 									"response": [
 										{
@@ -12385,15 +12385,13 @@
 										"id": "0b597a45-7a08-408b-a45f-2490b3020190",
 										"exec": [
 											"//validate status code\r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
+											"pm.test(\"Status code is 201\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
-											"var programName = pm.variables.get(programName);\r",
-											"var batchName = pm.variables.get(batchName);\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Program \"+ programName + \"with Batch-\"+batchName+\" already exists: ; Please give a different batch Name or Choose a different Program\");\r",
+											"    pm.response.to.have.status(\"Created\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -21335,115 +21333,6 @@
 					"item": [
 						{
 							"name": "update user with correct field",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "d5711551-c455-4e02-ab27-4d51c9849909",
-										"exec": [
-											"//Validating the status code\r",
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"//validating the status message\r",
-											"pm.test(\"Status code name is OK\", function () {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"//validating the JSON schema\r",
-											"var jsonData = pm.response.json();\r",
-											"var schema = \r",
-											"{\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"userId\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userFirstName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userLastName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userMiddleName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userPhoneNumber\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"userLocation\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userTimeZone\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userLinkedinUrl\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userEduUg\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userEduPg\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userComments\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"userVisaStatus\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"userId\",\r",
-											"    \"userFirstName\",\r",
-											"    \"userLastName\",\r",
-											"    \"userMiddleName\",\r",
-											"    \"userPhoneNumber\",\r",
-											"    \"userLocation\",\r",
-											"    \"userTimeZone\",\r",
-											"    \"userLinkedinUrl\",\r",
-											"    \"userEduUg\",\r",
-											"    \"userEduPg\",\r",
-											"    \"userComments\",\r",
-											"    \"userVisaStatus\"\r",
-											"  ]\r",
-											"}\r",
-											"  \r",
-											"\r",
-											"pm.test(\"Validating schema\", function() {\r",
-											"    pm.expect(tv4.validate(jsonData,schema)).to.be.true;\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Validating header\r",
-											"pm.test(\"Validating the Content-Type header is application/json\",() => {\r",
-											"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
-											"});\r",
-											"\r",
-											"//validating the data type of the response body\r",
-											"pm.test(\"Validating the data type of the response body\",() => {\r",
-											"    pm.expect(jsonData.userId).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userFirstName).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userLastName).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userPhoneNumber).to.be.a(\"number\");\r",
-											"    pm.expect(jsonData.userLocation).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userTimeZone).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userLinkedinUrl).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userEduUg).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userEduPg).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userVisaStatus).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userMiddleName).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userMiddleName).to.be.a(\"string\");\r",
-											"    pm.expect(jsonData.userComments).to.be.a(\"string\");\r",
-											"});\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
 							"id": "5fbf3023-ab67-4bfc-a7f1-8bc1d3629d7e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -21466,66 +21355,6 @@
 						},
 						{
 							"name": "Update user with invalid visa status",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "a1fe5cb9-c164-4d2b-ad1c-182eddc2a5e8",
-										"exec": [
-											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"message\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"success\": {\r",
-											"      \"type\": \"boolean\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"message\",\r",
-											"    \"success\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
 							"id": "01776fe7-2118-41ba-9384-6f596c8fd4b2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -21548,66 +21377,6 @@
 						},
 						{
 							"name": "Update user without FirstName",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "3f1c0510-a1d0-42a0-afa5-7644f00314a2",
-										"exec": [
-											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"message\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"success\": {\r",
-											"      \"type\": \"boolean\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"message\",\r",
-											"    \"success\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
 							"id": "078c9360-4591-4e9f-aa46-51631204c191",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26912,17 +26681,17 @@
 	],
 	"variable": [
 		{
-			"id": "3ae3f498-12f1-429f-8cbb-f8c684fa70c7",
+			"id": "3d83c9bf-dfb6-4b5b-a819-91c37c627d00",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "84ad825a-0f16-4c80-b139-7e903e100176",
+			"id": "f4c7b4cb-0fb2-4f2b-a4ac-78514dabcd55",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "05735f44-6ffb-4532-b8d7-01b6a68039f1",
+			"id": "4b50bcae-ee2c-472d-b30c-791d9aecc190",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
