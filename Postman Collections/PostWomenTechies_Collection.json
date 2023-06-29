@@ -12519,7 +12519,7 @@
 										"id": "1114369e-f5a8-4319-8b46-6be4b3d774c6",
 										"exec": [
 											"//get the 'value' field from the data file for this request run\r",
-											"pm.iterationData.get(\"value\")"
+											"pm.iterationData.get(\"batchId\")"
 										],
 										"type": "text/javascript"
 									}
@@ -12534,7 +12534,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28654,17 +28654,17 @@
 	],
 	"variable": [
 		{
-			"id": "c7195a67-ec12-4c36-b1a8-593db681252a",
+			"id": "9588a334-7540-4a8a-89bc-820e722002c9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b894c49a-23f4-488e-9af3-16abdf7afb41",
+			"id": "fb857383-1e18-4a5b-97c7-350a91db6fde",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "81f36080-854c-4eaf-85a7-ff3531eed20d",
+			"id": "4a10fb65-95c5-48c4-a7cd-ce2eb7578192",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
