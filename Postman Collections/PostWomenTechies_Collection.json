@@ -19122,88 +19122,6 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_098_Without_endpoint_only_Batch_Id",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "45f76dc3-1477-4d72-ac71-2a660b780ed7",
-										"exec": [
-											"//validate status code \r",
-											"pm.test(\"Status code is 405\", function () {\r",
-											"    pm.response.to.have.status(405);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,405);\r",
-											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "9301ed13-ad0f-4c0d-a0a7-603e8e087f4f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
-							},
-							"response": []
-						},
-						{
 							"name": "Program_Batch_TC_099_Invalid_Request_GET_POST_PUT",
 							"event": [
 								{
@@ -27282,17 +27200,17 @@
 	],
 	"variable": [
 		{
-			"id": "708824f2-590f-466c-a921-adc7bf2e2421",
+			"id": "83718dbb-85f1-4d1a-bbfe-67ef3edb8ac4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b53b8d49-b2f9-471c-b4f2-4cc8ae8bb974",
+			"id": "58be9eee-14d1-4705-8e32-667a258b3366",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "379da9c7-4f33-4e11-94bd-b6c16fecf9b6",
+			"id": "3d59d658-b5cd-431f-b3b3-79b6da78e40e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
