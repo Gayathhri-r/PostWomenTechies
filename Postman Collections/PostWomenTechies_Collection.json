@@ -15606,7 +15606,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n\r\n        \r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{emptybatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28681,17 +28681,17 @@
 	],
 	"variable": [
 		{
-			"id": "584100a8-6ce0-43ce-a8da-67cfb738abb7",
+			"id": "01546125-21c3-4a22-8a1b-bb830494fe71",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "135c34f8-8dfc-40ed-9da6-5404796608b8",
+			"id": "dbbd543b-cf76-40ba-86f2-b568ccffdcc6",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0cbbbaf4-dfce-41f8-8549-432d5a78ef8f",
+			"id": "857c70a5-6dba-48e3-9b36-7b96e140bb11",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
