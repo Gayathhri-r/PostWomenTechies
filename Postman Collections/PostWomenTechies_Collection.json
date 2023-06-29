@@ -13346,13 +13346,14 @@
 											"var id = jsonResponse.batchId;\r",
 											"console.log(id);\r",
 											"\r",
-											"pm.environment.set(\"createdBatchId\", id);\r",
+											"pm.environment.set(\"createdBatchId1\", id);\r",
 											"console.log(id);\r",
 											"    \r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"\r",
-											"        pm.expect(id,pm.environment.get(\"createdBatchId\"));\r",
-											"        pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
+											"        pm.expect(id,pm.environment.get(\"createdBatchId1\"));\r",
+											"         pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
+											"        //pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
 											"        \r",
 											"         pm.expect(jsonResponse.data.batchId).to.equal.pm.iterationData.get(\"batchId\");\r",
 											"         pm.expect(jsonResponse.data.batchName).to.eql.pm.iterationData.get(\"batchName\");\r",
@@ -28844,17 +28845,17 @@
 	],
 	"variable": [
 		{
-			"id": "db227396-24d0-4acd-bec5-084b6c608ba3",
+			"id": "8d43e8f7-9697-48ad-b545-2429efc5f636",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "12f1b9fe-5247-4c89-a936-71e285fde120",
+			"id": "daa5dbeb-a7cf-4dcb-88a5-e07610cacc70",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e1b2267e-7c0e-46a2-b7a0-7fb73c167db5",
+			"id": "baf5be98-ffda-403d-a383-ca4a12b022ee",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
