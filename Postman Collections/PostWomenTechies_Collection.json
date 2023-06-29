@@ -10798,6 +10798,11 @@
 													"    \r",
 													"//validate Response body\r",
 													"    pm.test(\"Validate Response body\", function() {\r",
+													"        pm.test(\"Validate response body\", function(){\r",
+													"    var invalidProgramId = pm.variables.get(invalidProgramId);\r",
+													"    //pm.expect(jsonResponse.message,\"programBatch with \"+ invalidProgramId+\"not found \").to.be.true\r",
+													"    pm.expect(jsonResponse.success,\"false\")\r",
+													"\r",
 													"         \r",
 													"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
 													"        pm.expect(jsonResponse.batchName,pm.environment.get(\"batchName\"));\r",
@@ -28074,17 +28079,17 @@
 	],
 	"variable": [
 		{
-			"id": "6a4f343c-6304-4480-993f-f22a537b81c7",
+			"id": "cd6b37f7-8e66-4220-b0d7-c758615eb6bd",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "dc9d43de-7f20-4f40-9239-336bafae988a",
+			"id": "5f46b4a5-840c-47e0-87d7-dc8dbf96c254",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8d6ff6f5-f02a-4492-8bd1-3aea5ee86fb5",
+			"id": "99120667-1d0f-48d8-95e0-ec4883f25ef8",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
