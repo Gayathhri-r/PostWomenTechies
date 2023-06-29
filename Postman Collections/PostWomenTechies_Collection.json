@@ -14787,7 +14787,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"  \",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n       // \"programName\": {{programName}}\r\n\r\n        \r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"SDET1  \",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n       // \"programName\": {{programName}}\r\n\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -27233,17 +27233,17 @@
 	],
 	"variable": [
 		{
-			"id": "8ea6d504-3ea6-4f91-b5a3-01e75c39feb4",
+			"id": "1a97aec7-6fba-4ba9-bb56-01b08b4fba09",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0083b300-a8fd-4b01-8fe5-b706fcb8ccdb",
+			"id": "a2ab9077-6f93-43b4-97f8-717f2ad5b65b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c8e8edf4-cf51-48aa-a84b-24b5369a426c",
+			"id": "d3748507-9afc-422f-8076-5c80c23e667e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
