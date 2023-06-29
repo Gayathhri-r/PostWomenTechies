@@ -12284,6 +12284,7 @@
 											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
+											"var jsonResponse = pm.response.json();\r",
 											"//validate status message\r",
 											"    var programName = pm.variables.get(programName);\r",
 											"    var batchName = pm.variables.get(batchName);\r",
@@ -12297,8 +12298,6 @@
 											"});\r",
 											"\r",
 											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
 											"//validate Response body\r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"         \r",
@@ -28095,17 +28094,17 @@
 	],
 	"variable": [
 		{
-			"id": "8a07370f-6540-4e54-9ea7-1cb95d8f9fb9",
+			"id": "c0f929cf-305f-4cfe-b783-815a8cd1a418",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e1ee111a-d023-418d-a8ff-d7b5e84d114f",
+			"id": "9b083be2-f083-45f9-bcdf-3f9d0d397baa",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0d65f155-2bb1-4595-8b98-7b749a4b5085",
+			"id": "b572c50d-121c-4e37-8a5c-6e25581cdab7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
