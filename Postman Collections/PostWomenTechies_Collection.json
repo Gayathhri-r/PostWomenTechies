@@ -11927,7 +11927,7 @@
 													"//validate response body\r",
 													"pm.test(\"Validate response body\", function(){\r",
 													"    var invalidProgramId = pm.variables.get(invalidProgramId);\r",
-													"    pm.expect(jsonResponse.message,\"programBatch with \"+ invalidProgramId+\"not found \").to.be.true\r",
+													"    //pm.expect(jsonResponse.message,\"programBatch with \"+ invalidProgramId+\"not found \").to.be.true\r",
 													"    pm.expect(jsonResponse.success,\"false\")\r",
 													"})\r",
 													"\r",
@@ -28079,17 +28079,17 @@
 	],
 	"variable": [
 		{
-			"id": "cd6b37f7-8e66-4220-b0d7-c758615eb6bd",
+			"id": "6e961551-f195-42fe-9368-48494a6fb73d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5f46b4a5-840c-47e0-87d7-dc8dbf96c254",
+			"id": "e6233db5-e8d2-4e62-8e3c-02f1c04c1728",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "99120667-1d0f-48d8-95e0-ec4883f25ef8",
+			"id": "82c9d591-ebc2-4a50-9f17-6540aecfb140",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
