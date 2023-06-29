@@ -18783,7 +18783,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_092_Non_Existing_Batch_Id",
+							"name": "Program_Batch_TC_091_92_Non_Existing_Batch_Id",
 							"event": [
 								{
 									"listen": "test",
@@ -18932,7 +18932,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}}/{{delEndPoint1}}/{{invalidDelBatchId}}"
+								"url": "{{baseURL}}}/{{delEndPoint1}}/{{alreadyDelBatchId}}"
 							},
 							"response": []
 						},
@@ -27440,17 +27440,17 @@
 	],
 	"variable": [
 		{
-			"id": "748664fb-5323-4aa3-8383-38b70dad9a34",
+			"id": "f202aea0-974a-4621-8ba4-f794075048d8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "bf972da1-1e09-4620-8a0b-7f3ff08e9f18",
+			"id": "312daf20-1de5-4bc8-ae3d-8ec4e40432c4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ce76ba0b-186c-41ce-a053-2aa05eba1fa7",
+			"id": "626d01f2-6f6f-44c5-916e-c9174c6276f7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
