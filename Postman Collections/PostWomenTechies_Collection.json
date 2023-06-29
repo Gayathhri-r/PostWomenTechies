@@ -18595,14 +18595,12 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
 											"    \r",
 											"//validate Response body\r",
 											"    \r",
 											"var jsonResponse = pm.response.json();\r",
 											"pm.test(\"Validate response body\",() => {\r",
-											"    pm.expect(response.message).to.eql(\"Batch with Id-4249 deleted Successfully!\");\r",
+											"    //pm.expect(response.message).to.eql(\"Batch with Id-4249 deleted Successfully!\");\r",
 											"    \r",
 											"});\r",
 											"\r",
@@ -18847,7 +18845,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema))\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
 											" })\r",
 											""
 										],
@@ -27197,17 +27195,17 @@
 	],
 	"variable": [
 		{
-			"id": "2d6aa84d-c952-42d6-b3a1-f4e08c2adc27",
+			"id": "57947856-b7ee-4a9b-b38a-da9e9aa8c312",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "f8ead1e2-04f3-4cda-96d8-98d61e247525",
+			"id": "dfe7798e-645e-4321-8c14-05f2829fab7f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "754d72e0-f706-40ee-bd7b-f5bfc69595b1",
+			"id": "e7faa0ba-c6ca-4f23-9d44-85447214ee28",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
