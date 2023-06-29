@@ -12374,7 +12374,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_032_Create Batch Copy",
+							"name": "Program_Batch_TC_032_Create Batch_Random_Value_BatchId",
 							"event": [
 								{
 									"listen": "test",
@@ -28320,17 +28320,17 @@
 	],
 	"variable": [
 		{
-			"id": "53aef1fa-f5d3-4d5e-97d7-a59a603044ad",
+			"id": "b6035eac-efc3-4cde-ac46-b5f56cade825",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "30f6dd39-edae-4ce1-b40d-41fce62f2642",
+			"id": "9849664c-aa10-4420-ae18-89549e4e042c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "02829082-dba8-4811-bd4b-62b700e02bf7",
+			"id": "6c208665-b980-44db-a20a-41c937df798e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
