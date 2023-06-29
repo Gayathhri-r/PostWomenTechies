@@ -14246,7 +14246,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  //\"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n       // \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14385,7 +14385,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\":-1,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28126,17 +28126,17 @@
 	],
 	"variable": [
 		{
-			"id": "4276dbec-8d5b-4c49-b02b-7cbb1f481ce5",
+			"id": "715ea06c-5a37-407d-9462-5e88b72f8fde",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "daa85847-8bb2-437e-a912-64b9a33b1fca",
+			"id": "52478618-7611-494f-9024-72fe45eb7f3b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2b81d193-8ae2-470b-9d5a-d5ee3d9d95c8",
+			"id": "50acbbab-5a47-4ee3-83d5-eeec4a04e3e9",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
