@@ -9678,29 +9678,6 @@
 													"//Get the response result\r",
 													"var jsonResponse = pm.response.json();\r",
 													"\r",
-													"    \r",
-													"//validate Response body\r",
-													"\r",
-													"\r",
-													"    pm.test(\"Validate Response body\", function() {\r",
-													"\r",
-													"        var jsonResponse = pm.response.json();\r",
-													"        var rbatchId = jsonData.batchId;\r",
-													"        var rbatchName = jsonData.batchName;\r",
-													"        var rbatchDescription = jsonData.batchDescription;\r",
-													"        var rbatchNoOfClasses = jsonData.batchNoOfClasses;\r",
-													"        var rprogramId = jsonData.programId;\r",
-													"        var rprogramName = jsonData.programName;\r",
-													"      \r",
-													"        pm.expect(jsonResponse.batchId, rbatchId);\r",
-													"        pm.expect(jsonResponse.batchName,rbatchName);\r",
-													"        pm.expect(jsonResponse.batchStatus,rbatchDescription);\r",
-													"        pm.expect(jsonResponse.batchDescription, rbatchNoOfClasses);\r",
-													"        pm.expect(jsonResponse.programId, rprogramId);\r",
-													"        pm.expect(jsonResponse.programName,rprogramName);\r",
-													"})\r",
-													"\r",
-													"\r",
 													" //validate response json schema\r",
 													"//Using json to json schema converter\r",
 													"var schema =  \r",
@@ -27094,17 +27071,17 @@
 	],
 	"variable": [
 		{
-			"id": "b8c3bdc8-224a-43a7-a339-a1f42f46bd59",
+			"id": "0eb11607-fa96-4a98-a8dd-937f36681149",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "40c455f9-546c-4f10-8575-ac560eb71f7c",
+			"id": "ebef4efa-cece-4002-8aa5-3f10d0351f82",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ba0e383c-8239-4376-aa4c-d10843a8c6b3",
+			"id": "4da2ddc2-b540-4950-a2d5-36533e1aca28",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
