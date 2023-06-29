@@ -9686,14 +9686,19 @@
 													"    pm.test(\"Validate Response body\", function() {\r",
 													"\r",
 													"        var jsonResponse = pm.response.json();\r",
-													"        var batchId = jsonData.batchId;\r",
+													"        var rbatchId = jsonData.batchId;\r",
+													"        var rbatchName = jsonData.batchName;\r",
+													"        var rbatchDescription = jsonData.batchDescription;\r",
+													"        var rbatchNoOfClasses = jsonData.batchNoOfClasses;\r",
+													"        var rprogramId = jsonData.programId;\r",
+													"        var rprogramName = jsonData.programName;\r",
+													"      \r",
 													"        pm.expect(jsonResponse.batchId, batchId);\r",
-													"        pm.expect(jsonResponse.batchName,pm.environment.get(\"batchName\"));\r",
-													"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"batchStatus\"));\r",
-													"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"batchDescription\"));;\r",
-													"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"batchNoOfClasses\"));;\r",
-													"        pm.expect(jsonResponse.programId, pm.environment.get(\"programId\"));;\r",
-													"        pm.expect(jsonResponse.programName,pm.environment.get(\"programName\"));;\r",
+													"        pm.expect(jsonResponse.batchName,batchName);\r",
+													"        pm.expect(jsonResponse.batchStatus,batchDescription);\r",
+													"        pm.expect(jsonResponse.batchDescription, batchNoOfClasses);\r",
+													"        pm.expect(jsonResponse.programId, programId);\r",
+													"        pm.expect(jsonResponse.programName,programName);\r",
 													"})\r",
 													"\r",
 													"\r",
@@ -28065,17 +28070,17 @@
 	],
 	"variable": [
 		{
-			"id": "a9cc0670-575c-462b-ae9b-a583e9a6058a",
+			"id": "35ed85b7-5142-432f-b06f-acb0bef434b6",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7873b738-b187-4e4a-9df6-0b1397c6bfc4",
+			"id": "e768ec6f-4bbf-4e69-86d6-5d56974833d4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "9561c263-04fd-47a7-941b-d1a4ed3a4cbf",
+			"id": "16524442-c588-48a5-a009-9e700b40dc89",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
