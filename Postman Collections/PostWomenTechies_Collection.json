@@ -13829,7 +13829,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"batchId\": 0,\r\n  //\"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "{\r\n        \"batchId\": 0,\r\n        //\"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28126,17 +28126,17 @@
 	],
 	"variable": [
 		{
-			"id": "6a46cc7d-6f1d-44c2-a3ad-ce76cb0270b5",
+			"id": "4465921c-5d41-4cc1-aa97-00b1341226df",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e6d13b80-edf6-4e7b-ac83-cccf3d742871",
+			"id": "0c362a08-f84f-45c9-bad6-a2cbda9667f8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1651f823-78d1-4bfd-bf08-094eaca889ab",
+			"id": "595cddc4-ad21-4cb1-b771-91b42ff4d1ac",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
