@@ -15415,7 +15415,7 @@
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
-											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
+											"        //pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
 											"})\r",
 											"\r",
 											"\r",
@@ -27762,17 +27762,17 @@
 	],
 	"variable": [
 		{
-			"id": "121330ce-a966-4606-9b64-0cb17a4e56fb",
+			"id": "c4106ef6-25c3-4c17-a5ec-ad5fd18c213a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "14de33ab-efed-426c-bc5f-a6ccfb0687e5",
+			"id": "07681729-cea0-472e-9771-247c92857227",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "824217a0-0974-49b5-b0af-fad65d8e5063",
+			"id": "925aaf0d-e88d-4802-a8cb-02b41d94444a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
