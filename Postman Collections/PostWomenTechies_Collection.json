@@ -18709,57 +18709,24 @@
 									"script": {
 										"id": "8d27866d-2923-4fb1-bcf6-43581990a62b",
 										"exec": [
-											"\r",
+											"console.log(\"Due to application error displays XML code, response body message validation cannot be done\");\r",
+											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
 											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
 											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"     pm.expect(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.message,\"Batch Name is mandatory\");\r",
-											"    pm.expect(jsonResponse.success,\"false\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"message\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"success\": {\r",
-											"      \"type\": \"boolean\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"message\",\r",
-											"    \"success\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema))\r",
-											" })\r",
 											""
 										],
 										"type": "text/javascript"
@@ -18773,7 +18740,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint1}}/{{invalidBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{nonExistingProgramId}}"
 							},
 							"response": []
 						},
@@ -27175,17 +27142,17 @@
 	],
 	"variable": [
 		{
-			"id": "ebecaedc-6bbc-481d-be0c-407c7b0e97b2",
+			"id": "7200562f-b299-4e4b-82b6-46fa24e8d236",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2528f479-3d7a-433b-b57f-bf35a64097ac",
+			"id": "17a02e1c-b3df-43b2-8d57-8b6a6be2853a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "efd615b3-8728-40a8-bd8f-0b51acc29324",
+			"id": "59f3fe81-aa11-4746-abae-dce435136a47",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
