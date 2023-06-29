@@ -20641,10 +20641,10 @@
 											"    ]\r",
 											"}\r",
 											"}\r",
-											"\r",
-											"pm.test(\"Validating schema\", function() {\r",
-											"    pm.expect(tv4.validate(jsonData,schema)).to.be.true;\r",
-											"});"
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse[0],schema)).to.be.true\r",
+											" })"
 										],
 										"type": "text/javascript"
 									}
@@ -26184,17 +26184,17 @@
 	],
 	"variable": [
 		{
-			"id": "f8464f7c-b7d7-4e15-a219-78b2c338030a",
+			"id": "1c7dff36-7b21-4e10-ad8a-b8f16e3de6e9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "68932a3a-31f4-4b6b-9419-fa7fd9bbd05e",
+			"id": "f7526a06-58c8-4561-b2c0-514bc3e81d26",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5a4b399c-0551-45d7-a21d-b9002f0fe5e5",
+			"id": "c0cd57c5-cc8c-4ed3-b576-e27caa91bcf2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
