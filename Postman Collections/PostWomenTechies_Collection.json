@@ -15757,14 +15757,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "/*{\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}*/\r\n\r\n[\r\n{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n},\r\n{\r\n  \"batchDescription\": \"This program is for participating in API Hackathon\",\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}\r\n]\r\n",
+									"raw": "\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchId}}"
+								"url": "{{baseURL}}/{{updateBatch}}/{{updateBatchID}}"
 							},
 							"response": []
 						},
@@ -27895,17 +27895,17 @@
 	],
 	"variable": [
 		{
-			"id": "663b911f-742a-4705-86b1-7427cc41a297",
+			"id": "3406995b-f1ad-413a-947a-acfab48585f8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7518edcb-c0f9-46fa-9b0e-53bc800ca26d",
+			"id": "3292d700-4570-4154-9580-f6590cea289b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b6bec789-c0ce-4882-836d-467e828d2fe5",
+			"id": "39e1d418-692b-482f-893b-b21d0413876c",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
