@@ -12305,13 +12305,15 @@
 											"//validate Response body\r",
 											"\r",
 											"var jsonResponse = pm.response.json();\r",
+											"\r",
 											"var id = jsonResponse.batchId;\r",
+											"console.log(id);\r",
 											"pm.environment.set(\"createdBatchId\", id);\r",
 											"console.log(id);\r",
 											"    \r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"\r",
-											"        pm.expect(id.batchId,pm.environment.get(createdBatchId));\r",
+											"        pm.expect(id,pm.environment.get(createdBatchId));\r",
 											"        pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
 											"        \r",
 											"         pm.expect(jsonResponse.data.batchId).to.equal.pm.iterationData.get(\"batchId\");\r",
@@ -28654,17 +28656,17 @@
 	],
 	"variable": [
 		{
-			"id": "bf1c67d1-20fd-496a-a42c-8090dc718749",
+			"id": "5cc34b59-fd04-48ab-bea3-e198df6b8e99",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e9eec491-9eff-48d7-bbc3-c61c2971ab11",
+			"id": "7931d540-1f81-450d-9b4d-f9cbae575a70",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "83c9aec3-746b-48d5-b272-fa21f238083f",
+			"id": "fa91542b-1fc0-44c2-961f-f08260763782",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
