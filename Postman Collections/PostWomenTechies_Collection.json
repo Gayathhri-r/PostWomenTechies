@@ -113,7 +113,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -26677,17 +26677,17 @@
 	],
 	"variable": [
 		{
-			"id": "78039f4e-749e-4bfe-b051-739698bd4fd7",
+			"id": "0f932edd-2752-4bf4-834a-89cbeea4bdc0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6f067973-a3f3-4fb5-808f-849441884eaf",
+			"id": "e83ba0a0-c947-48d6-bbe6-faa0e25ea5fe",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8110f2eb-6b86-4c46-9482-28d00033f03c",
+			"id": "44b737b2-a9b4-4f4f-bebb-991a9b67bdbe",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
