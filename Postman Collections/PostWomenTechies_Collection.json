@@ -15124,7 +15124,7 @@
 					"name": "PUT Batch - Update Batch",
 					"item": [
 						{
-							"name": "Program_Batch_TC_056_82_83_Update Batch",
+							"name": "Program_Batch_TC_056_Update Batch",
 							"event": [
 								{
 									"listen": "test",
@@ -15452,7 +15452,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": {{updateBatchID}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{updateBatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{ProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
+									"raw": "{\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{updateBatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{ProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -27601,17 +27601,17 @@
 	],
 	"variable": [
 		{
-			"id": "d89e6032-962c-433a-9af9-8f5be1a87191",
+			"id": "50b95f19-c0e3-4311-ba10-8dc2125dac3c",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "5e1154f1-d4e3-46df-b511-bfaf45841559",
+			"id": "3aee86d8-0c67-42f8-b6bc-fb8cd0c4a666",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b284bcb0-4680-47b1-86e7-657a5f2eadb0",
+			"id": "ea13c1fd-38ce-4922-b297-4f034a01383d",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
