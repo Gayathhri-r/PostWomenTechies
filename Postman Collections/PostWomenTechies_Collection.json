@@ -1219,6 +1219,140 @@
 							"response": []
 						},
 						{
+							"name": "Post Program-1_program",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e046177d-93de-449d-b914-90cd4d83bce3",
+										"exec": [
+											"//Valiate status Code\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
+											"});\r",
+											"\r",
+											"//Validate status message\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Created\")\r",
+											"});\r",
+											"\r",
+											"//Validate response header - Content-Type\r",
+											"pm.test(\"Content-Type is application/json\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//Validate response body\r",
+											"    pm.test(\"Validate response body\", function(){\r",
+											"        //pm.expect(jsonResponse.programId,pm.environment.get(programId));\r",
+											"        pm.expect(jsonResponse.programName,pm.environment.get(\"Jun23-PostWomenTechies-SDET-0102\"));\r",
+											"        pm.expect(jsonResponse.programDescription,pm.environment.get(\"selenium\"));\r",
+											"        pm.expect(jsonResponse.programStatus,pm.environment.get(\"Active\"));\r",
+											"       // pm.expect(jsonResponse.creationTime,pm.environment.get(creationTime));\r",
+											"       // pm.expect(jsonResponse.lastModTime,pm.environment.get(lastModTime));\r",
+											"    })\r",
+											"\r",
+											"//Validate response json Schema\r",
+											"//using json to json Schema converter\r",
+											"\r",
+											"var schema=\r",
+											"{\r",
+											"    \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"    \"Type\":\"Object\",\r",
+											"    \"properties\": {\r",
+											"        //\"programId\": {\r",
+											"           // \"type\": \"integer\"\r",
+											"        //},\r",
+											"        \"programName\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },    \r",
+											"        \"programDescription\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        \"programStatus\": {\r",
+											"            \"type\": \"string\"\r",
+											"        },\r",
+											"        //\"creationTime\": {\r",
+											"            //\"type\": \"integer\"\r",
+											"        //},\r",
+											"        //\"lastModTime\": {\r",
+											"            //\"type\": \"integer\"\r",
+											"        //}\r",
+											"    },\r",
+											"    \"required\" :[\r",
+											"        //\"programId\",\r",
+											"        \"programName\",\r",
+											"        \"programDescription\",\r",
+											"        \"programStatus\"\r",
+											"        //\"creationTime\",\r",
+											"        //\"lastModTime\"\r",
+											"    ]\r",
+											"}\r",
+											"\r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    //using tv4 validatroty library and validate method\r",
+											"    pm.expect(tv4.validate(jsonResponse[0],schema)).to.be.true\r",
+											"})\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											"    \r",
+											"\r",
+											"\r",
+											"    \r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "47884723-9f17-4e34-b82a-f6068233f636",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-B-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/saveprogram",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"saveprogram"
+									],
+									"query": [
+										{
+											"key": "programName",
+											"value": "Jun23-PostWomen Techies-SDET-101",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": " programStatus",
+											"value": "Active",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Post Program-Random Value for Program Status",
 							"event": [
 								{
@@ -26772,17 +26906,17 @@
 	],
 	"variable": [
 		{
-			"id": "68b8a9c9-ee13-4d35-9bb3-213419a21cf7",
+			"id": "794c1bfc-d10f-421d-b966-2e23c61ae1a7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "bd4b183c-0ef2-4cff-ba9c-34bf6ce98c54",
+			"id": "55ddd266-5627-4a3f-b481-03e6ce5ef1dd",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "86dcca72-8f86-4bc8-bef2-00ed8d55f94b",
+			"id": "4adb1dbb-afc5-4652-a37b-7ac485e34cd5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
