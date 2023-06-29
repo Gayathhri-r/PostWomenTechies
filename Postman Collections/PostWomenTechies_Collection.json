@@ -15228,6 +15228,11 @@
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
+											"var jsonResponse = pm.response.json();\r",
+											"var id = jsonResponse.batchId;\r",
+											"//pm.environment.set(\"CreatedBatchId\", id);\r",
+											"console.log(id);\r",
+											"\r",
 											"//validate status message\r",
 											"\r",
 											"pm.test(\"Status code name has string\", function () {\r",
@@ -28855,17 +28860,17 @@
 	],
 	"variable": [
 		{
-			"id": "8131c4fe-89d9-4bdc-a3e1-88f1c03c37a1",
+			"id": "cbecf468-06e7-43b3-bfa9-3a62dfe59adc",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d976b79f-a773-479e-98ca-fbfaf1be5859",
+			"id": "588ae7fa-1ef0-4dc7-b716-a354faa6e7d0",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ad6ad4aa-912c-4d2e-8c2e-6e6b80e03327",
+			"id": "e9f1833b-b048-4b9b-9634-50f794aa2963",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
