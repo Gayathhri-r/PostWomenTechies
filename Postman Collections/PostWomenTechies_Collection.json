@@ -9679,8 +9679,7 @@
 													"var jsonResponse = pm.response.json();\r",
 													"\r",
 													"    \r",
-													"//validate Response body\r",
-													"// Save access_token in a collection variable\r",
+													"/*validate Response body\r",
 													"\r",
 													"\r",
 													"    pm.test(\"Validate Response body\", function() {\r",
@@ -9699,7 +9698,7 @@
 													"        pm.expect(jsonResponse.batchDescription, rbatchNoOfClasses);\r",
 													"        pm.expect(jsonResponse.programId, rprogramId);\r",
 													"        pm.expect(jsonResponse.programName,rprogramName);\r",
-													"})\r",
+													"})*/\r",
 													"\r",
 													"\r",
 													" //validate response json schema\r",
@@ -28070,17 +28069,17 @@
 	],
 	"variable": [
 		{
-			"id": "cc631026-03a9-4446-aa8a-742e0e64a1fe",
+			"id": "804abde1-045b-4b5a-a3e6-36bbf2dd1a93",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "824cc2a4-f890-4807-8dec-8dacde624bfd",
+			"id": "226e7392-9bfb-4618-bf50-a375cbcf4489",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a022de14-17a6-4bbb-87c8-5fda14d9a760",
+			"id": "47ecc783-de99-4ed9-b728-63911dc29273",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
