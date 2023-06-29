@@ -21479,7 +21479,7 @@
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad request\");\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -21494,7 +21494,7 @@
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
 											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad request\");\r",
+											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -26852,17 +26852,17 @@
 	],
 	"variable": [
 		{
-			"id": "d5e15d22-0099-41be-a5ff-6629f6d7a30e",
+			"id": "db609bac-0862-499f-aeb2-fdde0e975720",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "4bfb03c3-34b3-4888-9cac-73cdff7b720b",
+			"id": "35194dd4-aadd-4eae-8084-f5efecab759a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "78679976-f235-4160-943e-d2ef17865e7b",
+			"id": "6313ffa2-0ac3-4026-a349-9bc2ff54b4f8",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
