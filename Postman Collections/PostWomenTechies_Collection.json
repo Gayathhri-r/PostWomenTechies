@@ -19052,7 +19052,7 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.message,\"Batch \"+ pm.variables.get(delBatchId) +\"with\" + pm.variables.get(delBatchId)+\"already exists: ; Please give a different batch Name or Choose a different Program\");\r",
+											"\r",
 											"    pm.expect(jsonResponse.success,\"false\");\r",
 											"})\r",
 											"\r",
@@ -19348,7 +19348,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19433,7 +19433,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19518,7 +19518,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -19600,7 +19600,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -27601,17 +27601,17 @@
 	],
 	"variable": [
 		{
-			"id": "eb8c4726-31da-4aa5-abe4-1eb20c8f66fd",
+			"id": "f50cda4e-fd6d-4732-9420-cbaa6326404a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8ffb225a-358d-4325-88e7-2921137b1b5b",
+			"id": "90b9e758-a6f9-41ba-aebb-4481e88ddffc",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "827d267d-2918-4e3d-8527-f824560fac8b",
+			"id": "38907082-13bd-421c-bf79-17c093e7b315",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
