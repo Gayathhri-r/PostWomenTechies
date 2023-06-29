@@ -23074,7 +23074,11 @@
 											"});\r",
 											"\r",
 											"//validating the data type of the response body\r",
-											"var jsonData = pm.response.json();"
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,400);\r",
+											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"})\r",
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -28021,17 +28025,17 @@
 	],
 	"variable": [
 		{
-			"id": "fb5935db-c7ed-47bc-9708-c8db92458f09",
+			"id": "88cc5f6a-4df5-4775-9e59-bbb1bf782c2e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d463dd6d-de20-49e5-bf0f-098217144bdc",
+			"id": "722627ee-08af-4497-83fa-c35e7cab5d6f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "63c31c48-5c23-4e88-8e93-ce0d44a23799",
+			"id": "f3f3c324-e9be-43b8-b01a-96ae3831e5b3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
