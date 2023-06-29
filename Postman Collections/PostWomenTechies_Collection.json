@@ -21786,6 +21786,66 @@
 						},
 						{
 							"name": "Update user with empty first name",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8498112f-d788-4870-8217-cd48a7c32f3f",
+										"exec": [
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(400);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,400);\r",
+											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "7226df3f-7ed9-4f95-80f2-7d29f294aa12",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26980,17 +27040,17 @@
 	],
 	"variable": [
 		{
-			"id": "a1f14bc2-3eb4-43e1-baa5-a703a565adf9",
+			"id": "441e9a63-a70b-47c2-ba0e-18cac45459b8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "acfd332a-62af-4d53-8fc6-51c3d169a8ae",
+			"id": "74ffe6ba-5325-4918-b6a5-732779fec20f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "255e2335-4265-48b8-8614-9a1c4f599ca9",
+			"id": "42b8e2f3-e5d6-48af-85bb-7b9b2cda0bda",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
