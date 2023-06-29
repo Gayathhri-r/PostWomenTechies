@@ -12228,6 +12228,25 @@
 										],
 										"type": "text/javascript"
 									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "ff08fe0e-074e-4d6b-9ee5-953eb89c6770",
+										"exec": [
+											"const randno = Math.floor(Math.random()*10000+1);\r",
+											"var randomstr = \"Jun23-PostwomenTechies-SDET-Selenium-100-\"+randno;\r",
+											"\r",
+											"pm.environment.set(\"batchDescription\",\"This is for Selenium Assignment\");\r",
+											"pm.environment.set(\"batchName\",randomstr);\r",
+											"pm.environment.set(\"batchId\",1);\r",
+											"pm.environment.set(\"programName\",\"Jun23-PostWomenTechies-SDET-100-100\");\r",
+											"pm.environment.set(\"programId\",3168);\r",
+											"\r",
+											" "
+										],
+										"type": "text/javascript"
+									}
 								}
 							],
 							"id": "b1b1952e-854d-4e04-b3c2-85930719e7ad",
@@ -12239,7 +12258,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-11\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
+									"raw": "\r\n {\r\n        \"batchId\": {{batchId}},\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName: \"{{programName}}\"\"\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28074,17 +28093,17 @@
 	],
 	"variable": [
 		{
-			"id": "b1e0ecac-d3f8-4e3a-90e6-433629ffb095",
+			"id": "c8d6be9b-bd1c-410f-8921-62a92c204bac",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "15af8473-7bdf-4447-8577-bd7a10fa70b3",
+			"id": "6861c059-fab4-4dd3-97f6-e334259f2e3b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1580841a-902e-4508-8fd6-cfdb9a91db00",
+			"id": "a2d0ad11-5fe0-486a-a640-9683d4fc3a34",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
