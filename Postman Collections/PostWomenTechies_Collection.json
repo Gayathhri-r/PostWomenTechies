@@ -18595,12 +18595,14 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
 											"    \r",
 											"//validate Response body\r",
 											"    \r",
 											"var jsonResponse = pm.response.json();\r",
 											"pm.test(\"Validate response body\",() => {\r",
-											"    //pm.expect(response.message).to.eql(\"Batch with Id-4249 deleted Successfully!\");\r",
+											"    pm.expect(response.message).to.eql(\"Batch with Id-4249 deleted Successfully!\");\r",
 											"    \r",
 											"});\r",
 											"\r",
@@ -27195,17 +27197,17 @@
 	],
 	"variable": [
 		{
-			"id": "c8b9f0ad-7b02-48a6-b989-2d2ad44ea283",
+			"id": "2d6aa84d-c952-42d6-b3a1-f4e08c2adc27",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "0c5132b0-8794-4ccf-a704-bfc432f75389",
+			"id": "f8ead1e2-04f3-4cda-96d8-98d61e247525",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4396f9f1-f5d0-49d3-8238-289066d94338",
+			"id": "754d72e0-f706-40ee-bd7b-f5bfc69595b1",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
