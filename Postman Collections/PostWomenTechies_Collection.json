@@ -15124,7 +15124,7 @@
 					"name": "PUT Batch - Update Batch",
 					"item": [
 						{
-							"name": "Program_Batch_TC_056_Update Batch",
+							"name": "Program_Batch_TC_056_82_83_Update Batch",
 							"event": [
 								{
 									"listen": "test",
@@ -15452,7 +15452,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{updateBatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{ProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
+									"raw": "{\r\n        \"batchId\": {{updateBatchID}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{updateBatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{ProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -24003,11 +24003,11 @@
 											"\r",
 											"pm.environment.set(\"Assign_assignmentDescription\",\"Cucumber Assignment\");\r",
 											"pm.environment.set(\"Assign_assignmentName\",randomstr);\r",
-											"pm.environment.set(\"Assign_batchId\",1);\r",
+											"pm.environment.set(\"Assign_batchId\",3123);\r",
 											"pm.environment.set(\"Assign_comments\",\"Created By Team18\");\r",
-											"pm.environment.set(\"Assign_createdBy\",\"U22\");\r",
+											"pm.environment.set(\"Assign_createdBy\",\"U4866\");\r",
 											"pm.environment.set(\"Assign_dueDate\",\"2023-06-29T13:14:42.450Z\");\r",
-											"pm.environment.set(\"Assign_graderId\",\"U19\");\r",
+											"pm.environment.set(\"Assign_graderId\",\"U4866\");\r",
 											"pm.environment.set(\"Assign_pathAttachment1\",\"File1.json\");\r",
 											"pm.environment.set(\"Assign_pathAttachment2\",\"File2.json\");\r",
 											"pm.environment.set(\"Assign_pathAttachment3\",\"File3.json\");\r",
@@ -27601,17 +27601,17 @@
 	],
 	"variable": [
 		{
-			"id": "d4125c7b-f4f3-4a1a-80e1-cec37f366bef",
+			"id": "d89e6032-962c-433a-9af9-8f5be1a87191",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d00f4e07-9965-45fa-98c9-9af556c58648",
+			"id": "5e1154f1-d4e3-46df-b511-bfaf45841559",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c6e18936-7525-4775-8ec7-2c9471515202",
+			"id": "b284bcb0-4680-47b1-86e7-657a5f2eadb0",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
