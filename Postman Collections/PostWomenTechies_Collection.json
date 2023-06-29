@@ -18935,7 +18935,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
 											" })\r",
 											""
 										],
@@ -18962,16 +18962,14 @@
 									"script": {
 										"id": "f50ad158-e651-43cc-993e-2e78741d5528",
 										"exec": [
-											"\r",
-											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
+											"pm.test(\"Status code is 405\", function () {\r",
+											"    pm.response.to.have.status(405);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
+											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -18985,8 +18983,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,404);\r",
-											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"    pm.expect(jsonResponse.status,405);\r",
+											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -19020,9 +19018,8 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
-											" })\r",
-											""
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })"
 										],
 										"type": "text/javascript"
 									}
@@ -19035,7 +19032,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint1}}/"
 							},
 							"response": []
 						},
@@ -19120,7 +19117,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint1}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
 							},
 							"response": []
 						},
@@ -27288,17 +27285,17 @@
 	],
 	"variable": [
 		{
-			"id": "abddf90e-11d7-4400-897b-086bbd4929fb",
+			"id": "0f5d13b6-a862-4c8f-ace6-93158c395144",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c78c6f20-0dd3-4885-a22a-ca204b916223",
+			"id": "fad49cfb-f43a-43e9-945f-8938b9eb90a6",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "69cd0cc0-830d-4485-a9b3-80d30a935260",
+			"id": "e55983cd-5d88-4cad-90dc-9641ffd71277",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
