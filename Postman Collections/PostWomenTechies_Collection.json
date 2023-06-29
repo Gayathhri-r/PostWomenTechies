@@ -12116,20 +12116,6 @@
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
-											"//validate Response body\r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"         \r",
-											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata1\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata2\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata1\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata2\"));\r",
-											"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"createbatchDescriptiondata1\"));\r",
-											"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"createbatchNoOfClassesdata1\"));\r",
-											"        pm.expect(jsonResponse.programId, pm.environment.get(\"createprogramIdata1\"));\r",
-											"        pm.expect(jsonResponse.programName,pm.environment.get(\"createprogramIddata2\"));\r",
-											"})\r",
-											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =  \r",
@@ -27071,17 +27057,17 @@
 	],
 	"variable": [
 		{
-			"id": "8fd10508-6b15-456a-b690-bf9ca9239ea4",
+			"id": "2704b44a-84bd-44c7-864b-ffdf5ed76c27",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "57ed3ce5-0938-4f35-adb3-ff4149f56b9d",
+			"id": "d1f903c6-d898-42c2-9ec8-9a5176fb12fe",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5297c4ef-6ce1-44cb-a804-9412af8d12d5",
+			"id": "e8faf7ec-4ac5-4cdc-819d-44ac3e75fc83",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
