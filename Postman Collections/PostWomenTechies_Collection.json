@@ -12285,13 +12285,13 @@
 											"});\r",
 											"\r",
 											"var jsonResponse = pm.response.json();\r",
-											"var id = jsonResponse.batchId;\r",
-											"pm.environment.set(\"CreatedBatchId\", id);\r",
+											"var id = jsonResponse.assignmentId;\r",
+											"pm.environment.set(\"CreatedId\", id);\r",
 											"console.log(id);\r",
 											"\r",
 											"//validate status message\r",
 											"    var programName = pm.variables.get(programName);\r",
-											"    var batchName = pm.variables.get(\"batchName\");\r",
+											"    var batchName = pm.variables.get(batchName);\r",
 											"    pm.test(\"Status code name has string\", function() {\r",
 											"         \r",
 											"});\r",
@@ -28620,17 +28620,17 @@
 	],
 	"variable": [
 		{
-			"id": "c021ff41-20dc-4f83-8098-7004f09f2dc6",
+			"id": "0f4ca20a-ea55-4d76-840e-460865f918c7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "264782ed-de8c-4894-9756-744f4085ce6d",
+			"id": "b89333d1-c1fc-4ddf-b9f9-af3b61c9f734",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8a4849da-f919-49f4-9d8f-302a11a64cb8",
+			"id": "a11aeec2-d2c1-4daf-ae91-887c4bf1681e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
