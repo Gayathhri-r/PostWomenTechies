@@ -20569,7 +20569,7 @@
 											"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
 											"});\r",
 											"//validating the data type of the response body\r",
-											"var jsonData = pm.response.json();\r",
+											"var jsonResponse = pm.response.json();\r",
 											" pm.test(\"Validate Response body\", function() {\r",
 											"\r",
 											"        pm.expect(jsonResponse.userId,pm.environment.get(\"userId\"));\r",
@@ -26184,17 +26184,17 @@
 	],
 	"variable": [
 		{
-			"id": "a7a8c13a-bda2-4817-8547-d503b8d58797",
+			"id": "67bc92f2-c34a-4c20-9cbc-e5bf9d54d043",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "54e55591-789a-4a7a-b409-fec669f692e4",
+			"id": "cb3bd079-a634-4e3e-bd89-ec759a0aa6ca",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d859879d-c3d5-47ba-bdef-834dbb17b55e",
+			"id": "ea101fd8-84f8-482a-8662-628a9bfc533b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
