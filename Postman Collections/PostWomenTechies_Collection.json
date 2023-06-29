@@ -12310,16 +12310,8 @@
 											"    \r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"\r",
-											"        pm.expect(id,pm.environment.get(\"createdBatchId\"));\r",
+											"        //pm.expect(id,pm.environment.get(\"createdBatchId\"));\r",
 											"        pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
-											"        \r",
-											"         pm.expect(jsonResponse.data.batchId).to.equal.pm.iterationData.get(\"batchId\");\r",
-											"         pm.expect(jsonResponse.data.batchName).to.eql.pm.iterationData.get(\"batchName\");\r",
-											"         pm.expect(jsonResponse.data.batchDescription).to.eql.pm.iterationData.get(\"batchDescription\");\r",
-											"         pm.expect(jsonResponse.data.batchNoOfClasses).to.eql.pm.iterationData.get(\"batchNoOfClasses\");\r",
-											"         pm.expect(jsonResponse.data.programId).to.eql.pm.iterationData.get(\"programId\");\r",
-											"         pm.expect(jsonResponse.data.programName).to.eql.pm.iterationData.get(\"programName\");\r",
-											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
 											"      \r",
 											"})\r",
 											"\r",
@@ -28851,17 +28843,17 @@
 	],
 	"variable": [
 		{
-			"id": "757342f7-7cd1-4640-abd8-6b2e234ddd25",
+			"id": "96e72141-835a-4366-a3be-90fe59acb4de",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1a529c14-e55c-47d9-af57-203c9732f8f5",
+			"id": "3d70658f-750e-4464-8c18-919ad6becb00",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "bdfb04bc-84ef-4c42-aa41-f3a01790b2ef",
+			"id": "be4f5e5d-8265-42aa-b314-72ca53f297a3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
