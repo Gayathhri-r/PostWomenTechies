@@ -12251,7 +12251,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_032_Create Batch Copy",
+							"name": "Program_Batch_TC_032_Create Batch_PathParams",
 							"event": [
 								{
 									"listen": "test",
@@ -28320,17 +28320,17 @@
 	],
 	"variable": [
 		{
-			"id": "baa95379-62c8-41d9-8406-aca430e3cf91",
+			"id": "53aef1fa-f5d3-4d5e-97d7-a59a603044ad",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "20144715-9d21-43ed-9e88-7b1e5af7f06c",
+			"id": "30f6dd39-edae-4ce1-b40d-41fce62f2642",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "14386471-29db-440f-8c19-a2ca5b089c00",
+			"id": "02829082-dba8-4811-bd4b-62b700e02bf7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
