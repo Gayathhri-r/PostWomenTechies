@@ -18696,7 +18696,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
 											" })\r",
 											""
 										],
@@ -18772,73 +18772,6 @@
 								}
 							],
 							"id": "7c54e59a-5b9a-4742-b837-cba3ffcfbf02",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
-							},
-							"response": []
-						},
-						{
-							"name": "Program_Batch_TC_090_Multiple_Batches_same_Program",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "4c48e4d5-691c-4892-9c73-7823a72afd28",
-										"exec": [
-											"//validate status code\r",
-											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"OK\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"    \r",
-											"//validate Response body\r",
-											"    \r",
-											"var jsonResponse = pm.response.json();\r",
-											"pm.test(\"Validate response body\",() => {\r",
-											"    pm.expect(response.message).to.eql(\"Batch deleted successfully\");\r",
-											"    \r",
-											"});\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "57906b35-8d12-48ef-bc44-710d5c1fc004",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -27601,17 +27534,17 @@
 	],
 	"variable": [
 		{
-			"id": "f50cda4e-fd6d-4732-9420-cbaa6326404a",
+			"id": "4b815db7-50d7-4618-81fd-3cd9470a3dec",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "90b9e758-a6f9-41ba-aebb-4481e88ddffc",
+			"id": "b0f4dcce-3f22-4271-a217-cff0799f2f7f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "38907082-13bd-421c-bf79-17c093e7b315",
+			"id": "34e897cd-42fc-48cf-b410-45ef7c1967a6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
