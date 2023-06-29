@@ -10192,11 +10192,10 @@
 													"\r",
 													"//validate response body\r",
 													"pm.test(\"Validate response body\", function(){\r",
-													"    var environmentVar = pm.environment.get(\"Program_Batch_TC_013\");\r",
-													"    pm.expect(jsonResponse.message,\"Batch not found with Id :  \" +environmentVar+ \" \").to.be.true;\r",
+													"    var batchName = pm.variables.get(batchName);\r",
+													"    pm.expect(jsonResponse.message,\"programBatch with \"+ batchName+\"not found \").to.be.true\r",
 													"    pm.expect(jsonResponse.success,\"false\")\r",
 													"})\r",
-													"\r",
 													" //validate response json schema\r",
 													"//Using json to json schema converter\r",
 													"var schema =   \r",
@@ -10234,7 +10233,7 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchByName}}/{{Program_Batch_TC_013}}"
+										"url": "{{baseURL}}/{{getBatchByName}}/{{invalidbatchName}}"
 									},
 									"response": [
 										{
@@ -26912,17 +26911,17 @@
 	],
 	"variable": [
 		{
-			"id": "e9f72398-8f8a-4fad-9a7c-5be4578d8a76",
+			"id": "de6238e3-363e-4926-be2f-7d8f3acf6797",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1db8fb0c-6266-4aa2-b26c-045839c0afd3",
+			"id": "b0d59e16-9047-43c2-badb-95265eaa2d50",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a70346e1-71c4-45d6-a8a2-e4c79baf6bf3",
+			"id": "c60eb04a-934a-42e6-a7a2-e8333affa1da",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
