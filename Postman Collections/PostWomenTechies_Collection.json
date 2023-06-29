@@ -15511,183 +15511,6 @@
 							]
 						},
 						{
-							"name": "Program_Batch_TC_053_Empty_Batch_Description",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "e3095c08-4d12-4d60-8de0-7571f671fc51",
-										"exec": [
-											"//validate status code\r",
-											"pm.test(\"Status code is 201\", function () {\r",
-											"    pm.response.to.have.status(201);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Created\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate Response body\r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"         \r",
-											"        pm.expect(jsonResponse.batchId, \"batchId\");\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata1\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata2\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata1\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata2\"));\r",
-											"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"createbatchDescriptiondata1\"));\r",
-											"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"createbatchNoOfClassesdata1\"));\r",
-											"        pm.expect(jsonResponse.programId, pm.environment.get(\"createprogramIdata1\"));\r",
-											"        pm.expect(jsonResponse.programName,pm.environment.get(\"createprogramIddata2\"));\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =  \r",
-											" {\r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"batchId\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"batchName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchDescription\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchStatus\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"batchNoOfClasses\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"programId\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"programName\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"batchId\",\r",
-											"    \"batchName\",\r",
-											"    \"batchDescription\",\r",
-											"    \"batchStatus\",\r",
-											"    \"batchNoOfClasses\",\r",
-											"    \"programId\",\r",
-											"    \"programName\"\r",
-											"  ]\r",
-											"}\r",
-											"\r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema))\r",
-											" })\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "133d7995-538b-44fa-a340-90a87895b018",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{emptybatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n\r\n        \r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseURL}}/{{createBatch}}"
-							},
-							"response": [
-								{
-									"id": "0477072d-1f5a-4116-a6f9-2c640394cf07",
-									"name": "New Request",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batche"
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "Cowboy"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Vary",
-											"value": "Origin"
-										},
-										{
-											"key": "Vary",
-											"value": "Access-Control-Request-Method"
-										},
-										{
-											"key": "Vary",
-											"value": "Access-Control-Request-Headers"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 23 Jun 2023 19:13:05 GMT"
-										},
-										{
-											"key": "Via",
-											"value": "1.1 vegur"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"timestamp\": \"2023-06-23T19:13:06.410+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/lms/batche\"\n}"
-								}
-							]
-						},
-						{
 							"name": "Program_Batch_TC_053_Empty_Program_Id",
 							"event": [
 								{
@@ -28667,17 +28490,17 @@
 	],
 	"variable": [
 		{
-			"id": "43e0a83c-26a0-4f79-8e9b-b842f65b8a5f",
+			"id": "dffb6e46-2e24-42b6-aef7-d991610551c0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "f5c20af9-8d72-4676-ab0a-31b77bd4a93b",
+			"id": "8d190c95-556f-4407-b75e-7bf8296441e8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6ab13b31-1372-4b10-959a-a35973750bc9",
+			"id": "cb657ccf-ebae-4f88-acc5-5f5645ae83c2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
