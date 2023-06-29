@@ -21956,6 +21956,27 @@
 					"item": [
 						{
 							"name": "Delete Student user valid userId",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "410d5b4e-df57-413c-934a-63c8854719f5",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "14b0b7e4-a4ca-4a2e-be29-5c88ca3014df",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -21963,7 +21984,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/users/users/U19"
+								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/users/users/U5202"
 							},
 							"response": []
 						},
@@ -27121,17 +27142,17 @@
 	],
 	"variable": [
 		{
-			"id": "ab81fa95-e95b-4500-ac54-67df6d7bc10f",
+			"id": "6ffbb833-6805-4320-acf5-6f8a5a9f7360",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "a065143d-a80a-40f1-a2b0-a067170e4d41",
+			"id": "bb1ec1bf-c976-4605-825b-6dcd23609501",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "01a01f26-8130-4377-9d05-d7f4bd080011",
+			"id": "80b17a1c-4c9d-4576-b78b-4bd4418c2a23",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
