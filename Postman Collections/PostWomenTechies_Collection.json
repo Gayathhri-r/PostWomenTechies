@@ -21969,6 +21969,27 @@
 						},
 						{
 							"name": "Delete Admin user valid userId",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0c0f7077-6045-4e37-8faf-0ffd5d769ee9",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Content-Type is present\", function () {\r",
+											"    pm.response.to.have.header(\"Content-Type\");\r",
+											"});\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "3477f7f8-03e1-4674-8861-d76301dcf426",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -27100,17 +27121,17 @@
 	],
 	"variable": [
 		{
-			"id": "a592ef61-4569-4d74-8039-0b37e8c7c37f",
+			"id": "ab81fa95-e95b-4500-ac54-67df6d7bc10f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6fd19806-60f3-41d2-b464-e843b285449d",
+			"id": "a065143d-a80a-40f1-a2b0-a067170e4d41",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b055bd0e-c821-40da-93e1-3cb35a3bc6b4",
+			"id": "01a01f26-8130-4377-9d05-d7f4bd080011",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
