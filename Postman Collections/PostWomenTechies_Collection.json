@@ -12313,6 +12313,14 @@
 											"\r",
 											"        pm.expect(id.batchId,pm.environment.get(createdBatchId));\r",
 											"        pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
+											"        \r",
+											"         pm.expect(jsonResponse.data.batchId).to.equal.pm.iterationData.get(\"batchId\");\r",
+											"         pm.expect(jsonResponse.data.batchName).to.eql.pm.iterationData.get(\"batchName\");\r",
+											"         pm.expect(jsonResponse.data.batchDescription).to.eql.pm.iterationData.get(\"batchDescription\");\r",
+											"         pm.expect(jsonResponse.data.batchNoOfClasses).to.eql.pm.iterationData.get(\"batchNoOfClasses\");\r",
+											"         pm.expect(jsonResponse.data.programId).to.eql.pm.iterationData.get(\"programId\");\r",
+											"         pm.expect(jsonResponse.data.programName).to.eql.pm.iterationData.get(\"programName\");\r",
+											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
 											"      \r",
 											"})\r",
 											"\r",
@@ -28646,17 +28654,17 @@
 	],
 	"variable": [
 		{
-			"id": "26d9a0ff-334d-4013-9b5e-2d4dfed4a510",
+			"id": "bf1c67d1-20fd-496a-a42c-8090dc718749",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c67673f4-bafe-4f68-b3c4-4c69f1ed13bc",
+			"id": "e9eec491-9eff-48d7-bbc3-c61c2971ab11",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "5d988b35-d0d4-4b21-a182-0ce8690bca77",
+			"id": "83c9aec3-746b-48d5-b272-fa21f238083f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
