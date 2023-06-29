@@ -9682,7 +9682,7 @@
 													"//validate Response body\r",
 													"// Save access_token in a collection variable\r",
 													"\r",
-													"pm.collectionVariables.set(\"bearer-token\", access_token);\r",
+													"\r",
 													"    pm.test(\"Validate Response body\", function() {\r",
 													"\r",
 													"        var jsonResponse = pm.response.json();\r",
@@ -28070,17 +28070,17 @@
 	],
 	"variable": [
 		{
-			"id": "35ed85b7-5142-432f-b06f-acb0bef434b6",
+			"id": "5081400c-8f05-4892-9520-7b24101121d4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e768ec6f-4bbf-4e69-86d6-5d56974833d4",
+			"id": "ce0e0a8f-7a25-4be3-b393-e541496288cf",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "16524442-c588-48a5-a009-9e700b40dc89",
+			"id": "9c6c263b-07fd-4fc1-993f-ae2a86f70eaa",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
