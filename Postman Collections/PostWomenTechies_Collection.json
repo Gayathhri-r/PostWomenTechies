@@ -13200,7 +13200,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "\r\n {\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-10\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13690,7 +13690,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "/*{\r\n\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n        \r\n}*/\r\n\r\n{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13829,7 +13829,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        //\"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "{\r\n  \"batchId\": 0,\r\n  //\"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -13968,7 +13968,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n       // \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  //\"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14107,7 +14107,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        //\"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  //\"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14246,7 +14246,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n       // \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  //\"batchNoOfClasses\": 10,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14385,7 +14385,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{NegbatchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n}\r\n",
+									"raw": "{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\":-1,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14524,7 +14524,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{zerobatchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n}\r\n",
+									"raw": "{\r\n  \"batchId\": 0,\r\n  \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\":0,\r\n  \"programId\": 3168,\r\n  \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14840,7 +14840,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": " {\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{NegprogramId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "{\r\n  \r\n  \"batchName\": \"Jun23-PostWomenTechies1\",\r\n  \"batchDescription\": \"This batch is for Postman hackathon\",\r\n  \"batchStatus\": \"Active\",\r\n  \"batchNoOfClasses\": 10,\r\n  \"programId\": -3168\r\n  \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -14985,7 +14985,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n        \"batchName\": \"{{emptybatchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n        \r\n}",
+									"raw": "{\r\n\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -23106,16 +23106,56 @@
 											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
 											"  \"type\": \"object\",\r",
 											"  \"properties\": {\r",
-											"    \"message\": {\r",
+											"    \"userId\": {\r",
 											"      \"type\": \"string\"\r",
 											"    },\r",
-											"    \"success\": {\r",
-											"      \"type\": \"boolean\"\r",
+											"    \"userFirstName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userLastName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userMiddleName\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userPhoneNumber\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"userLocation\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userTimeZone\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userLinkedinUrl\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userEduUg\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userEduPg\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userComments\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"userVisaStatus\": {\r",
+											"      \"type\": \"string\"\r",
 											"    }\r",
 											"  },\r",
 											"  \"required\": [\r",
-											"    \"message\",\r",
-											"    \"success\"\r",
+											"    \"userId\",\r",
+											"    \"userFirstName\",\r",
+											"    \"userLastName\",\r",
+											"    \"userMiddleName\",\r",
+											"    \"userPhoneNumber\",\r",
+											"    \"userLocation\",\r",
+											"    \"userTimeZone\",\r",
+											"    \"userLinkedinUrl\",\r",
+											"    \"userEduUg\",\r",
+											"    \"userEduPg\",\r",
+											"    \"userComments\",\r",
+											"    \"userVisaStatus\"\r",
 											"  ]\r",
 											"}\r",
 											"\r",
@@ -23124,7 +23164,22 @@
 											"});\r",
 											"\r",
 											"//validating the data type of the response body\r",
-											"var jsonData = pm.response.json();"
+											"var jsonData = pm.response.json();\r",
+											"pm.test(\"Validating the data type of the response body\",() => {\r",
+											"    pm.expect(jsonData.userId).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userFirstName).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userLastName).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userPhoneNumber).to.be.a(\"number\");\r",
+											"    pm.expect(jsonData.userLocation).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userTimeZone).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userLinkedinUrl).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userEduUg).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userEduPg).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userVisaStatus).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userMiddleName).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userMiddleName).to.be.a(\"string\");\r",
+											"    pm.expect(jsonData.userComments).to.be.a(\"string\");\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -28071,17 +28126,17 @@
 	],
 	"variable": [
 		{
-			"id": "c71e9e5c-36d6-431c-b127-65ea76e59a7a",
+			"id": "d3022066-f2c8-449d-b59c-4fa23030c1fd",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7dd9e16c-bd98-4dd2-91cc-eb6a5c24c52e",
+			"id": "9eb73523-8c03-41d4-a483-33ae518a5733",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "34acf20e-2dd8-46f9-8310-30cd7630688b",
+			"id": "13c0098a-66cf-4a83-a942-aee4322a1e98",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
