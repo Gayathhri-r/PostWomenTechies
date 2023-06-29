@@ -18640,7 +18640,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_88_Delete_program_for_existing_Batch_Batch_Program",
+							"name": "Program_Batch_TC_88_Delete_program_for_existing_Batch",
 							"event": [
 								{
 									"listen": "test",
@@ -27364,17 +27364,17 @@
 	],
 	"variable": [
 		{
-			"id": "2e345d3a-8bf4-4d4d-aed7-5dc77e7c5243",
+			"id": "f642b042-d066-4fe2-aaae-7bd0e79fe3a3",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d1f9e62b-d4c5-47ae-b484-4e22ccbfbb2b",
+			"id": "3633096b-9680-41c1-96b2-84b7a218ea68",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e8c0ba96-8a48-4453-b2b6-8f01ed5bbacb",
+			"id": "27830108-90fe-4b54-9743-c0c7683bfaad",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
