@@ -113,7 +113,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-B-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -247,7 +247,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#3\",\r\n  \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-B-0.#3\",\r\n  \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1319,7 +1319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-B-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1817,7 +1817,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-M-0.#13\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-B-0.#13\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2182,7 +2182,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-M-0.#14\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-B-0.#14\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -21624,6 +21624,34 @@
 						},
 						{
 							"name": "Update user role status with correct userID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d917b59f-55a4-4b77-a45d-36c3470c03da",
+										"exec": [
+											"//Validating the status code\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"//validating the status message\r",
+											"pm.test(\"Status code name is OK\", function () {\r",
+											"    pm.response.to.have.status(\"OK\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Validating header\r",
+											"pm.test(\"Validating the Content-Type header is application/json\",() => {\r",
+											"    pm.expect(pm.response.headers.get('Content-Type')).to.eql('text/plain;charset=UTF-8');\r",
+											"});\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "223b4c82-2205-4393-a39f-38f0f25dcee1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -21633,14 +21661,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"roleId\": \"R02\",\r\n  \"userRoleStatus\": \"Not Active\"\r\n}",
+									"raw": "{\r\n  \"roleId\": \"R01\",\r\n  \"userRoleStatus\": \"Not Active\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/users/users/roleStatus/U24"
+								"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/users/users/roleStatus/U113"
 							},
 							"response": []
 						},
@@ -26906,17 +26934,17 @@
 	],
 	"variable": [
 		{
-			"id": "052b472f-6482-43ab-adbb-b8885273c922",
+			"id": "c55bb2e0-a13d-4e50-850c-691bab995b0f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "af0f093a-8967-4832-afa5-5f7337791767",
+			"id": "f1a3981c-fe50-478d-8714-8a389a004b3d",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "bec56eb5-31b8-4c10-b76a-badbfc11ffd1",
+			"id": "bc1bba5e-46bc-42a2-8e63-d5805c52b5cc",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
