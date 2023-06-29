@@ -12653,7 +12653,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
+									"raw": "{\r\n\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}}\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -12745,15 +12745,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{programName}}\"\r\n        }\r\n",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": "{{baseURL}}/"
 							},
 							"response": []
@@ -28103,17 +28094,17 @@
 	],
 	"variable": [
 		{
-			"id": "29efa973-0781-44ac-bc36-1f4c29e91ed6",
+			"id": "71f73c56-7e3b-4725-9c51-912cfacc7076",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8babf58d-9996-4b0a-9ca9-4c1f7c4d7895",
+			"id": "c76059e5-aa0e-44dd-a8dd-c81f7675f166",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "54de75b5-7a42-49a8-9ba4-2347afeb25ba",
+			"id": "e575dd43-f2f8-46e2-93cc-3d943c1f3dfa",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
