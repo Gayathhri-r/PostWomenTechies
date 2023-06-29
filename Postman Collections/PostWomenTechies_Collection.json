@@ -12435,22 +12435,14 @@
 											"         pm.expect(jsonResponse.data.batchNoOfClasses).to.eql.pm.iterationData.get(\"batchNoOfClasses\");\r",
 											"         pm.expect(jsonResponse.data.programId).to.eql.pm.iterationData.get(\"programId\");\r",
 											"         pm.expect(jsonResponse.data.programName).to.eql.pm.iterationData.get(\"programName\");\r",
-											"         \r",
-											"        }\r",
+											"            pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
+											"        })\r",
 											"\r",
-											"    /*pm.test(\"Validate Response body\", function() {\r",
+											"   \r",
 											"         \r",
-											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata1\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata2\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata1\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata2\"));\r",
-											"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"createbatchDescriptiondata1\"));\r",
-											"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"createbatchNoOfClassesdata1\"));\r",
-											"        pm.expect(jsonResponse.programId, pm.environment.get(\"createprogramIdata1\"));\r",
-											"        pm.expect(jsonResponse.programName,pm.environment.get(\"createprogramIddata2\"));\r",
-											"})*/\r",
-											"\r",
+											"    \r",
+											"   \r",
+											" \r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =  \r",
@@ -28654,17 +28646,17 @@
 	],
 	"variable": [
 		{
-			"id": "9588a334-7540-4a8a-89bc-820e722002c9",
+			"id": "26d9a0ff-334d-4013-9b5e-2d4dfed4a510",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fb857383-1e18-4a5b-97c7-350a91db6fde",
+			"id": "c67673f4-bafe-4f68-b3c4-4c69f1ed13bc",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4a10fb65-95c5-48c4-a7cd-ce2eb7578192",
+			"id": "5d988b35-d0d4-4b21-a182-0ce8690bca77",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
