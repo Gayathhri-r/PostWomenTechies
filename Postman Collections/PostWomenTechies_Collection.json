@@ -15215,154 +15215,6 @@
 							]
 						},
 						{
-							"name": "Program_Batch_TC_052_Empty_Batch_status",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "e3095c08-4d12-4d60-8de0-7571f671fc51",
-										"exec": [
-											"\r",
-											"\r",
-											"//validate status code \r",
-											"pm.test(\"Status code is 400\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
-											"});\r",
-											"\r",
-											"//validate status message\r",
-											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
-											"});\r",
-											"\r",
-											"//validate response header - Content-type\r",
-											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
-											"});\r",
-											"\r",
-											"\r",
-											"//Get the response result\r",
-											"var jsonResponse = pm.response.json();\r",
-											"\r",
-											"//validate response body\r",
-											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
-											"})\r",
-											"\r",
-											" //validate response json schema\r",
-											"//Using json to json schema converter\r",
-											"var schema =   \r",
-											" {\r",
-											"     \r",
-											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
-											"  \"type\": \"object\",\r",
-											"  \"properties\": {\r",
-											"    \"timestamp\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"status\": {\r",
-											"      \"type\": \"integer\"\r",
-											"    },\r",
-											"    \"error\": {\r",
-											"      \"type\": \"string\"\r",
-											"    },\r",
-											"    \"path\": {\r",
-											"      \"type\": \"string\"\r",
-											"    }\r",
-											"  },\r",
-											"  \"required\": [\r",
-											"    \"timestamp\",\r",
-											"    \"status\",\r",
-											"    \"error\",\r",
-											"    \"path\"\r",
-											"  ]\r",
-											"}\r",
-											"//validate schema \r",
-											"pm.test(\"Validate schema\", () => {\r",
-											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
-											" })\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "3d8cd5e7-3c74-4dc5-891b-de33baf47d99",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{EmptybatchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": {{programName}}\r\n\r\n        \r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{baseURL}}/{{createBatch}}"
-							},
-							"response": [
-								{
-									"id": "7574e342-57fb-4212-b618-437207a5bd7a",
-									"name": "New Request",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batche"
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Server",
-											"value": "Cowboy"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Vary",
-											"value": "Origin"
-										},
-										{
-											"key": "Vary",
-											"value": "Access-Control-Request-Method"
-										},
-										{
-											"key": "Vary",
-											"value": "Access-Control-Request-Headers"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Transfer-Encoding",
-											"value": "chunked"
-										},
-										{
-											"key": "Date",
-											"value": "Fri, 23 Jun 2023 19:13:05 GMT"
-										},
-										{
-											"key": "Via",
-											"value": "1.1 vegur"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"timestamp\": \"2023-06-23T19:13:06.410+00:00\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"path\": \"/lms/batche\"\n}"
-								}
-							]
-						},
-						{
 							"name": "Program_Batch_TC_052_Invalid_Batch_status",
 							"event": [
 								{
@@ -28490,17 +28342,17 @@
 	],
 	"variable": [
 		{
-			"id": "dffb6e46-2e24-42b6-aef7-d991610551c0",
+			"id": "4a4280da-8413-424b-9678-e63be654b39b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "8d190c95-556f-4407-b75e-7bf8296441e8",
+			"id": "900772b6-80b3-4b7f-8a66-bbc8dd9ac519",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cb657ccf-ebae-4f88-acc5-5f5645ae83c2",
+			"id": "bce74bfd-4be5-4ae6-9ba3-e6e78817ce27",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
