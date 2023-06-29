@@ -20570,10 +20570,21 @@
 											"});\r",
 											"//validating the data type of the response body\r",
 											"var jsonData = pm.response.json();\r",
-											"pm.test(\"Validating the data of the response body\",() => {\r",
-											"    pm.expect(jsonData.status).to.eql(200);\r",
-											"    pm.expect(jsonData.error).to.eql(\"OK\");\r",
-											"});\r",
+											" pm.test(\"Validate Response body\", function() {\r",
+											"\r",
+											"        pm.expect(jsonResponse.userId,pm.environment.get(\"userId\"));\r",
+											"        pm.expect(jsonResponse.userFirstName,pm.expect.get(\"userFirstName\"));\r",
+											"        pm.expect(jsonResponse.userLastName,pm.expect.get(\"userLastName\"));    \r",
+											"        pm.expect(jsonResponse.userPhoneNumber,pm.expect.get(\"userPhoneNumber\"));\r",
+											"        pm.expect(jsonResponse.userLocation,pm.expect.get(\"userLocation\"));\r",
+											"        pm.expect(jsonResponse.userTimeZone,pm.expect.get(\"userTimeZone\"));\r",
+											"        pm.expect(jsonResponse.userLinkedinUrl,pm.expect.get(\"userLinkedinUrl\"));\r",
+											"        pm.expect(jsonResponse.userEduUg,pm.expect.get(\"userEduUg\"));\r",
+											"        pm.expect(jsonResponse.userEduPg,pm.expect.get(\"userEduPg\"));\r",
+											"        pm.expect(jsonResponse.userVisaStatus,pm.expect.get(\"userVisaStatus\"));\r",
+											"        pm.expect(jsonResponse.userMiddleName,pm.expect.get(\"userMiddleName\"));\r",
+											"        pm.expect(jsonResponse.userComments,pm.expect.get(\"userComments\"));\r",
+											"})\r",
 											"//validating the JSON schema\r",
 											"var schema =\r",
 											"{\r",
@@ -20628,7 +20639,6 @@
 											"      \"userTimeZone\",\r",
 											"      \"userVisaStatus\"\r",
 											"    ]\r",
-											"  }\r",
 											"}\r",
 											"\r",
 											"pm.test(\"Validating schema\", function() {\r",
@@ -26173,17 +26183,17 @@
 	],
 	"variable": [
 		{
-			"id": "54c874f0-7ae0-4e68-9316-7f16b440f677",
+			"id": "8ebbd546-a1ec-4220-8fb4-6ead1055607d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "1c9499a7-b7b4-4b1e-bba1-95715fcf0642",
+			"id": "8e0f7629-6fc6-4a23-8884-cc45539de641",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6b4ec8c6-c0bf-49da-8814-15c6b319f571",
+			"id": "be4b0863-b3a3-4c8d-9375-1b4803267689",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
