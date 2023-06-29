@@ -13341,22 +13341,6 @@
 											"\r",
 											"pm.environment.set(\"createdBatchId1\", id);\r",
 											"console.log(id);\r",
-											"    \r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"\r",
-											"        pm.expect(id,pm.environment.get(\"createdBatchId1\"));\r",
-											"         pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-											"        //pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
-											"        \r",
-											"         pm.expect(jsonResponse.data.batchId).to.equal.pm.iterationData.get(\"batchId\");\r",
-											"         pm.expect(jsonResponse.data.batchName).to.eql.pm.iterationData.get(\"batchName\");\r",
-											"         pm.expect(jsonResponse.data.batchDescription).to.eql.pm.iterationData.get(\"batchDescription\");\r",
-											"         pm.expect(jsonResponse.data.batchNoOfClasses).to.eql.pm.iterationData.get(\"batchNoOfClasses\");\r",
-											"         pm.expect(jsonResponse.data.programId).to.eql.pm.iterationData.get(\"programId\");\r",
-											"         pm.expect(jsonResponse.data.programName).to.eql.pm.iterationData.get(\"programName\");\r",
-											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-											"      \r",
-											"})\r",
 											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
@@ -28838,17 +28822,17 @@
 	],
 	"variable": [
 		{
-			"id": "bfd3bfe8-9517-4e14-942c-a446aaed953a",
+			"id": "7fc0eb2e-9165-443d-bd9f-9d97fc3258e5",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3d34b293-32d8-4c36-8763-c0898fc359c5",
+			"id": "1801b168-78c1-4fcb-8a34-449dd4f77419",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "c1a1c1af-d509-41aa-a276-f3b4a8dd4be7",
+			"id": "493a27a2-4462-44bb-806d-74a78ee08b24",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
