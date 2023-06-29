@@ -15503,7 +15503,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_059_Update_Multiple_Batch_for_same_program",
+							"name": "Program_Batch_TC_059_Update_Multiple_Batch_in_requestbody",
 							"event": [
 								{
 									"listen": "test",
@@ -27762,17 +27762,17 @@
 	],
 	"variable": [
 		{
-			"id": "44eb04c7-142a-4211-b0a0-4c771f3d9263",
+			"id": "6d7e4e21-f288-4a8d-9f35-95504912c5f7",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "7c7eb922-744b-440c-acd4-09aa40e01181",
+			"id": "18b59c29-4d9d-4eaf-a88f-efca8f09357c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "bfe45d29-34a3-42f6-b4d9-0f2797c5a22d",
+			"id": "41aba935-810a-4e10-a8bc-dd058d78ffdb",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
