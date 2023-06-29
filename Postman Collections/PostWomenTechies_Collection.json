@@ -18545,15 +18545,6 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"//random batchName serial number generation\r",
-											"\r",
-											"var random = Math.random().toString(36).substring(2);\r",
-											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
-											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
-											"/*var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
-											"pm.environment.set(\"batchDescription\",batchDescription)*/\r",
-											"\r",
-											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
@@ -18564,7 +18555,7 @@
 											"        console.log(jsonResponse.batchName);\r",
 											"        console.log(jsonResponse.batchDescription);\r",
 											"        console.log(jsonResponse.programName);\r",
-											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
+											"        pm.expect(jsonResponse.batchId).to.eql(4140);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
@@ -27786,17 +27777,17 @@
 	],
 	"variable": [
 		{
-			"id": "385cbd1e-b282-43ac-b93e-da8aebd7d5b5",
+			"id": "8520f2b2-4778-48ba-a7b0-2a7f263ac6bf",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d06e6a89-4cc3-471c-9d58-aa0af7220e99",
+			"id": "204ec130-664c-4661-a414-9a0359b71467",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cf9f97f4-ee5e-4425-b741-39c48c29df11",
+			"id": "295df477-f86b-407b-aba7-3428f66f0556",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
