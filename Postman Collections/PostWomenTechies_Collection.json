@@ -12237,9 +12237,10 @@
 											"const randno = Math.floor(Math.random()*10000+1);\r",
 											"var randomstr = \"Jun23-PostwomenTechies-SDET-Selenium-100-\"+randno;\r",
 											"\r",
-											"pm.environment.set(\"batchDescription\",\"This is for Selenium Assignment\");\r",
-											"pm.environment.set(\"batchName\",randomstr);\r",
 											"pm.environment.set(\"batchId\",1);\r",
+											"pm.environment.set(\"batchName\",randomstr);\r",
+											"pm.environment.set(\"batchDescription\",\"This is for Selenium Assignment\");\r",
+											"pm.environment.set(\"batchStatus\",\"Active\");\r",
 											"pm.environment.set(\"programName\",\"Jun23-PostWomenTechies-SDET-100-100\");\r",
 											"pm.environment.set(\"programId\",3168);\r",
 											"\r",
@@ -28093,17 +28094,17 @@
 	],
 	"variable": [
 		{
-			"id": "c8d6be9b-bd1c-410f-8921-62a92c204bac",
+			"id": "84782825-7ac8-40f9-8b72-bd830bdcb4ad",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6861c059-fab4-4dd3-97f6-e334259f2e3b",
+			"id": "9c093e9a-d24e-4341-8419-c5dc2108e5b0",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a2d0ad11-5fe0-486a-a640-9683d4fc3a34",
+			"id": "d71eca11-8bce-4a06-bae0-69d91546e1c8",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
