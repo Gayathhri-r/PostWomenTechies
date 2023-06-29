@@ -649,7 +649,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
+									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-AS-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -26525,17 +26525,17 @@
 	],
 	"variable": [
 		{
-			"id": "0c91f215-f5e2-4eed-bca6-b81868cbe048",
+			"id": "296894dd-46c5-4043-aeb3-14a73c3ec28d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "449b1b1f-285d-425c-8aed-00f3e591c98e",
+			"id": "effda03f-ce71-4a58-b7aa-785c8e176b96",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "cad0355c-1cfe-481c-a767-e9fe365e3e4e",
+			"id": "0e5a25e9-0805-4459-ba31-ec995308e4f3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
