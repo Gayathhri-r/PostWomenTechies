@@ -22131,6 +22131,66 @@
 						},
 						{
 							"name": "{{baseURL}}/{{GetAllUsers}}/U998",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8e9e792f-6fec-4363-9aa4-856e371e195a",
+										"exec": [
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "76052771-3bdf-488a-8685-c20953b2ba8a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -27223,17 +27283,17 @@
 	],
 	"variable": [
 		{
-			"id": "5cefc0d6-896b-4c60-9a57-512af95a8e36",
+			"id": "8e0a83c9-c1f8-4234-b9ce-df7d09bc960b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "6fe8b2cd-11f1-41a0-96f4-a82077aff575",
+			"id": "365e994b-a6ed-4b4c-a90e-f7896ff5f4a0",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "14a10787-d2a4-4144-8136-7c9503846064",
+			"id": "05ec59d7-3364-4088-a143-0d8ebd2db003",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
