@@ -8504,9 +8504,14 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": ""
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
-										"url": "{{baseURL}}/{{getBatchById}}/{{batchId}}"
+										"url": "{{baseURL}}/{{getBatchById}}/{{getbatchId}}"
 									},
 									"response": [
 										{
@@ -9198,7 +9203,16 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchById}}/{{Program_Batch_TC_011}}"
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseURL}}/{{getBatchById}}/{{InvalidSpecialCharId}}"
 									},
 									"response": [
 										{
@@ -26465,17 +26479,17 @@
 	],
 	"variable": [
 		{
-			"id": "75715831-4197-4ca2-8980-8465a46f150f",
+			"id": "ae21682e-1e31-442f-a87c-aa5493384317",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "4d1ce33f-cb90-4dad-b0d7-ccba598f5414",
+			"id": "e86a67fa-d4ed-480c-8fb9-0cda5383459c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "6587723e-94e6-44ec-99d8-1848916dc07e",
+			"id": "e6d4c0f0-003b-4542-bdeb-bea1006f8284",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
