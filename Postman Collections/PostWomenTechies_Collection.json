@@ -113,7 +113,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-AS-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1319,7 +1319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101AS-0.#7\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-AS-0.#1\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -26525,17 +26525,17 @@
 	],
 	"variable": [
 		{
-			"id": "f051bc97-978f-4de1-b0b6-90e3eb60105b",
+			"id": "034dcdd9-d205-4968-94e9-acae633e26ab",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ba06ef21-dec1-44b2-9a3f-e2f7c7bd4fa7",
+			"id": "c2c0f107-f47e-4a01-a308-d20f460e6307",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2a817221-fe5d-4d68-baee-082b0e7ecd88",
+			"id": "33f26a5e-ba50-4391-8d98-fc990c4d36e3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
