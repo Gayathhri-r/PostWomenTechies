@@ -20651,18 +20651,18 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\r\n        \"programName\": \"{{batchName}}\",\r\n        \"programDescription\": \"{{batchDescription}}\",\r\n        \"programStatus\": \"{{batchStatus}}\"\r\n        \r\n}",
+							"raw": "/*{\r\n\r\n        \"programName\": \"{{batchName}}\",\r\n        \"programDescription\": \"{{batchDescription}}\",\r\n        \"programStatus\": \"{{batchStatus}}\"\r\n        \r\n}*/",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{baseURL}}/{{createProgram}}"
+						"url": "{{baseURL}}{{GetAllUsers}} "
 					},
 					"response": []
 				}
@@ -26624,17 +26624,17 @@
 	],
 	"variable": [
 		{
-			"id": "34b49e80-68b8-46b8-a1dc-ad22c00b4c7e",
+			"id": "222ee4c3-a19e-4797-9acf-dbf9b7654bc0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "dfb6908e-e96f-4673-89f8-e9722653c94a",
+			"id": "93925a30-1a94-4529-87d8-4fad2301f88e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ef742143-6d53-4b14-85f2-0695a06375bc",
+			"id": "5fe06c2d-8cf5-4eb7-8f3c-baceb8f9781b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
