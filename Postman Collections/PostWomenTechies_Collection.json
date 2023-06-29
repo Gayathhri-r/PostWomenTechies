@@ -12280,21 +12280,21 @@
 										"id": "0b597a45-7a08-408b-a45f-2490b3020190",
 										"exec": [
 											"//validate status code\r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
+											"pm.test(\"Status code is 201\", function () {\r",
+											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
 											"var jsonResponse = pm.response.json();\r",
-											"var id = jsonResponse.assignmentId;\r",
+											"var id = jsonResponse.batchId;\r",
 											"pm.environment.set(\"CreatedBatchId\", id);\r",
 											"console.log(id);\r",
 											"\r",
 											"//validate status message\r",
-											"    var programName = pm.variables.get(programName);\r",
-											"    var batchName = pm.variables.get(\"batchName\");\r",
-											"    pm.test(\"Status code name has string\", function() {\r",
-											"         \r",
+											"\r",
+											"pm.test(\"Status code name has string\", function () {\r",
+											"    pm.response.to.have.status(\"Created\");\r",
 											"});\r",
+											"\r",
 											"\r",
 											"//validate response header - Content-type\r",
 											"pm.test(\"Content-type is application/json\",function(){\r",
@@ -28620,17 +28620,17 @@
 	],
 	"variable": [
 		{
-			"id": "908e4727-5957-4361-b243-898921c29fca",
+			"id": "730eb104-1f24-424e-9f94-ef15b9d7da1e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "10d594c4-7454-44e4-940a-fbb216f44627",
+			"id": "08718ed1-aca5-4901-b5c8-beb1cbe750ba",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "0329275c-2921-4aee-860a-38c0f2aa3aa5",
+			"id": "f19a456d-212f-49ab-a9cf-935a7ddfa2f3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
