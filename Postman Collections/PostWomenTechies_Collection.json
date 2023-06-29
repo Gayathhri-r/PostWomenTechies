@@ -10588,7 +10588,7 @@
 									"request": {
 										"method": "DELETE",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchByName}}/{{getbatchName}}"
+										"url": "{{baseURL}}/{{getBatchByName}}/{{getDELbyProgramId}}"
 									},
 									"response": [
 										{
@@ -11582,7 +11582,7 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchByProgramId}}/{{Program_Batch_TC_011}}"
+										"url": "{{baseURL}}/{{getBatchByProgramId}}/{{InvalidSpecialCharId}}"
 									},
 									"response": [
 										{
@@ -12679,25 +12679,64 @@
 									"script": {
 										"id": "dab9668c-30f5-4205-8b21-1f21b77d6eb4",
 										"exec": [
-											"console.log(\"Due to application error displays XML code, response body validation cannot be done\");\r",
-											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
-											"\r",
 											"//validate status code \r",
-											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(404);\r",
+											"pm.test(\"Status code is 405\", function () {\r",
+											"    pm.response.to.have.status(405);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Not Found\");\r",
+											"    pm.response.to.have.status(\"Method Not Allowed\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
 											"pm.test(\"Content-type is application/json\",function(){\r",
-											"     pm.expect(\"Content-Type\",\"application/json\");\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											""
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,405);\r",
+											"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"     \r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"timestamp\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"status\": {\r",
+											"      \"type\": \"integer\"\r",
+											"    },\r",
+											"    \"error\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"path\": {\r",
+											"      \"type\": \"string\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"timestamp\",\r",
+											"    \"status\",\r",
+											"    \"error\",\r",
+											"    \"path\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })"
 										],
 										"type": "text/javascript"
 									}
@@ -27057,17 +27096,17 @@
 	],
 	"variable": [
 		{
-			"id": "2704b44a-84bd-44c7-864b-ffdf5ed76c27",
+			"id": "adb95fe7-47c7-4efe-91b7-45d34cfa7503",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d1f903c6-d898-42c2-9ec8-9a5176fb12fe",
+			"id": "f68db66a-0cc2-4ee9-baa8-8566144d604a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e8faf7ec-4ac5-4cdc-819d-44ac3e75fc83",
+			"id": "d7cd6a64-921c-41b2-8d34-04762a90b5e3",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
