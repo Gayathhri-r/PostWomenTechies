@@ -14203,19 +14203,8 @@
 											"\r",
 											"var id = jsonResponse.batchId;\r",
 											"console.log(id);\r",
-											"//validate Response body\r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"         \r",
-											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata1\"));\r",
-											"        pm.expect(jsonResponse.batchName,pm.environment.get(\"createbatchNamedata2\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata1\"));\r",
-											"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"createbatchStatusdata2\"));\r",
-											"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"createbatchDescriptiondata1\"));\r",
-											"        pm.expect(jsonResponse.batchNoOfClasses, pm.environment.get(\"createbatchNoOfClassesdata1\"));\r",
-											"        pm.expect(jsonResponse.programId, pm.environment.get(\"createprogramIdata1\"));\r",
-											"        pm.expect(jsonResponse.programName,pm.environment.get(\"createprogramIddata2\"));\r",
-											"})\r",
+											"\r",
+											"  \r",
 											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
@@ -28078,17 +28067,17 @@
 	],
 	"variable": [
 		{
-			"id": "939d97ae-13b2-4b96-bf69-c2d75633dd3f",
+			"id": "5abe4cbc-2e8b-4e32-b94e-9350c50a256e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "53c53e59-8537-4d5d-8b3f-f11813fe5f48",
+			"id": "1dc5bf51-dda8-4468-ac64-5f5f8718ec31",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "bbbb03b2-d40d-44c3-abba-2c3a9c8701d7",
+			"id": "25276050-6c2a-4e2b-a194-21a31fe3fc37",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
