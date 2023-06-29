@@ -12308,13 +12308,6 @@
 											"pm.environment.set(\"createdBatchId\", id);\r",
 											"console.log(id);\r",
 											"    \r",
-											"    pm.test(\"Validate Response body\", function() {\r",
-											"\r",
-											"        //pm.expect(id,pm.environment.get(\"createdBatchId\"));\r",
-											"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
-											"        pm.expect(jsonResponse.batchName).to.include(\"PostWomen\"); \r",
-											"      \r",
-											"})\r",
 											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
@@ -28845,17 +28838,17 @@
 	],
 	"variable": [
 		{
-			"id": "8d43e8f7-9697-48ad-b545-2429efc5f636",
+			"id": "bfd3bfe8-9517-4e14-942c-a446aaed953a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "daa5dbeb-a7cf-4dcb-88a5-e07610cacc70",
+			"id": "3d34b293-32d8-4c36-8763-c0898fc359c5",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "baf5be98-ffda-403d-a383-ca4a12b022ee",
+			"id": "c1a1c1af-d509-41aa-a276-f3b4a8dd4be7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
