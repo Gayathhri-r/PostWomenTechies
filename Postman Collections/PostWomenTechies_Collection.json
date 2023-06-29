@@ -16001,7 +16001,8 @@
 											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
-											"\r",
+											"var id = jsonResponse.batchId;\r",
+											"console.log(id);\r",
 											"//validate Response body\r",
 											"    pm.test(\"Validate Response body\", function() {\r",
 											"         \r",
@@ -28807,17 +28808,17 @@
 	],
 	"variable": [
 		{
-			"id": "90e24a6f-77d9-419d-93d3-418fe1798bc3",
+			"id": "6e81cd7d-eee6-429c-9a42-2aed9129bf2e",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "536c409b-2dfb-45dd-ba65-4cb894bcd926",
+			"id": "af21faf8-e3c0-470c-beda-25b5a66af6e8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a2949cc1-9a77-4ee5-9bf6-0570d7da9e8b",
+			"id": "42f34e20-92f3-4140-a34e-b93ce94f3752",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
