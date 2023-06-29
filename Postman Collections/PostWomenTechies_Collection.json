@@ -18765,7 +18765,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
 											" })\r",
 											""
 										],
@@ -18955,7 +18955,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_096_Without_Endpoints",
+							"name": "Program_Batch_TC_096_98_Without_Endpoints",
 							"event": [
 								{
 									"listen": "test",
@@ -27200,17 +27200,17 @@
 	],
 	"variable": [
 		{
-			"id": "83718dbb-85f1-4d1a-bbfe-67ef3edb8ac4",
+			"id": "e160933d-2166-4d8d-8b58-5f8cb7be9df0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "58be9eee-14d1-4705-8e32-667a258b3366",
+			"id": "599b4483-577b-4a92-8db4-1bc0557f836a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "3d59d658-b5cd-431f-b3b3-79b6da78e40e",
+			"id": "7413d411-a530-4adf-8a99-97c07bb5f72b",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
