@@ -11710,7 +11710,7 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchByProgramId}}/{{Program_Batch_TC_011}}"
+										"url": "{{baseURL}}/{{getBatchByProgramId}}/{{InvalidAlphanumericBatchId}}"
 									},
 									"response": [
 										{
@@ -13346,7 +13346,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema));\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false;\r",
 											" })\r",
 											""
 										],
@@ -27096,17 +27096,17 @@
 	],
 	"variable": [
 		{
-			"id": "adb95fe7-47c7-4efe-91b7-45d34cfa7503",
+			"id": "e756e513-4efd-4953-a468-2a82646880df",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "f68db66a-0cc2-4ee9-baa8-8566144d604a",
+			"id": "39dc4d38-c652-4a00-b914-b02933f7979a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d7cd6a64-921c-41b2-8d34-04762a90b5e3",
+			"id": "8c9be757-9479-4698-8fd0-606f1e54b0c7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
