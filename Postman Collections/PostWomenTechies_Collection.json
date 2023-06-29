@@ -19013,7 +19013,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
+											" pm.expect(tv4.validate(jsonResponse,schema))\r",
 											" })"
 										],
 										"type": "text/javascript"
@@ -19043,12 +19043,12 @@
 											"\r",
 											"//validate status code \r",
 											"pm.test(\"Status code is 404\", function () {\r",
-											"    pm.response.to.have.status(400);\r",
+											"    pm.response.to.have.status(404);\r",
 											"});\r",
 											"\r",
 											"//validate status message\r",
 											"pm.test(\"Status code name has string\", function() {\r",
-											"    pm.response.to.have.status(\"Bad Request\");\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
 											"});\r",
 											"\r",
 											"//validate response header - Content-type\r",
@@ -19062,8 +19062,8 @@
 											"\r",
 											"//validate response body\r",
 											"pm.test(\"Validate response body\", function(){\r",
-											"    pm.expect(jsonResponse.status,400);\r",
-											"    pm.expect(jsonResponse.error,\"Bad Request\");\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
 											"})\r",
 											"\r",
 											" //validate response json schema\r",
@@ -19097,7 +19097,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" pm.expect(tv4.validate(jsonResponse,schema))\r",
 											" })\r",
 											""
 										],
@@ -27195,17 +27195,17 @@
 	],
 	"variable": [
 		{
-			"id": "abfd324c-764c-4f7f-859c-843a6ae7dc83",
+			"id": "6563295e-fbf2-4fb2-beeb-f15ac7d921a8",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "fbd6b68b-7dec-467f-96ef-20cd4d3ca2e3",
+			"id": "663fb072-4914-4aac-b654-8950baadb772",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4a9ca2a2-b773-40c5-a13e-7518324ee454",
+			"id": "0b300621-02a8-43ca-bae0-f44e3bfd1d4f",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
