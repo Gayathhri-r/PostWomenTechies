@@ -13250,15 +13250,6 @@
 							"request": {
 								"method": "POST",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
 								"url": "{{invalidBaseUrl}}/{{createBatch}}"
 							},
 							"response": [
@@ -28121,17 +28112,17 @@
 	],
 	"variable": [
 		{
-			"id": "2a886cb3-7db5-4bf1-a25e-0e8c685d1e32",
+			"id": "a3d83cce-765f-462b-b237-99ee0d065964",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "4f5df4f6-395b-45f7-9740-38d72e8aca0a",
+			"id": "ccf481e2-6b60-4151-b229-926263f63f3a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a9f61ae8-2722-4083-94cd-1f8ee25981e1",
+			"id": "ab8dc977-4471-4879-ada6-f62c3614b0d7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
