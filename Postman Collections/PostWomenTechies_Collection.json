@@ -12522,7 +12522,7 @@
 										"id": "1114369e-f5a8-4319-8b46-6be4b3d774c6",
 										"exec": [
 											"//get the 'value' field from the data file for this request run\r",
-											"pm.iterationData.get(\"batchId\")"
+											"//pm.iterationData.get(\"batchId\")"
 										],
 										"type": "text/javascript"
 									}
@@ -15227,11 +15227,6 @@
 											"pm.test(\"Status code is 201\", function () {\r",
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
-											"\r",
-											"var jsonResponse = pm.response.json();\r",
-											"var id = jsonResponse.batchId;\r",
-											"//pm.environment.set(\"CreatedBatchId\", id);\r",
-											"console.log(id);\r",
 											"\r",
 											"//validate status message\r",
 											"\r",
@@ -28860,17 +28855,17 @@
 	],
 	"variable": [
 		{
-			"id": "7c5aa906-83d0-4dcd-89e1-10f7f0e99d68",
+			"id": "8131c4fe-89d9-4bdc-a3e1-88f1c03c37a1",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e4ce0bd1-2040-44a0-af0b-b0007d1e645e",
+			"id": "d976b79f-a773-479e-98ca-fbfaf1be5859",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "519b1c70-7837-4916-9251-6b4779eed4ec",
+			"id": "ad6ad4aa-912c-4d2e-8c2e-6e6b80e03327",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
