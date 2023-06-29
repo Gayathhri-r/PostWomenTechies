@@ -21540,6 +21540,66 @@
 						},
 						{
 							"name": "Update user role status with incorrect userId",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "25c86348-b877-42db-9bff-fa66a59da0f0",
+										"exec": [
+											"//validate status code \r",
+											"pm.test(\"Status code is 400\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											"\r",
+											"//validate status message\r",
+											"pm.test(\"Status code name has string\", function() {\r",
+											"    pm.response.to.have.status(\"Not Found\");\r",
+											"});\r",
+											"\r",
+											"//validate response header - Content-type\r",
+											"pm.test(\"Content-type is application/json\",function(){\r",
+											"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+											"});\r",
+											"\r",
+											"\r",
+											"//Get the response result\r",
+											"var jsonResponse = pm.response.json();\r",
+											"\r",
+											"//validate response body\r",
+											"pm.test(\"Validate response body\", function(){\r",
+											"    pm.expect(jsonResponse.status,404);\r",
+											"    pm.expect(jsonResponse.error,\"Not Found\");\r",
+											"})\r",
+											"\r",
+											" //validate response json schema\r",
+											"//Using json to json schema converter\r",
+											"var schema =   \r",
+											" {\r",
+											"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+											"  \"type\": \"object\",\r",
+											"  \"properties\": {\r",
+											"    \"message\": {\r",
+											"      \"type\": \"string\"\r",
+											"    },\r",
+											"    \"success\": {\r",
+											"      \"type\": \"boolean\"\r",
+											"    }\r",
+											"  },\r",
+											"  \"required\": [\r",
+											"    \"message\",\r",
+											"    \"success\"\r",
+											"  ]\r",
+											"}\r",
+											"//validate schema \r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"  //using tv4 validatory library and validate method\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+											" })"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "d628c3c8-2798-48be-bc22-187e446a180a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -26920,17 +26980,17 @@
 	],
 	"variable": [
 		{
-			"id": "0bf5fd43-04c8-4d5d-963b-29ac488ea3c6",
+			"id": "a1f14bc2-3eb4-43e1-baa5-a703a565adf9",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "b9ae3bb4-72d6-4f18-b42a-361320f4541c",
+			"id": "acfd332a-62af-4d53-8fc6-51c3d169a8ae",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "e0649913-4fd4-430b-8e6b-2ae821ee3d7f",
+			"id": "255e2335-4265-48b8-8614-9a1c4f599ca9",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
