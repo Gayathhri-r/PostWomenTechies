@@ -9680,9 +9680,14 @@
 													"\r",
 													"    \r",
 													"//validate Response body\r",
+													"// Save access_token in a collection variable\r",
+													"\r",
+													"pm.collectionVariables.set(\"bearer-token\", access_token);\r",
 													"    pm.test(\"Validate Response body\", function() {\r",
-													"         \r",
-													"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
+													"\r",
+													"        var jsonResponse = pm.response.json();\r",
+													"        var batchId = jsonData.batchId;\r",
+													"        pm.expect(jsonResponse.batchId, batchId);\r",
 													"        pm.expect(jsonResponse.batchName,pm.environment.get(\"batchName\"));\r",
 													"        pm.expect(jsonResponse.batchStatus,pm.environment.get(\"batchStatus\"));\r",
 													"        pm.expect(jsonResponse.batchDescription, pm.environment.get(\"batchDescription\"));;\r",
@@ -28060,17 +28065,17 @@
 	],
 	"variable": [
 		{
-			"id": "61824cdb-0a46-45ec-a2f7-818515ee42d1",
+			"id": "a9cc0670-575c-462b-ae9b-a583e9a6058a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e7db4562-14f6-47f4-8780-240a90279eb7",
+			"id": "7873b738-b187-4e4a-9df6-0b1397c6bfc4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "58cdb8dd-7040-4652-8a52-488fc96a587f",
+			"id": "9561c263-04fd-47a7-941b-d1a4ed3a4cbf",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
