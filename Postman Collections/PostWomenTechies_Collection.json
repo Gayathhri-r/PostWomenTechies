@@ -8511,7 +8511,7 @@
 												}
 											}
 										},
-										"url": "{{baseURL}}/{{getBatchById}}/{{getbatchId}}"
+										"url": "{{baseURL}}/{{getBatchById}}/{{batchId}}"
 									},
 									"response": [
 										{
@@ -26479,17 +26479,17 @@
 	],
 	"variable": [
 		{
-			"id": "fd0209fb-e4a1-4ff4-9b86-bee6ed12cd3e",
+			"id": "ae173fbb-c0cc-42e1-936b-3077ddb75a76",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "58ba29f7-ba6b-48bc-9a41-3cfb340395d4",
+			"id": "e583f465-25bf-4d6f-8b02-6c8d1081c692",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "9ad3064b-c267-4965-96b5-35b7650e214c",
+			"id": "5e028870-e6e9-4760-b991-a83566f5d45a",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
