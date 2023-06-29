@@ -9693,12 +9693,12 @@
 													"        var rprogramId = jsonData.programId;\r",
 													"        var rprogramName = jsonData.programName;\r",
 													"      \r",
-													"        pm.expect(jsonResponse.batchId, batchId);\r",
-													"        pm.expect(jsonResponse.batchName,batchName);\r",
-													"        pm.expect(jsonResponse.batchStatus,batchDescription);\r",
-													"        pm.expect(jsonResponse.batchDescription, batchNoOfClasses);\r",
-													"        pm.expect(jsonResponse.programId, programId);\r",
-													"        pm.expect(jsonResponse.programName,programName);\r",
+													"        pm.expect(jsonResponse.batchId, rbatchId);\r",
+													"        pm.expect(jsonResponse.batchName,rbatchName);\r",
+													"        pm.expect(jsonResponse.batchStatus,rbatchDescription);\r",
+													"        pm.expect(jsonResponse.batchDescription, rbatchNoOfClasses);\r",
+													"        pm.expect(jsonResponse.programId, rprogramId);\r",
+													"        pm.expect(jsonResponse.programName,rprogramName);\r",
 													"})\r",
 													"\r",
 													"\r",
@@ -28070,17 +28070,17 @@
 	],
 	"variable": [
 		{
-			"id": "5081400c-8f05-4892-9520-7b24101121d4",
+			"id": "cc631026-03a9-4446-aa8a-742e0e64a1fe",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "ce0e0a8f-7a25-4be3-b393-e541496288cf",
+			"id": "824cc2a4-f890-4807-8dec-8dacde624bfd",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "9c6c263b-07fd-4fc1-993f-ae2a86f70eaa",
+			"id": "a022de14-17a6-4bbb-87c8-5fda14d9a760",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
