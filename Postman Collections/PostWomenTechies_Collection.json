@@ -18640,7 +18640,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_089_90_Data_Driven_Testing_ Valid_Batches",
+							"name": "Program_Batch_TC_088_89_90_Data_Driven_Testing_ Valid_Batches",
 							"event": [
 								{
 									"listen": "test",
@@ -18935,7 +18935,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
+											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
 											" })\r",
 											""
 										],
@@ -27288,17 +27288,17 @@
 	],
 	"variable": [
 		{
-			"id": "ef7cff90-c845-4391-aeb0-0a9c312e81a0",
+			"id": "f4705dd7-e7d5-4f16-ade8-a8e8c167a33f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "52e0140d-c1f2-4563-8e94-b8aae73baea6",
+			"id": "f017f2a2-f0cd-488c-a246-e4c65bd5cdc4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "7c28d88e-9c33-4d7f-97ce-9f2a52edfeee",
+			"id": "431f091e-aa88-48f7-b997-ac32c8dc6496",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
