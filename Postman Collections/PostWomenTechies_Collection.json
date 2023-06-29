@@ -12272,7 +12272,7 @@
 							"response": []
 						},
 						{
-							"name": "Program_Batch_TC_033_34_35Create Batch",
+							"name": "Program_Batch_TC_033_34_35Create Batch_data_driven",
 							"event": [
 								{
 									"listen": "test",
@@ -12303,9 +12303,6 @@
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
 											"var id = jsonResponse.batchId;\r",
-											"console.log(id);\r",
-											"\r",
-											"pm.environment.set(\"createdBatchId\", id);\r",
 											"console.log(id);\r",
 											"    \r",
 											"\r",
@@ -28081,17 +28078,17 @@
 	],
 	"variable": [
 		{
-			"id": "d475b1db-d2cc-4211-89ca-f7e94a87b00e",
+			"id": "939d97ae-13b2-4b96-bf69-c2d75633dd3f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "86e1c1cc-e500-4431-8cc0-d3fa27dfbe29",
+			"id": "53c53e59-8537-4d5d-8b3f-f11813fe5f48",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "95654b24-539e-49db-b67d-f6a6a2b59ed6",
+			"id": "bbbb03b2-d40d-44c3-abba-2c3a9c8701d7",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
