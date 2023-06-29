@@ -10609,9 +10609,9 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "POST",
+										"method": "DELETE",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchByName}}/{{batchName}}"
+										"url": "{{baseURL}}/{{getBatchByName}}/{{getbatchName}}"
 									},
 									"response": [
 										{
@@ -27094,17 +27094,17 @@
 	],
 	"variable": [
 		{
-			"id": "2d54e60b-aebb-430e-ab3c-91842e30898b",
+			"id": "29066fed-4e3a-49e0-a623-a0b6e64030a0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d3ecafc9-420b-497d-afc9-0ecafc9d0a75",
+			"id": "ba3154f9-f4d3-4dbc-8ad8-a5d315fce414",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "043c4ad4-30ff-4475-8bfa-42b1c71d262e",
+			"id": "eb22ac77-4dd5-4e4a-8d86-018fa7a97e09",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
