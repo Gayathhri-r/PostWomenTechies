@@ -12761,7 +12761,7 @@
 										}
 									}
 								},
-								"url": "{{baseURL}}/{{createBatch}}"
+								"url": "{{baseURL}}/{{withoutEndpoint}}"
 							},
 							"response": []
 						},
@@ -28657,17 +28657,17 @@
 	],
 	"variable": [
 		{
-			"id": "2c8a0d52-fa16-4466-bae4-76a4293f28ae",
+			"id": "a1512c61-5f71-4c12-a5ac-d721d0d81471",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "44cd4890-5b55-4088-aff3-eea5572ffb13",
+			"id": "968eac70-85cd-44f9-935f-af6467c7a644",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "a3a91f27-1bf8-4843-bc6e-675e10903e7c",
+			"id": "713f6af4-bcc7-4168-9eb7-4235e6916f67",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
