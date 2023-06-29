@@ -917,7 +917,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-#101-8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-#8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1051,7 +1051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-#101-9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -8511,7 +8511,7 @@
 												}
 											}
 										},
-										"url": "{{baseURL}}/{{getBatchById}}/{{getbatchId}}"
+										"url": "{{baseURL}}/{{getBatchById}}/{{batchId}}"
 									},
 									"response": [
 										{
@@ -26479,17 +26479,17 @@
 	],
 	"variable": [
 		{
-			"id": "c7100300-7daf-42d6-90f8-4273c01fa099",
+			"id": "8d7140be-87f1-47f0-a7b6-a458063f080f",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "dca7d36e-23ac-4074-9e18-d78153cb5920",
+			"id": "ae836471-57b3-48d1-9df2-b8f748161b2b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d656d679-c1b7-4d54-ae6c-dee1378e25e2",
+			"id": "5d88c14e-ff3b-4e87-ad60-a42cd794a9db",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
