@@ -1227,7 +1227,7 @@
 										"id": "e046177d-93de-449d-b914-90cd4d83bce3",
 										"exec": [
 											"//Valiate status Code\r",
-											"pm.test(\"Status code is 200\", function () {\r",
+											"pm.test(\"Status code is 201\", function () {\r",
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
@@ -1319,7 +1319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n   \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-P-0.#1\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#2\",\r\n  \"programStatus\":  \"InProgress\"\r\n}\r\n\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1327,11 +1327,15 @@
 									}
 								},
 								"url": {
-									"raw": "{{baseURL}}/saveprogram",
+									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram",
+									"protocol": "https",
 									"host": [
-										"{{baseURL}}"
+										"lms-api-hackathon-june2023-930a8b0f895d",
+										"herokuapp",
+										"com"
 									],
 									"path": [
+										"lms",
 										"saveprogram"
 									],
 									"query": [
@@ -26677,17 +26681,17 @@
 	],
 	"variable": [
 		{
-			"id": "9a110c81-8998-424f-b84f-5aa129848561",
+			"id": "bb467a1e-c6d7-46a7-9988-166e0612d282",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "68dce94b-5a6e-4b13-b3c3-41b2367de421",
+			"id": "31edaffd-7b5e-48b7-bdc0-c1d0102c031c",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "3e2f85a3-4ecd-4aa0-8ef7-0882add48ceb",
+			"id": "5e37cf16-c2b0-41b6-91e4-f6ef467b8445",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
