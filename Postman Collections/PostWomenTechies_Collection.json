@@ -10534,6 +10534,134 @@
 									]
 								},
 								{
+									"name": "Program_Batch_TC_021_Invalid_Request_POST_PUT_DELETE",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "e04d7133-63da-4509-acfb-938892daf50d",
+												"exec": [
+													"//validate status code \r",
+													"pm.test(\"Status code is 405\", function () {\r",
+													"    pm.response.to.have.status(405);\r",
+													"});\r",
+													"\r",
+													"//validate status message\r",
+													"pm.test(\"Status code name has string\", function() {\r",
+													"    pm.response.to.have.status(\"Method Not Allowed\");\r",
+													"});\r",
+													"\r",
+													"//validate response header - Content-type\r",
+													"pm.test(\"Content-type is application/json\",function(){\r",
+													"     pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
+													"});\r",
+													"\r",
+													"\r",
+													"//Get the response result\r",
+													"var jsonResponse = pm.response.json();\r",
+													"\r",
+													"//validate response body\r",
+													"pm.test(\"Validate response body\", function(){\r",
+													"    pm.expect(jsonResponse.status,405);\r",
+													"    pm.expect(jsonResponse.error,\"Method Not Allowed\");\r",
+													"})\r",
+													"\r",
+													" //validate response json schema\r",
+													"//Using json to json schema converter\r",
+													"var schema =   \r",
+													" {\r",
+													"     \r",
+													"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+													"  \"type\": \"object\",\r",
+													"  \"properties\": {\r",
+													"    \"timestamp\": {\r",
+													"      \"type\": \"string\"\r",
+													"    },\r",
+													"    \"status\": {\r",
+													"      \"type\": \"integer\"\r",
+													"    },\r",
+													"    \"error\": {\r",
+													"      \"type\": \"string\"\r",
+													"    },\r",
+													"    \"path\": {\r",
+													"      \"type\": \"string\"\r",
+													"    }\r",
+													"  },\r",
+													"  \"required\": [\r",
+													"    \"timestamp\",\r",
+													"    \"status\",\r",
+													"    \"error\",\r",
+													"    \"path\"\r",
+													"  ]\r",
+													"}\r",
+													"//validate schema \r",
+													"pm.test(\"Validate schema\", () => {\r",
+													"  //using tv4 validatory library and validate method\r",
+													" pm.expect(tv4.validate(jsonResponse,schema)).to.be.true\r",
+													" })"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "efa926b5-e3c7-4541-b9d9-82622c65cfd5",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": "{{baseURL}}/{{getBatchByName}}/{{batchName}}"
+									},
+									"response": [
+										{
+											"id": "ca803827-a692-40fa-95b9-1a761c58a8fb",
+											"name": "Program_Batch_TC_004_Invalid_Request_POST",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": "{{baseURL}}/{{getAllBatches}}"
+											},
+											"status": "Unsupported Media Type",
+											"code": 415,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Server",
+													"value": "Cowboy"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Accept",
+													"value": "application/json"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Date",
+													"value": "Sun, 25 Jun 2023 11:29:20 GMT"
+												},
+												{
+													"key": "Via",
+													"value": "1.1 vegur"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"timestamp\": \"2023-06-25T11:29:20.348+00:00\",\n    \"status\": 415,\n    \"error\": \"Unsupported Media Type\",\n    \"path\": \"/lms/batches\"\n}"
+										}
+									]
+								},
+								{
 									"name": "Program_Batch_TC_022_Invalid_Base_URL",
 									"event": [
 										{
@@ -26966,17 +27094,17 @@
 	],
 	"variable": [
 		{
-			"id": "f47c41e1-39b2-4da5-850d-e81c3f39464c",
+			"id": "2d54e60b-aebb-430e-ab3c-91842e30898b",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "c530fe2f-9042-458f-ba03-cadcd3e6ce56",
+			"id": "d3ecafc9-420b-497d-afc9-0ecafc9d0a75",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "4e194a00-6f7e-4882-af6b-359a785f90a2",
+			"id": "043c4ad4-30ff-4475-8bfa-42b1c71d262e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
