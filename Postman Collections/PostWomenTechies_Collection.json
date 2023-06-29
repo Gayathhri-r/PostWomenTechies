@@ -12241,6 +12241,7 @@
 											"pm.environment.set(\"batchName\",randomstr);\r",
 											"pm.environment.set(\"batchDescription\",\"This is for Selenium Assignment\");\r",
 											"pm.environment.set(\"batchStatus\",\"Active\");\r",
+											"pm.environment.set(\"batchNoOfClasses\",10);\r",
 											"pm.environment.set(\"programName\",\"Jun23-PostWomenTechies-SDET-100-100\");\r",
 											"pm.environment.set(\"programId\",3168);\r",
 											"\r",
@@ -12259,7 +12260,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "\r\n {\r\n        \"batchId\": {{batchId}},\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName: \"{{programName}}\"\"\r\n        \r\n}",
+									"raw": "\r\n {\r\n        \"batchId\": 0,\r\n        \"batchName\": \"{{batchName}}\",\r\n        \"batchDescription\": \"{{batchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{programId}},\r\n        \"programName\": \"{{batchName}}\"\r\n        }\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -28094,17 +28095,17 @@
 	],
 	"variable": [
 		{
-			"id": "84782825-7ac8-40f9-8b72-bd830bdcb4ad",
+			"id": "135de989-928f-4d7d-9c0c-9112264e14c4",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "9c093e9a-d24e-4341-8419-c5dc2108e5b0",
+			"id": "12c1c667-8cf5-485d-8f9d-c0a7f633a836",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d71eca11-8bce-4a06-bae0-69d91546e1c8",
+			"id": "6e336eac-9a37-43fc-9afd-6deef42266e9",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
