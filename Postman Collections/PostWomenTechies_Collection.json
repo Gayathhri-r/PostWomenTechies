@@ -14153,8 +14153,6 @@
 											"var id = jsonResponse.batchId;\r",
 											"console.log(id);\r",
 											"\r",
-											"  \r",
-											"\r",
 											" //validate response json schema\r",
 											"//Using json to json schema converter\r",
 											"var schema =  \r",
@@ -27096,17 +27094,17 @@
 	],
 	"variable": [
 		{
-			"id": "3f3de1e6-333d-4fc8-aa8a-0f98fb003999",
+			"id": "7fee63cd-6e07-4334-a51c-e6b1ae77fa36",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "bd439cd1-7792-4120-b4df-099d0c8b2fe4",
+			"id": "2c9746ce-2768-4d07-9755-350db1ba93be",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "747f3347-f741-447d-862f-79599c287d87",
+			"id": "ea8579b1-260b-48a6-8316-b535accdefc2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
