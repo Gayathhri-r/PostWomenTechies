@@ -9390,7 +9390,7 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{baseURL}}/{{getBatchById}}/{{Program_Batch_TC_012}}"
+										"url": "{{baseURL}}/{{getBatchById}}/{{InvalidAlphanumericBatchId}}"
 									},
 									"response": [
 										{
@@ -26526,17 +26526,17 @@
 	],
 	"variable": [
 		{
-			"id": "1f0ce2d4-c4b1-49b4-a8f6-83b23180fa0d",
+			"id": "4268f46f-23c0-4f88-bfa1-e210b35f32aa",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "87265f00-175b-4f95-95d5-8f32cde857fe",
+			"id": "1e0af6ef-83b3-4b80-89fb-3035f51d340b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1ab7fa90-cce3-4181-8425-e9ea394af1b6",
+			"id": "ffda6d68-daa8-4fe6-8df4-2052a6cb563e",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
