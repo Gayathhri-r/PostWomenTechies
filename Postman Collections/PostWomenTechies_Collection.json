@@ -113,7 +113,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#10\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -247,7 +247,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#3\",\r\n  \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"Selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#3\",\r\n  \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -381,7 +381,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#4\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#4\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -515,7 +515,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n    \r\n}\r\n\r\n",
+									"raw": "{\r\n   \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n    \r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -649,7 +649,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
+									"raw": "{\r\n    \r\n    \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#6\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -783,7 +783,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#7\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#7\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -917,7 +917,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#8\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1051,7 +1051,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#9\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1185,7 +1185,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#2\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1219,7 +1219,7 @@
 							"response": []
 						},
 						{
-							"name": "Post Program-1_program",
+							"name": "Post Program-1_program_valid end points and base url",
 							"event": [
 								{
 									"listen": "test",
@@ -1227,7 +1227,7 @@
 										"id": "e046177d-93de-449d-b914-90cd4d83bce3",
 										"exec": [
 											"//Valiate status Code\r",
-											"pm.test(\"Status code is 201\", function () {\r",
+											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(201);\r",
 											"});\r",
 											"\r",
@@ -1319,7 +1319,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#2\",\r\n  \"programStatus\":  \"InProgress\"\r\n}\r\n\r\n\r\n",
+									"raw": "{\r\n    \r\n     \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#1\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1327,15 +1327,11 @@
 									}
 								},
 								"url": {
-									"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/saveprogram",
-									"protocol": "https",
+									"raw": "{{baseURL}}/saveprogram",
 									"host": [
-										"lms-api-hackathon-june2023-930a8b0f895d",
-										"herokuapp",
-										"com"
+										"{{baseURL}}"
 									],
 									"path": [
-										"lms",
 										"saveprogram"
 									],
 									"query": [
@@ -1450,7 +1446,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#11\",\r\n  \"programStatus\": \"12\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#11\",\r\n  \"programStatus\": \"12\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1554,7 +1550,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \"programName\": \"Jun23-PostWomenTechies-SDET-101-M-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n   \"programName\": \"Jun23-PostWomenTechies-SDET-101-J-0.#5\",\r\n    \"programDescription\": \"Selenium\",\r\n    \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1685,7 +1681,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-101-M-0.#12\"\r\n\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-101-J-0.#12\"\r\n\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1821,7 +1817,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-M-0.#13\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-A-0.#12\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2186,7 +2182,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-M-0.#14\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\":\"\",\r\n  \"programName\": \"Jun23-PostWomenTechies-#101-AS-0.#13\",\r\n   \"programStatus\": \"InProgress\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -26681,17 +26677,17 @@
 	],
 	"variable": [
 		{
-			"id": "ff1f2521-b120-4079-86e8-69b0311c410d",
+			"id": "5904eeb0-9485-4c53-ad13-2bc30babb8e6",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "2be5607e-d3fc-480d-a579-78ed7da78366",
+			"id": "25ff13fa-e2c6-4efe-8af3-01ebe78a45d8",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "1c1a8b17-b06d-46a2-9cc7-ec09b8d1cdb6",
+			"id": "b0a467c4-da70-4fb6-a66a-c24a2e82ccb5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
