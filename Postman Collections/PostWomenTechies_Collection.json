@@ -1085,7 +1085,7 @@
 							"response": []
 						},
 						{
-							"name": "Post Program-2nd program_valid end points and base url",
+							"name": "Post Program-2nd program",
 							"event": [
 								{
 									"listen": "test",
@@ -1446,7 +1446,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-0.#11\",\r\n  \"programStatus\": \"12\"\r\n}\r\n",
+									"raw": "{\r\n  \"programDescription\": \"selenium\",\r\n  \"programName\": \"Jun23-PostWomenTechies-SDET-101-AS-0.#11\",\r\n  \"programStatus\": \"12\"\r\n}\r\n",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -26525,17 +26525,17 @@
 	],
 	"variable": [
 		{
-			"id": "07a19942-f53b-4ed5-874c-8bc9307bfacc",
+			"id": "3d124529-488d-489c-8810-86f1b72c8141",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e5f4671c-12f8-4985-87e1-c5a48d5537b0",
+			"id": "1fea59ab-e655-4c54-bed6-2a26e5641b52",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d054f7f5-77ee-4f08-9eb0-813415dbbdb0",
+			"id": "3c7960b9-8ef4-4d9c-ab26-ef2f7798eaaf",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
