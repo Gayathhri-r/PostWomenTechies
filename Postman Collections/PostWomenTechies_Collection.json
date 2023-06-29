@@ -7131,7 +7131,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"programName\": \"{{Jun23-PostWomenTechies-SDET-101-2}}\",\r\n}"
+									"raw": "{\r\n        \"programName\": \"{{Jun23-PostWomenTechies-SDET-101-AS-0.#2}}\",\r\n}"
 								},
 								"url": {
 									"raw": "{{baseURL}}/deletebyprogname/{programName}",
@@ -26526,17 +26526,17 @@
 	],
 	"variable": [
 		{
-			"id": "c1592144-8839-4ea6-bf6e-36771d47cef0",
+			"id": "1f0ce2d4-c4b1-49b4-a8f6-83b23180fa0d",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "88949392-7d5d-43f0-8b54-4562357637f6",
+			"id": "87265f00-175b-4f95-95d5-8f32cde857fe",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "111eeee1-6fc0-4db0-8b8d-3d12f99f2a22",
+			"id": "1ab7fa90-cce3-4181-8425-e9ea394af1b6",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
