@@ -15401,15 +15401,6 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"//random batchName serial number generation\r",
-											"\r",
-											"var random = Math.random().toString(36).substring(2);\r",
-											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
-											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
-											"/*var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
-											"pm.environment.set(\"batchDescription\",batchDescription)*/\r",
-											"\r",
-											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
@@ -15500,7 +15491,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{updateBatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{updateProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
+									"raw": "{\r\n        \"batchId\": {{updateBatchId}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{updateBatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{ProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -27771,17 +27762,17 @@
 	],
 	"variable": [
 		{
-			"id": "2e00759c-cbfc-46f1-a631-ae3a3ebe61d8",
+			"id": "59e51d20-83e7-4432-895d-6f050ad949bb",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "e778cacb-d36b-4a82-99f5-24f883bb38f1",
+			"id": "15f7eed4-6942-412b-a937-ff9ad39a71ad",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "2ccc9178-28a2-4bbe-b658-a0d1b692097f",
+			"id": "f583adbf-f76d-4eb7-8f30-14b29da93bab",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
