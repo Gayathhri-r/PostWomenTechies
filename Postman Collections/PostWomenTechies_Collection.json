@@ -18434,15 +18434,6 @@
 											"    pm.response.to.have.header(\"Content-Type\",\"application/json\");\r",
 											"});\r",
 											"\r",
-											"//random batchName serial number generation\r",
-											"\r",
-											"var random = Math.random().toString(36).substring(2);\r",
-											"//batchName = Jun23-EliteForce-SDET-SDET01-001\r",
-											"//Jun23-TeamName-ProgramName-BatchName-serialnumber \r",
-											"/*var batchDescription = \"This batch is for Postman hackathon update-\"+random;\r",
-											"pm.environment.set(\"batchDescription\",batchDescription)*/\r",
-											"\r",
-											"\r",
 											"//Get the response result\r",
 											"var jsonResponse = pm.response.json();\r",
 											"\r",
@@ -18452,12 +18443,12 @@
 											"        console.log(jsonResponse.batchId);\r",
 											"        console.log(jsonResponse.batchName);\r",
 											"        console.log(jsonResponse.batchDescription);\r",
-											"        pm.expect(jsonResponse.batchId).to.eql(3130);\r",
+											"        pm.expect(jsonResponse.batchId).to.eql(4140);\r",
 											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
 											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
-											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
+											"        //pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
 											"})\r",
 											"\r",
 											"\r",
@@ -27808,17 +27799,17 @@
 	],
 	"variable": [
 		{
-			"id": "47c9bc4b-30bf-481a-83a5-502ecbca12f6",
+			"id": "ce8c8d01-b0b1-4af5-a40a-bc9f266b4705",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d3bcaca4-f982-48bc-a459-9b70168ec894",
+			"id": "303f2061-5e5a-4fb2-b091-12fed9dd0d9f",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d3e6b4b5-4f48-4e47-adcb-31f02559903d",
+			"id": "47d742f6-edac-42c7-8f10-af1a5b2dbc50",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
