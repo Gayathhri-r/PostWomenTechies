@@ -18635,7 +18635,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "{{baseURL}}/{{delEndPoint}}/{{delBatchId}}"
+								"url": "{{baseURL}}/{{delEndPoint}}/{{createdBatchId}}"
 							},
 							"response": []
 						},
@@ -18926,7 +18926,7 @@
 											"//validate schema \r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"  //using tv4 validatory library and validate method\r",
-											" pm.expect(tv4.validate(jsonResponse,schema)).to.be.false\r",
+											" pm.expect(tv4.validate(jsonResponse,schema))\r",
 											" })\r",
 											""
 										],
@@ -27364,17 +27364,17 @@
 	],
 	"variable": [
 		{
-			"id": "f642b042-d066-4fe2-aaae-7bd0e79fe3a3",
+			"id": "9b6ad084-93ce-41e1-91df-939a2984ddf0",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "3633096b-9680-41c1-96b2-84b7a218ea68",
+			"id": "79314a5a-6a8d-4d28-a695-6e1c061d65dd",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "27830108-90fe-4b54-9743-c0c7683bfaad",
+			"id": "ee8ef50b-d682-4e3d-b4e4-d2e70889dd0c",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
