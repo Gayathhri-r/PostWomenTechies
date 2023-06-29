@@ -20573,17 +20573,17 @@
 											" pm.test(\"Validate Response body\", function() {\r",
 											"\r",
 											"        pm.expect(jsonResponse.userId,pm.environment.get(\"userId\"));\r",
-											"        pm.expect(jsonResponse.userFirstName,pm.expect.get(\"userFirstName\"));\r",
-											"        pm.expect(jsonResponse.userLastName,pm.expect.get(\"userLastName\"));    \r",
-											"        pm.expect(jsonResponse.userPhoneNumber,pm.expect.get(\"userPhoneNumber\"));\r",
-											"        pm.expect(jsonResponse.userLocation,pm.expect.get(\"userLocation\"));\r",
-											"        pm.expect(jsonResponse.userTimeZone,pm.expect.get(\"userTimeZone\"));\r",
-											"        pm.expect(jsonResponse.userLinkedinUrl,pm.expect.get(\"userLinkedinUrl\"));\r",
-											"        pm.expect(jsonResponse.userEduUg,pm.expect.get(\"userEduUg\"));\r",
-											"        pm.expect(jsonResponse.userEduPg,pm.expect.get(\"userEduPg\"));\r",
-											"        pm.expect(jsonResponse.userVisaStatus,pm.expect.get(\"userVisaStatus\"));\r",
-											"        pm.expect(jsonResponse.userMiddleName,pm.expect.get(\"userMiddleName\"));\r",
-											"        pm.expect(jsonResponse.userComments,pm.expect.get(\"userComments\"));\r",
+											"        pm.expect(jsonResponse.userFirstName,pm.environment.get(\"userFirstName\"));\r",
+											"        pm.expect(jsonResponse.userLastName,pm.environment.get(\"userLastName\"));    \r",
+											"        pm.expect(jsonResponse.userPhoneNumber,pm.environment.get(\"userPhoneNumber\"));\r",
+											"        pm.expect(jsonResponse.userLocation,pm.environment.get(\"userLocation\"));\r",
+											"        pm.expect(jsonResponse.userTimeZone,pm.environment.get(\"userTimeZone\"));\r",
+											"        pm.expect(jsonResponse.userLinkedinUrl,pm.environment.get(\"userLinkedinUrl\"));\r",
+											"        pm.expect(jsonResponse.userEduUg,pm.environment.get(\"userEduUg\"));\r",
+											"        pm.expect(jsonResponse.userEduPg,pm.environment.get(\"userEduPg\"));\r",
+											"        pm.expect(jsonResponse.userVisaStatus,pm.environment.get(\"userVisaStatus\"));\r",
+											"        pm.expect(jsonResponse.userMiddleName,pm.environment.get(\"userMiddleName\"));\r",
+											"        pm.expect(jsonResponse.userComments,pm.environment.get(\"userComments\"));\r",
 											"})\r",
 											"//validating the JSON schema\r",
 											"var schema =\r",
@@ -26184,17 +26184,17 @@
 	],
 	"variable": [
 		{
-			"id": "67bc92f2-c34a-4c20-9cbc-e5bf9d54d043",
+			"id": "f8464f7c-b7d7-4e15-a219-78b2c338030a",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "cb3bd079-a634-4e3e-bd89-ec759a0aa6ca",
+			"id": "68932a3a-31f4-4b6b-9419-fa7fd9bbd05e",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "ea101fd8-84f8-482a-8662-628a9bfc533b",
+			"id": "5a4b399c-0551-45d7-a21d-b9002f0fe5e5",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
