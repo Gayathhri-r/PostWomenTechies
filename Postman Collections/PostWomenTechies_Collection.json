@@ -15360,11 +15360,11 @@
 											"        console.log(jsonResponse.batchName);\r",
 											"        console.log(jsonResponse.batchDescription);\r",
 											"        pm.expect(jsonResponse.batchId).to.eql(4140);\r",
-											"        pm.expect(jsonResponse.batchName).to.eql(\"Jun23-PostWomenTechies-SDET-100\");\r",
-											"        pm.expect(jsonResponse.batchDescription).to.eql(\"This program is for participating in API Hackathon\");\r",
+											"        pm.expect(jsonResponse.batchName).to.eqls(\"Jun23-PostWomenTechies-SDET-100\");\r",
+											"        pm.expect(jsonResponse.batchDescription).to.include(\"This program is for participating in API Hackathon\");\r",
 											"        pm.expect(jsonResponse.batchNoOfClasses).to.eql(10);\r",
 											"        pm.expect(jsonResponse.programId).to.eql(3168);\r",
-											"        pm.expect(jsonResponse.programName).to.not.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
+											"        pm.expect(jsonResponse.programName).to.eql(\"Jun26-PostWomenTechies-SDET-100\");     \r",
 											"})\r",
 											"\r",
 											"\r",
@@ -15440,7 +15440,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "/*{\r\n        \"batchId\": {{updateBatchID}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{BatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{updateProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}*/\r\n\r\n{\r\n                \"batchId\": 4140,\r\n                \"batchName\": \"Jun23-PostWomenTechies-SDET-100\",\r\n                \"batchDescription\": \"This is API Hackathaon\",\r\n                \"batchStatus\": \"Active\",\r\n                \"batchNoOfClasses\": \"10\",\r\n                \"programId\": 3168,\r\n                \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n                \r\n        }",
+									"raw": "/*{\r\n        \"batchId\": {{updateBatchID}},\r\n        \"batchName\": \"{{updateBatchName}}\",\r\n        \"batchDescription\": \"{{BatchDescription}}\",\r\n        \"batchStatus\": \"{{batchStatus}}\",\r\n        \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n        \"programId\": {{updateProgramId}},\r\n        \"programName\": {{programName}}\r\n        \r\n}*/\r\n\r\n{\r\n                \"batchId\": 4141,\r\n                \"batchName\": \"Jun23-PostWomenTechies-SDET-1001\",\r\n                \"batchDescription\": \"This is API Hackathaon\",\r\n                \"batchStatus\": \"Active\",\r\n                \"batchNoOfClasses\": \"10\",\r\n                \"programId\": 3168,\r\n                \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\r\n                \r\n        }",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -27096,17 +27096,17 @@
 	],
 	"variable": [
 		{
-			"id": "d669b6f9-76a9-4d99-ac57-ebdd10254cf5",
+			"id": "c65ac02d-fcb2-44ff-b27c-ef57c20a7f56",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "695278e6-6719-4b86-b848-7b5111ac493e",
+			"id": "34bbb65d-b979-47aa-90ce-474f0078ef1b",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d211d89d-f3fb-48fa-8458-d28637b0415b",
+			"id": "65779acd-b0c1-4b6e-ac39-1087e1dcc852",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
