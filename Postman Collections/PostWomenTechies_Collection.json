@@ -10794,9 +10794,9 @@
 													"//validate Response body\r",
 													"    pm.test(\"Validate Response body\", function() {\r",
 													"        pm.test(\"Validate response body\", function(){\r",
-													"    var invalidProgramId = pm.variables.get(invalidProgramId);\r",
+													"      pm.test(\"Status code name has string\", function() {\r",
 													"    //pm.expect(jsonResponse.message,\"programBatch with \"+ invalidProgramId+\"not found \").to.be.true\r",
-													"    pm.expect(jsonResponse.success,\"false\")\r",
+													"    //pm.expect(jsonResponse.success,\"false\")\r",
 													"\r",
 													"         \r",
 													"        pm.expect(jsonResponse.batchId, pm.environment.get(\"batchId\"));\r",
@@ -28094,17 +28094,17 @@
 	],
 	"variable": [
 		{
-			"id": "c0f929cf-305f-4cfe-b783-815a8cd1a418",
+			"id": "3486b14a-f742-43cb-824b-bb5859a5d4ba",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "9b083be2-f083-45f9-bcdf-3f9d0d397baa",
+			"id": "2a37e299-3f68-475c-935f-542b8dbf302a",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "b572c50d-121c-4e37-8a5c-6e25581cdab7",
+			"id": "655e2b94-e2d4-4c48-b390-870ca559fdf2",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
