@@ -16391,7 +16391,7 @@
 									"script": {
 										"id": "21bb2abe-1181-4312-a919-f590cde7882f",
 										"exec": [
-											"console.log(\"Due to application error displays XML code, response body message validation cannot be done\");\r",
+											"console.log(\"Due to application error displays XML code, response body validation cannot be done\");\r",
 											"console.log(\"JSONError: Unexpected token '<' at 1:1<!DOCTYPE html>^\");\r",
 											"\r",
 											"//validate status code \r",
@@ -27601,17 +27601,17 @@
 	],
 	"variable": [
 		{
-			"id": "bf667a5b-327e-4bd3-850d-643bbe5ae1e8",
+			"id": "09f43d60-49d0-43a2-aaec-6ebdb6711f03",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d6df6d3d-8ee0-4c66-9081-3858adcf01b4",
+			"id": "d817d4c4-3d80-4394-b57b-458c23ba3ee4",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "11bb6f51-d49d-4f42-ba88-4c9d01ee69a8",
+			"id": "e16996c6-4284-4c36-84df-44fc25e0c379",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
