@@ -12253,7 +12253,7 @@
 											"\r",
 											"var id = jsonResponse.batchId;\r",
 											"console.log(id);\r",
-											"pm.environment.set(\"Batch_CreatedId\", id);\r",
+											"pm.environment.set(\"createdBatchId\", id);\r",
 											"console.log(id);\r",
 											"    \r",
 											"\r",
@@ -27181,17 +27181,17 @@
 	],
 	"variable": [
 		{
-			"id": "ed625af5-72ad-46b8-a837-7bdfffc3717e",
+			"id": "aec5a938-d359-4be0-ac02-d9b0da2d0a54",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "d37d50c0-7471-48c8-a4df-546d44f3a30a",
+			"id": "28f71f72-6b45-40ca-8e6b-5b4c64008022",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "d4e44445-8b5f-4781-bbc0-ebb083073bf9",
+			"id": "8204990e-750f-4ea5-9781-b5d6e39ed2ec",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
