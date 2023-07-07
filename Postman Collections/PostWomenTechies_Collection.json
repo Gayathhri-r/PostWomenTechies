@@ -9750,49 +9750,7 @@
 										"header": [],
 										"url": "{{baseURL}}/{{getBatchByName}}/{{batchName}}"
 									},
-									"response": [
-										{
-											"id": "4d3e3ad4-748e-4f77-b0fb-95a12a12b5d1",
-											"name": "Program_Batch_TC_007_Valid_Batch_ID",
-											"originalRequest": {
-												"method": "GET",
-												"header": [],
-												"url": "{{baseURL}}/{{getBatchById}}/{{batchId}}"
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Server",
-													"value": "Cowboy"
-												},
-												{
-													"key": "Connection",
-													"value": "keep-alive"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json"
-												},
-												{
-													"key": "Transfer-Encoding",
-													"value": "chunked"
-												},
-												{
-													"key": "Date",
-													"value": "Mon, 26 Jun 2023 05:20:56 GMT"
-												},
-												{
-													"key": "Via",
-													"value": "1.1 vegur"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n    \"batchId\": 1504,\n    \"batchName\": \"Jun23-PostWomenTechies-SDET-100-001\",\n    \"batchDescription\": \"This batch is for Postman hackathon\",\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 10,\n    \"programId\": 3168,\n    \"programName\": \"Jun26-PostWomenTechies-SDET-100\"\n}"
-										}
-									]
+									"response": []
 								},
 								{
 									"name": "Program_Batch_TC_017_Without_Endpoint",
@@ -27181,17 +27139,17 @@
 	],
 	"variable": [
 		{
-			"id": "aec5a938-d359-4be0-ac02-d9b0da2d0a54",
+			"id": "2e0c3a76-f6f6-4a84-9bc2-6351a37cf2da",
 			"key": "Assign_CreatedId",
 			"value": ""
 		},
 		{
-			"id": "28f71f72-6b45-40ca-8e6b-5b4c64008022",
+			"id": "3e9aef8f-65ed-44be-b36a-836b8d7ff362",
 			"key": "userEndpoint",
 			"value": "/users/users"
 		},
 		{
-			"id": "8204990e-750f-4ea5-9781-b5d6e39ed2ec",
+			"id": "ec8c8421-8e5f-44fc-99f5-68db6f0a8c4d",
 			"key": "{{saveprogram}}",
 			"value": "saveprogram"
 		}
